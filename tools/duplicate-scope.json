@@ -1,0 +1,4 @@
+{
+  "screens": ["phone-*"],
+  "reason": "User, 2026-11-09: \"Remember to only look at [re]petition on single screen not unfolded\". Repetition (CR-70 / K8) is judged on single-screen layouts (cover/phone); on the open Fold the same text in the left and right pane is not a repetition. Set by config, never by filters."
+}

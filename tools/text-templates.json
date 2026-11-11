@@ -1,0 +1,44 @@
+{
+ "_doc": "CR-81: same element/function = same wording. Per group, every visible text of the listed roles on screens matching `screens` is reduced to a template (placeholders below); a template not in `allowed` is a deviation. Add a variant only with the user's decision.",
+ "placeholders": [
+  [
+   "(?:gen|feb|mar|apr|mag|giu|lug|ago|set|ott|nov|dic)[a-z]*",
+   "<m>"
+  ],
+  [
+   "\\d+(?:[.,]\\d+)*",
+   "<d>"
+  ]
+ ],
+ "groups": [
+  {
+   "name": "period coverage line",
+   "roles": [
+    "period-subtitle",
+    "period-coverage",
+    "page-subtitle"
+   ],
+   "screens": "^(phone|fold)-(top-|)(spese|mese|pilastri)",
+   "match": "^(dati (al|dal|fino)|parziale|nessun)",
+   "allowed": {
+    "dati al <d> <m>": "coverageLabel, user 2026-11-09 \"è ovvio che inizi da 1\"; same wording on Mese and Spese (\"uniforma all'altra schermata che diceva fino al\")",
+    "dati dal <d> al <d> <m>": "coverageLabel, data starts after the window's first day",
+    "dati dal <d> <m> al <d> <m>": "coverageWording (window across months)",
+    "nessun dato": "coverageLabel",
+    "nessun dato per questo mese": "Mese",
+    "nessun conto collegato": "Mese"
+   }
+  },
+  {
+   "name": "period start phrase (any role)",
+   "roles": [
+    "*"
+   ],
+   "screens": "^(phone|fold)-(top-|)(spese|mese|pilastri)",
+   "match": "^(da|dal) \\d+ [a-z]{3}\\b",
+   "allowed": {
+    "dal <d> <m>": "Pilastri: stat subtitle and pillar column date (user 2026-11-09: same wording for the same period start; \"da <d> <m>\" is not used)"
+   }
+  }
+ ]
+}

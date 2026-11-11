@@ -1,0 +1,10 @@
+[
+  {
+    "screen": "glob of dump names, e.g. narrow-top-*",
+    "id": "optional: the element tag (resource-id)",
+    "text": "optional: regex on the element text, e.g. ^s*Syncs*$",
+    "reason": "why this ONE element legitimately repeats",
+    "decidedBy": "user",
+    "date": "YYYY-MM-DD"
+  }
+]

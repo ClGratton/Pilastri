@@ -1,0 +1,126 @@
+{
+  "_comment": "Locale data (config.locale selects one key or a list for the duplicate check's stopWords/unitSigns; config.dateLocale selects the date entry of the dateRanges add-on, or an inline object of the same shape). stopWords: attached words that are not units (prepositions), lower case; unitSigns: extra unit signs besides currency symbols and %; order: dm (9 nov) or md (Nov 9); separators: regex sources joining the two ends of a range; months: name or abbreviation (lower case) -> number; full: names that count as a month word on their own (default: longer than 4 characters). Add a locale by copying _template. Keys starting with _ are not locales.",
+  "it": {
+    "order": "dm",
+    "separators": [
+      "–",
+      "—",
+      "-",
+      "→",
+      "\\bal\\b"
+    ],
+    "months": {
+      "gennaio": 1,
+      "febbraio": 2,
+      "marzo": 3,
+      "aprile": 4,
+      "maggio": 5,
+      "giugno": 6,
+      "luglio": 7,
+      "agosto": 8,
+      "settembre": 9,
+      "ottobre": 10,
+      "novembre": 11,
+      "dicembre": 12,
+      "gen": 1,
+      "feb": 2,
+      "mar": 3,
+      "apr": 4,
+      "mag": 5,
+      "giu": 6,
+      "lug": 7,
+      "ago": 8,
+      "set": 9,
+      "sett": 9,
+      "ott": 10,
+      "nov": 11,
+      "dic": 12
+    },
+    "stopWords": [
+      "di",
+      "da",
+      "al",
+      "e",
+      "a",
+      "il",
+      "in",
+      "su",
+      "con",
+      "per"
+    ],
+    "unitSigns": []
+  },
+  "en": {
+    "order": "md",
+    "separators": [
+      "–",
+      "—",
+      "-",
+      "→",
+      "\\bto\\b",
+      "\\buntil\\b"
+    ],
+    "months": {
+      "january": 1,
+      "february": 2,
+      "march": 3,
+      "april": 4,
+      "may": 5,
+      "june": 6,
+      "july": 7,
+      "august": 8,
+      "september": 9,
+      "october": 10,
+      "november": 11,
+      "december": 12,
+      "jan": 1,
+      "feb": 2,
+      "mar": 3,
+      "apr": 4,
+      "jun": 6,
+      "jul": 7,
+      "aug": 8,
+      "sep": 9,
+      "sept": 9,
+      "oct": 10,
+      "nov": 11,
+      "dec": 12
+    },
+    "full": [
+      "january",
+      "february",
+      "march",
+      "april",
+      "june",
+      "july",
+      "august",
+      "september",
+      "october",
+      "november",
+      "december"
+    ],
+    "stopWords": [
+      "of",
+      "to",
+      "at",
+      "on",
+      "the",
+      "and",
+      "a",
+      "in"
+    ],
+    "unitSigns": []
+  },
+  "_template": {
+    "order": "dm",
+    "separators": [
+      "–",
+      "—",
+      "-"
+    ],
+    "months": {},
+    "full": [],
+    "stopWords": [],
+    "unitSigns": []
+  }
+}

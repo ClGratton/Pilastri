@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The window paints the app surface before Compose's first frame, so a cold start never flashes another color. -->
+    <style name="Theme.Pilastri" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/pilastri_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="postSplashScreenTheme">@style/Theme.Pilastri</item>
+    </style>
+    <color name="pilastri_bg">#F7F3FA</color>
+    <!-- Fixed, non-night-qualified variants: MainActivity picks one for the splash so the app's own Aspetto choice wins over the system. -->
+    <style name="Theme.Pilastri.Light" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/pilastri_bg_light</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+    <style name="Theme.Pilastri.Dark" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/pilastri_bg_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+    <color name="pilastri_bg_light">#F7F3FA</color>
+    <color name="pilastri_bg_dark">#141119</color>
+</resources>

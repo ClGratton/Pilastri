@@ -1,0 +1,190 @@
+{
+  "adb": "F:/Android/Sdk/platform-tools/adb.exe",
+  "serial": "emulator-5554",
+  "package": "xyz.grtlabs.pilastri",
+  "activity": ".MainActivity",
+  "extras": {
+    "list": "capture_list",
+    "id": "capture_id",
+    "route": "capture_route",
+    "tab": "capture_tab",
+    "month": "capture_month",
+    "all": "capture_all",
+    "prefix": "capture_prefix",
+    "perkind": "capture_perkind",
+    "only": "capture_only",
+    "vptag": "capture_vptag",
+    "mid": "capture_mid",
+    "shots": "capture_shots",
+    "dir": "capture_dir",
+    "motion": "capture_motion",
+    "from": "capture_from",
+    "resume": "capture_resume",
+    "frames": "capture_frames"
+  },
+  "logTag": "PILASTRI_CAPTURE",
+  "viewportTag": "period-viewport",
+  "density": 2.625,
+  "viewportPoint": "tools/viewport-point.mjs",
+  "holdPoint": "tools/hold-point.mjs",
+  "halfBatch": [
+    "powershell",
+    "-NoProfile",
+    "-File",
+    "tools/half-batch.ps1",
+    "{src}",
+    "{dst}"
+  ],
+  "layouts": {
+    "fold": {
+      "prefix": "fold",
+      "wmSize": "2208x1768",
+      "budgetS": 90
+    },
+    "cover": {
+      "prefix": "phone",
+      "wmSize": "1080x2340",
+      "budgetS": 90
+    },
+    "fs2": {
+      "prefix": "phone-fs2",
+      "wmSize": "1080x2340",
+      "fontScale": "2.0",
+      "motion": false,
+      "perKind": 1,
+      "budgetS": 30,
+      "walk": false,
+      "launch": false
+    }
+  },
+  "stallS": 30,
+  "_motion": "Swipe strips by the names the checker reads (<prefix>-<out>-rest|moving, -hold-*, -mid-*). dest = a destination name from the app list ({cur}/{prev} = month yyyy-MM); vp = viewport index in dump order; drag = travel factor (1 = 85%->35% of the viewport); mid.len 0.4 = the short drag (title stays in its clip). The app performs each one itself with real MotionEvents.",
+  "motion": {
+    "fold": [
+      {
+        "out": "pilastri",
+        "dest": "top-pilastri",
+        "vp": 0,
+        "drag": 1,
+        "hold": true,
+        "mid": {
+          "len": 1
+        }
+      },
+      {
+        "out": "mese",
+        "dest": "top-pilastri",
+        "vp": 1,
+        "drag": 1,
+        "hold": true,
+        "mid": {
+          "len": 0.4
+        }
+      },
+      {
+        "out": "spese",
+        "dest": "top-spese",
+        "vp": 1,
+        "drag": 1,
+        "hold": true,
+        "mid": {
+          "len": 0.4
+        }
+      },
+      {
+        "out": "contributions",
+        "dest": "contributions",
+        "vp": 1,
+        "hold": true
+      }
+    ],
+    "cover": [
+      {
+        "out": "pilastri",
+        "dest": "top-pilastri",
+        "vp": 0,
+        "drag": 1,
+        "hold": true,
+        "mid": {
+          "len": 1
+        }
+      },
+      {
+        "out": "mese",
+        "dest": "month-{cur}",
+        "vp": 0,
+        "drag": 1,
+        "hold": true,
+        "mid": {
+          "len": 0.4,
+          "dest": "month-{prev}"
+        }
+      },
+      {
+        "out": "spese",
+        "dest": "top-spese",
+        "vp": 1,
+        "drag": 1,
+        "hold": true,
+        "mid": {
+          "len": 0.4
+        }
+      },
+      {
+        "out": "contributions",
+        "dest": "contributions",
+        "vp": 0,
+        "hold": true
+      }
+    ]
+  },
+  "_rename": "Mechanical map from the app destination names to the names the checker and earlier gates use: first name = move, further names = copies (also half/*.png).",
+  "rename": {
+    "fold-pillar-1": [
+      "fold-pillar",
+      "fold-island-back"
+    ],
+    "fold-pension": [
+      "fold-previdenza"
+    ],
+    "fold-connections": [
+      "fold-impostazioni-conti"
+    ],
+    "phone-pillar-1": [
+      "phone-pillar"
+    ],
+    "phone-pension": [
+      "phone-previdenza"
+    ],
+    "phone-connections": [
+      "phone-impostazioni-conti"
+    ],
+    "phone-month-{cur}": [
+      "phone-mese"
+    ],
+    "phone-month-{prev}": [
+      "phone-mese-mid"
+    ],
+    "phone-fs2-pillar-1": [
+      "phone-fs2-pillar"
+    ],
+    "phone-fs2-month-{cur}": [
+      "phone-fs2-mese"
+    ]
+  },
+  "afterResize": [
+    "am force-stop com.google.android.apps.nexuslauncher"
+  ],
+  "afterResizeMs": 2500,
+  "_walker": "In-app states/actions (device add-ons state-stability, action-outcome): states = every enabled checkable node of every captured page, tapped and restored; actions = every non-navigation, non-destructive, non-external control on pages matching actionsOn. skip/nav = regexes of labels never tapped / treated as navigation (app defaults in CaptureHook SKIP_DEFAULT / NAV_DEFAULT).",
+  "walker": {
+    "states": true,
+    "actionsOn": [
+      "*-connections"
+    ],
+    "max": 6
+  },
+  "launch": {
+    "frames": "20:150"
+  }
+}

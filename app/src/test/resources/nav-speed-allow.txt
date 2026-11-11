@@ -1,0 +1,5 @@
+# Reviewed exceptions to NavigationSpeedTest (key = file:trimmed line). Each needs a reason.
+# Settings is not a top destination and the figure is one target lookup per pillar row.
+Settings.kt:val t = a.targetFor(p, app.today)
+# Spese: inside remember(a); the first read of one small preferences file. Candidate to move into HomeModel (needs a Context).
+Spese.kt:val refs = runCatching { AutoCategoryAttempts(SharedPrefsStore(ctx.getSharedPreferences("pilastri_autocat", android.content.Context.MODE_PRIVATE))).attempted() }.getOrDefault(emptySet())

@@ -1,0 +1,19 @@
+{
+ "_doc": "Empty manifest for scripts/addons/flow-effort.mjs (SKILL K31, K32, K34). One row per flow of the product (setup, connecting a service, import, payment, permission, sign-in). flow_list: the project's own list of flows; a listed flow with no row fails. Per step: actor person|system, surface own-ui|third-party-in-app|browser|other-app, kind sign-in|input|consent|wait|choice, provider, hideable true|false (reason when a hideable step stays visible, or when a third-party surface carries a step that is not sign-in or consent), in_app_reason when a third-party page is used inside the app (the provider documents no sign-in for apps, with the source). methods: the flow-effort table, every documented method with its person steps first time and later, permitted true|false, exactly one chosen, a reason on the chosen one when a permitted method has fewer steps first time or later; a function with a person step on a third-party surface needs the table on one of its flows. return: when a sign-in or consent runs in the browser, the address the app owns (owned true) and where the pending state is kept outside screen memory. Flows of one function share one path. No filters: fix the flow or record the reason.",
+ "flow_list": ["example-flow"],
+ "flows": [
+  {
+   "id": "example-flow",
+   "function": "example-function",
+   "steps": [
+    { "id": "s1", "actor": "person", "surface": "browser", "kind": "sign-in", "provider": "example-provider", "hideable": false },
+    { "id": "s2", "actor": "system", "surface": "own-ui", "kind": "wait", "provider": "example-provider", "hideable": false }
+   ],
+   "return": { "address": "https://app.example/return", "owned": true, "pending_state": "where the pending authorization is kept outside screen memory" },
+   "methods": [
+    { "id": "documented-app-flow", "permitted": true, "first": 2, "later": 0, "chosen": true, "source": "docs page" },
+    { "id": "website-in-an-in-app-page", "permitted": false, "chosen": false, "source": "the provider documents a sign-in for apps" }
+   ]
+  }
+ ]
+}

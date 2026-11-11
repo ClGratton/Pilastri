@@ -1,0 +1,9 @@
+[
+ {
+  "screen": "narrow-top-f",
+  "text": "^Total 429 .$",
+  "reason": "selftest: pattern written with U+0020 must still match U+00A0 text",
+  "decidedBy": "user",
+  "date": "2026-11-09"
+ }
+]

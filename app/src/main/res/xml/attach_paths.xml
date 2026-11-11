@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Camera shots for attachments live here for the seconds it takes to read them, then are deleted. -->
+<paths>
+    <cache-path name="attach" path="attach/"/>
+</paths>

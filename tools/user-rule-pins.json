@@ -1,0 +1,60 @@
+{
+ "rules": "critique-rules.md",
+ "manifest": "fixtures/cr/manifest.json",
+ "pins": [
+  {
+   "cr": "CR-01",
+   "row": [
+    ">= 40 dp on Fold",
+    ">= 28 dp on cover",
+    "ancora più di quella che ti ho detto"
+   ],
+   "code": [
+    {
+     "file": "consistency-check.mjs",
+     "pattern": "CR01_PEEK_FOLD = (\\d+)",
+     "expect": 40
+    },
+    {
+     "file": "consistency-check.mjs",
+     "pattern": "CR01_PEEK_COVER = (\\d+)",
+     "expect": 28
+    },
+    {
+     "file": "../app/src/main/java/xyz/grtlabs/pilastri/ui/Motion.kt",
+     "pattern": "val PeriodPeekWide = (\\d+)\\.dp",
+     "expect": 40
+    },
+    {
+     "file": "../app/src/main/java/xyz/grtlabs/pilastri/ui/Motion.kt",
+     "pattern": "val PeriodPeek = (\\d+)\\.dp",
+     "expect": 28
+    },
+    {
+     "file": "../app/src/main/java/xyz/grtlabs/pilastri/ui/Motion.kt",
+     "pattern": "PeriodPeekAlpha = 0\\.(\\d)f",
+     "expect": 6
+    }
+   ]
+  },
+  {
+   "cr": "CR-89",
+   "row": [
+    "Qua perché così stretto?",
+    "va bene modifica schermata"
+   ],
+   "code": [
+    {
+     "file": "device-addons.json",
+     "pattern": "\"endGutterDp\": (\\d+)",
+     "expect": 16
+    },
+    {
+     "file": "../app/src/main/java/xyz/grtlabs/pilastri/ui/PageHeader.kt",
+     "pattern": "val Gutter = (\\d+)\\.dp",
+     "expect": 16
+    }
+   ]
+  }
+ ]
+}

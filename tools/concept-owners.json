@@ -1,0 +1,272 @@
+{
+  "_comment": "One implementation per concept (user, 2026-11-09 ~17:25: \"sono al stessa cosa e stessa classe come fanno a essere diverse, evita che stessi concetti abbiano codice diverso\"). Each concept has OWNER files (the only place its signatures may appear) and signatures = line regexes (comments and imports ignored; an object with `near` needs a second regex within 15 lines of the line). A wrapper that only passes parameters has no signature and is fine. `known` = a second implementation that exists today, with its reason; it is listed in the report. Generic form: design-method/scripts (addon concept-owners, config conceptOwners). Test: ConceptOwnershipTest (CR-76 / CR-77). Every `known` entry carries a `decision` (the user's or the pending-owner note); the orchestrator removes an entry when the second implementation is gone. Signatures describe the implementation (spring, pointer pass, tags), never a function name, so a thin delegating wrapper has none.",
+  "concepts": [
+    {
+      "name": "ChatGPT sign-in",
+      "owners": [
+        "ai/ChatGptSignIn.kt",
+        "ai/ChatGptPlan.kt",
+        "ai/Routes.kt"
+      ],
+      "signatures": [
+        "ChatGptOAuth\\.authorizeUrl\\(",
+        "LoopbackListener\\.open\\(",
+        "ChatGptSignIn\\.run\\(",
+        "auth\\.openai\\.com",
+        "AiWebActivity\\.loginIntent\\([^)]*CHATGPT"
+      ],
+      "known": []
+    },
+    {
+      "name": "period strip",
+      "owners": [
+        "ui/Period.kt"
+      ],
+      "signatures": [
+        "(?<![A-Za-z])PeriodState\\(",
+        "(?<![A-Za-z])PeriodGesture\\(",
+        "\\)\\s*:\\s*PeriodState\\b",
+        "PeriodPhysics\\.(settleTarget|displayed|rawOf|rubber)\\b",
+        "Motion\\.periodSettle",
+        "\\.position\\.(animateTo|snapTo|stop)\\(",
+        "UiTag\\.PERIOD_(VIEWPORT|PAGE_\\w+|LABEL_\\w+)\\b",
+        {
+          "re": "detect(Horizontal)?DragGestures|awaitHorizontalDragOrCancellation|horizontalDrag\\(",
+          "near": "PeriodState|PeriodGesture|PERIOD_|\\bstrip\\b|heroFade"
+        }
+      ],
+      "known": []
+    },
+    {
+      "name": "period header (title, chip, subtitle)",
+      "owners": [
+        "ui/PageHeader.kt"
+      ],
+      "signatures": [
+        "UiTag\\.PERIOD_(TITLE|CHIP|SUBTITLE)\\b",
+        "fun\\s+(PeriodTitle|PeriodStrip|PeriodChip|PeriodPageHeader)\\b"
+      ],
+      "known": []
+    },
+    {
+      "name": "page header",
+      "owners": [
+        "ui/PageHeader.kt"
+      ],
+      "signatures": [
+        "UiTag\\.PAGE_(TITLE|SUBTITLE|HEADER|TRAILING)\\b",
+        "fun\\s+PageHeader\\b"
+      ],
+      "known": []
+    },
+    {
+      "name": "chip",
+      "owners": [
+        "ui/Kit.kt",
+        "ui/Tags.kt"
+      ],
+      "signatures": [
+        "fun\\s+Tag\\(",
+        "UiTag\\.(CHIP|SELECTED)\\b"
+      ],
+      "known": []
+    },
+    {
+      "name": "threshold haptic",
+      "owners": [
+        "ui/CommitHaptics.kt",
+        "ui/Motion.kt"
+      ],
+      "signatures": [
+        "VibrationEffect",
+        "PRIMITIVE_\\w+",
+        "HapticFeedbackType\\.GestureThresholdActivate",
+        "\\.vibrate\\(",
+        "\\.(commitPoint|thresholdOut|dragStart|distanceTick)\\("
+      ],
+      "known": []
+    },
+    {
+      "name": "press feedback",
+      "owners": [
+        "ui/Press.kt"
+      ],
+      "signatures": [
+        "Motion\\.PressedScale\b",
+        "Motion\\.press\\(\\)",
+        {
+          "re": "awaitFirstDown\\(",
+          "near": "glow|pressedScale|PressedScale|Motion\\.press"
+        }
+      ],
+      "known": []
+    },
+    {
+      "name": "connect accounts flow",
+      "owners": [
+        "ui/setup/SetupFlow.kt",
+        "ui/setup/SetupModel.kt",
+        "ui/setup/EbBankAccess.kt",
+        "ui/setup/SetupFrame.kt",
+        "sync/eb/EbConnector.kt",
+        "ui/setup/EbSetupModel.kt",
+        "ui/setup/EbSetupScreens.kt",
+        "ui/setup/BankReturn.kt"
+      ],
+      "signatures": [
+        "EbBankAccess\\(",
+        "BankSteps\\.(begin|complete|loadBanks)\\(",
+        "(?<![A-Za-z])EbConnector\\(",
+        "\\.startLink\\(",
+        "SetupRules\\.bankFlow\\("
+      ],
+      "known": []
+    },
+    {
+      "name": "setup page scaffold",
+      "owners": [
+        "ui/setup/SetupFlow.kt",
+        "ui/PageHeader.kt",
+        "ui/AppRoot.kt",
+        "sync/WebChrome.kt"
+      ],
+      "signatures": [
+        "Type\\.setupTitle\b",
+        "windowInsetsPadding\\(WindowInsets\\.safeDrawing"
+      ],
+      "known": []
+    },
+    {
+      "name": "enable banking setup (native panel)",
+      "_why": "Wave 16, user approval 2026-11-09 ~23:50 ('Si, schermate vanno bene'): one EB setup flow. The hidden page and its scripts live in EbPanel/WebViewEbPage; the screens host one WebViewEbPage.",
+      "owners": [
+        "sync/eb/EbPanel.kt",
+        "sync/eb/WebViewEbPage.kt",
+        "ui/setup/EbSetupScreens.kt"
+      ],
+      "signatures": [
+        "/api/link_accounts",
+        "/api/applications",
+        "firebaseui-",
+        "__vue__",
+        "class\\s+\\w+\\s*(\\([^)]*\\))?\\s*:\\s*EbPage\b",
+        "(?<![A-Za-z])WebViewEbPage\\(",
+        "(?<![A-Za-z])EbPanel\\("
+      ],
+      "known": []
+    },
+    {
+      "name": "sync bar (2 dp refresh / sync line)",
+      "_why": "Polish 2, owner G: one 2 dp bar with exact semantics bounds (Material's indicator enlarges them to about 22 dp and the node overlapped the text above). Home's sync line, the pull-to-refresh bar and the provider card's bar are all SyncBar in ui/Kit.kt. The Agente working line (determinate-free, transparent track, own colour, no 'Aggiornamento in corso' label) is the one known second form.",
+      "owners": [
+        "ui/Kit.kt"
+      ],
+      "signatures": [
+        {
+          "re": "(?<![A-Za-z])LinearProgressIndicator\\(",
+          "near": "height\\(2\\.dp\\)|Aggiornamento in corso"
+        }
+      ],
+      "known": [
+        {
+          "file": "ai/AssistantPage.kt",
+          "reason": "The assistant's 'working' line: a 2 dp indicator with a transparent track in the action colour, labelled by the surrounding row, not a data sync; it keeps its own placeholder spacer of the same height.",
+          "decision": "pending-owner note (Polish 2 G): merge into SyncBar with a label parameter if the user wants it."
+        }
+      ]
+    },
+    {
+      "name": "clipboard read",
+      "_why": "Wave 17, user 2026-11-10: the app never reads the clipboard unasked. Every primaryClip / coerceToText read for use lives behind ClipboardSource so a test can fake it and count. Polish 3 (2026-11-10): the Agente hand-off and its reply paste are gone; ai/WebChat.kt stays listed only for the CLIPBOARD_SERVICE handle of ClipWrite (a write); it reads no clip.",
+      "owners": [
+        "ui/setup/PasteField.kt",
+        "ai/WebChat.kt"
+      ],
+      "signatures": [
+        "(?<![A-Za-z])primaryClip(?![A-Za-z])",
+        "\\.coerceToText\\(",
+        "CLIPBOARD_SERVICE"
+      ],
+      "known": []
+    },
+    {
+      "name": "clipboard write and own-clip clear",
+      "_why": "Polish 3 2026-11-10: the app writes the clipboard only on a person's tap (the routine's instructions, an assistant reply under AG-REPLY). One owner, ClipWrite in ai/WebChat.kt; nothing is tracked or cleared.",
+      "owners": [
+        "ai/WebChat.kt"
+      ],
+      "signatures": [
+        "setPrimaryClip\\(",
+        "clearPrimaryClip\\(",
+        "ClipData\\.newPlainText"
+      ],
+      "known": []
+    },
+    {
+      "name": "setup action row (title + caption, full width)",
+      "_why": "G-17 / EB-2, 2026-11-10: a group of setup actions is one set of full-width rows with a title and a caption; one owner, SetupActionRow in ui/setup/SetupFlow.kt.",
+      "owners": [
+        "ui/setup/SetupFlow.kt"
+      ],
+      "signatures": [
+        "Column\\(Modifier\\.fillMaxWidth\\(\\)\\.heightIn\\(min = 56\\.dp\\)\\.pressable\\("
+      ],
+      "known": []
+    },
+    {
+      "name": "sibling action row by role (confirm rightmost)",
+      "_why": "G-17(d) / CR-96, 2026-11-10 (user: confirm sits on the right): a Row of buttons is laid out by RoleActionRow in ui/CardKit.kt (confirm and secondary passed by role, tags applied there). A hand-built Row with spacing near a PillButton is a second implementation.",
+      "owners": [
+        "ui/CardKit.kt"
+      ],
+      "signatures": [
+        {
+          "re": "^\\s*Row\\(.*spacedBy",
+          "near": "PillButton\\("
+        },
+        "^fun RoleActionRow\\("
+      ],
+      "known": [
+        {
+          "file": "ui/screens/Common.kt",
+          "reason": "One button next to a caption or a text field: a single action, no sibling to order (CR-96 judges rows of two or more actions).",
+          "decision": "agent, 2026-11-10: single action row, not a sibling-action row; open to the user's veto"
+        },
+        {
+          "file": "ui/screens/Register.kt",
+          "reason": "One button next to a caption or a text field: a single action, no sibling to order (CR-96 judges rows of two or more actions).",
+          "decision": "agent, 2026-11-10: single action row, not a sibling-action row; open to the user's veto"
+        },
+        {
+          "file": "ui/screens/Review.kt",
+          "reason": "One button next to a caption or a text field: a single action, no sibling to order (CR-96 judges rows of two or more actions).",
+          "decision": "agent, 2026-11-10: single action row, not a sibling-action row; open to the user's veto"
+        },
+        {
+          "file": "ui/screens/Settings.kt",
+          "reason": "One button next to a caption or a text field: a single action, no sibling to order (CR-96 judges rows of two or more actions).",
+          "decision": "agent, 2026-11-10: single action row, not a sibling-action row; open to the user's veto"
+        },
+        {
+          "file": "ui/screens/Scenarios.kt",
+          "reason": "Rows of text inputs (Dal/Al, ...) near the scenario buttons; the button row itself uses RoleActionRow.",
+          "decision": "agent, 2026-11-10: false positive of the near-match"
+        }
+      ]
+    }
+  ],
+  "gestures": {
+    "_comment": "Every top-level declaration that contains one of these gesture signatures (a drag with a commit fraction, or a predictive back) must reference the shared helper. `exceptions` = { file, segment (substring of the declaration line), reason }.",
+    "signatures": [
+      "anchoredDraggable\\(",
+      "\\.draggable\\(",
+      "rememberDraggableState\\(",
+      "PredictiveBackHandler\\(",
+      "detect(Horizontal|Vertical)?DragGestures\\(",
+      "awaitHorizontalDragOrCancellation\\(",
+      "(?<![A-Za-z])horizontalDrag\\("
+    ],
+    "helper": "rememberCommitHaptics|CommitHaptics\\(",
+    "exceptions": []
+  }
+}

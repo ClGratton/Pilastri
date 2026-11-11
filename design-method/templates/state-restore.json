@@ -1,0 +1,79 @@
+{
+ "_doc": "Empty manifest for scripts/addons/state-restore.mjs (SKILL K28). Fill roots, flow_file_patterns, flows; copy rules and loosen one only with a reason. known_lost items do not fail, they are counted; a restore test replaces its item.",
+ "roots": [
+  "app/src/main/java"
+ ],
+ "tests_root": "app/src/test",
+ "flow_file_patterns": [],
+ "rules": [
+  {
+   "id": "R1-typed-input-in-memory",
+   "regex": "var\\s+\\w+\\s+by\\s+remember(\\([^)]*\\))?\\s*\\{\\s*mutableStateOf\\((\"\"|TextFieldValue\\()",
+   "why": "typed input kept in screen memory is lost on recreation and process death: rememberSaveable or a store"
+  },
+  {
+   "id": "R2-flow-position-in-memory",
+   "regex": "var\\s+(step|screen|stage|page|selected\\w*|mode(?!l)|tab|position)\\w*\\s+by\\s+remember(?!Saveable)",
+   "why": "the flow position kept in screen memory returns the person to the start"
+  },
+  {
+   "id": "R3-work-owner-in-remember",
+   "regex": "remember\\s*\\{\\s*\\w*(State|Session|Runner|Page|App)\\(",
+   "why": "an object that owns work, held in remember, dies with the screen: it must belong to a listed flow with a holder outside the screen"
+  },
+  {
+   "id": "R4-work-destroyed-on-dispose",
+   "regex": "(onDispose\\s*\\{[^}]*(destroy|cancel|clear|stopLoading)\\()|(onRelease\\s*=\\s*\\{[^}]*destroy\\()",
+   "why": "in-flight work destroyed when the screen leaves composition: resume by itself or named failure with retry"
+  },
+  {
+   "id": "R5-lifecycle-handler-assigns-flow-state",
+   "regex": "Lifecycle\\.Event\\.ON_(STOP|PAUSE|RESUME|START)|override\\s+fun\\s+on(Stop|Pause|Resume|Start|NewIntent)\\(",
+   "near": "\\b(model|step|screen|stack)\\s*=[^=]",
+   "window": 12,
+   "until": "^\\s*override\\s+fun\\s+on\\w+\\(.*\\{\\s*$",
+   "why": "a stop/resume/new-intent handler that assigns flow state can reset the flow on return"
+  },
+  {
+   "id": "R6-process-singleton-flow-state",
+   "regex": "^object\\s+\\w+",
+   "near": "^( {4}|\\t)(private |internal )?(@Volatile )?var\\s",
+   "window": 40,
+   "until": "^\\}",
+   "why": "a process singleton holding mutable flow state is lost with the process"
+  }
+ ],
+ "allow": [],
+ "flows": [],
+ "_example": {
+  "_comment": "One flow entry (not read by the checker). tests values are Class#method found by text search under tests_root; known_lost needs a trigger in background|recreate|process|link.",
+  "flow": "checkout-step",
+  "owner": [
+   "ui/Checkout.kt:40-120"
+  ],
+  "holder": "rememberSaveable + a store on disk",
+  "inputs": [
+   "step",
+   "address field"
+  ],
+  "work": "payment page wait",
+  "tests": {
+   "background": "CheckoutRestoreTest#backgroundKeepsStep",
+   "recreate": "CheckoutRestoreTest#recreateKeepsInput"
+  },
+  "known_lost": [
+   {
+    "trigger": "process",
+    "what": "payment page wait restarts",
+    "reason": "UNKNOWN or decision",
+    "size": "work"
+   },
+   {
+    "trigger": "link",
+    "what": "n/a: no redirect return",
+    "reason": "audit date",
+    "size": "none"
+   }
+  ]
+ }
+}

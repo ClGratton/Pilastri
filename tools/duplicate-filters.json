@@ -1,0 +1,224 @@
+[
+  {
+    "screen": "*",
+    "id": "",
+    "text": "^al 6 nov$",
+    "reason": "Liquidita pillar column date vs the Mese header coverage 'dati dal 1 al 6 nov': the account value's date and the month's coverage end are two facts that coincide in the synthetic archive."
+  },
+  {
+    "screen": "*-mese*",
+    "id": "",
+    "text": "^150 .$",
+    "reason": "Flusso destination value and the Versamenti ledger row: flow and ledger levels of the single 150 euro synthetic contribution (the duplicate total line is removed in the app). Judgment call for the owner."
+  },
+  {
+    "screen": "*-mese*",
+    "id": "",
+    "text": "^dal saldo [0-9.]+ .$",
+    "reason": "Deficit covered from the balance vs total Spese: equal only because the synthetic month has no income; two different facts. (generalised 2026-11-10: the amount follows the synthetic month, 441 then 466)."
+  },
+  {
+    "screen": "*spese*",
+    "id": "",
+    "text": "^Spesa$",
+    "reason": "Stat label 'Spesa' (total) vs a user category named Spesa: category names are user data."
+  },
+  {
+    "screen": "*futuro*",
+    "id": "",
+    "text": "^partenza 9 nov",
+    "reason": "Scenario start date vs today's freshness: the start date equals today only in the synthetic archive."
+  },
+  {
+    "screen": "*",
+    "id": "",
+    "text": "^nominale$",
+    "reason": "Basis toggle option vs the table column header of the same word: a control choice vs a column label."
+  },
+  {
+    "screen": "*pillar*",
+    "id": "",
+    "text": "^n/d$",
+    "reason": "Honesty marker 'n/d' on different fields (value, chart, bars): each unknown is its own fact."
+  },
+  {
+    "screen": "*previdenza*",
+    "id": "",
+    "text": "^n/d$",
+    "reason": "Honesty marker 'n/d' on different fields (datore contribution, deduction space, extra quota): each unknown is its own fact."
+  },
+  {
+    "screen": "*previdenza*",
+    "id": "",
+    "text": "^tuo$",
+    "reason": "Column heading of each fund card plus the deduction legend: stand-alone cards each name their own columns."
+  },
+  {
+    "screen": "*previdenza*",
+    "id": "",
+    "text": "^datore$",
+    "reason": "Column heading of each fund card plus the deduction legend: stand-alone cards each name their own columns."
+  },
+  {
+    "screen": "*-mese*",
+    "id": "",
+    "text": "^tuo$",
+    "reason": "Ledger row label of each Versamenti entry: every row names its own contribution as tuo (siblings, each its own fact)."
+  },
+  {
+    "screen": "*-mese*",
+    "id": "",
+    "text": "^28 ott . da isybank$",
+    "reason": "Two Versamenti ledger movements of the same day and source: two separate movements (synthetic archive has identical ones)."
+  },
+  {
+    "screen": "*-mese*",
+    "id": "",
+    "text": "^60 .$",
+    "reason": "Flusso note line \"Versamento in Lungo termine 60 euro\" vs the ledger row of that contribution: flow and ledger levels of one synthetic contribution (as the 150 euro entry)."
+  },
+  {
+    "screen": "*",
+    "id": "",
+    "text": "^24[.]630 .$",
+    "reason": "Futuro: the Oggi hero is the Lungo termine value now (Future.kt:81); the Lungo termine card restates that total above its breakdown by source (Future.kt:140). A breakdown restating the total it splits is legitimate (user, 2026-11-09: \"è il breakdown quindi la ripetizione è lecita\")."
+  },
+  {
+    "screen": "*previdenza*",
+    "id": "",
+    "text": "^Previdenza$",
+    "reason": "Open Fold list-detail: the Futuro card title in the left pane and the Previdenza page title of its own detail in the right pane."
+  },
+  {
+    "screen": "*previdenza*",
+    "id": "",
+    "text": "^Deduzione 2026$",
+    "reason": "Open Fold list-detail: summary card in the left pane and the detail card of the same name in the right pane."
+  },
+  {
+    "screen": "*previdenza*",
+    "id": "",
+    "text": "^tetto 5[.]300 .$",
+    "reason": "Open Fold list-detail: summary card in the left pane and its detail card in the right pane."
+  },
+  {
+    "screen": "*previdenza*",
+    "id": "",
+    "text": "^Allianz Insieme$",
+    "reason": "Open Fold list-detail: the fund row in the left pane and the fund heading of its detail in the right pane."
+  },
+  {
+    "screen": "*previdenza*",
+    "id": "",
+    "text": "^datato 27 set$",
+    "reason": "Fund date of the detail card (right pane) vs the left pane freshness clause that names the oldest source: two panes, each stating the date of its own object."
+  },
+  {
+    "screen": "*previdenza*",
+    "id": "",
+    "text": "^9 nov . Dati di esempio$",
+    "reason": "Right pane page subtitle date vs the left pane freshness line: list-detail panes, each with its own header."
+  },
+  {
+    "screen": "*-conti",
+    "id": "",
+    "text": "^forma n/d . dati al 27 set$",
+    "reason": "Conti row of the account with its own data date vs the freshness clause naming the oldest source: the row is the evidence for the clause (list item)."
+  },
+  {
+    "screen": "*pilastri*",
+    "id": "",
+    "text": "^dal [0-9]{1,2} [a-z]{3}$",
+    "reason": "Pilastri: the stale pillar column date (\"dal 27 set\", Home.kt:240) vs the freshness line naming the stale source (\"Allianz Insieme datato 27 set\", Controls.kt:63-65): the pillar value date and which source makes it old are different facts (user, 2026-11-09: \"È diverso\"). Same class as the Conti row filter."
+  },
+  {
+    "screen": "*account-sample*",
+    "id": "",
+    "text": "^[0-9.]+,[0-9]{2} .$",
+    "reason": "Account page: the hero value is the latest record and the history list below shows its newest row; the list row is the evidence for the hero (a list item restating the current value)."
+  },
+  {
+    "screen": "*account-sample*",
+    "id": "",
+    "text": "^Dati di esempio . saldo",
+    "reason": "Sibling history rows carry the same source note; each row is its own record."
+  },
+  {
+    "screen": "*account-sample*",
+    "id": "",
+    "text": "^(dato|dati) (al|fino al) [0-9]+ [a-z]{3}|^[0-9]+ [a-z]{3} 20[0-9]{2}$",
+    "reason": "Hero freshness line vs the date of the newest history row: the row is the evidence for the freshness line."
+  },
+  {
+    "screen": "*categories*",
+    "id": "",
+    "text": "^(non )?essenziale$",
+    "reason": "Category type label of each category row: sibling rows, each its own category."
+  },
+  {
+    "screen": "*categories*",
+    "id": "",
+    "text": "^150$",
+    "reason": "Budget scale tick vs a category amount: a scale value and a figure coinciding in the synthetic archive."
+  },
+  {
+    "screen": "*category-none*",
+    "id": "",
+    "text": "^23,40 .$",
+    "reason": "Total of the uncategorised category vs its single movement: a breakdown restating the total it splits (user 2026-11-09)."
+  },
+  {
+    "screen": "*contributions*",
+    "id": "",
+    "text": "^(Versamenti tuoi|Datore . separato|Prelievi|Proventi|Costi|nominale|. gen 2026|indice mancante|non registrati|Progetti|[0-9.]+,[0-9]{2} .)$",
+    "reason": "Quanto hai messo: the Tutti i pilastri summary card and the pillar card name the same rows and columns; stand-alone cards each name their own, and the totals equal the pillar card only because the synthetic archive has contributions in one pillar."
+  },
+  {
+    "screen": "*-mese*",
+    "id": "",
+    "text": "^(Lungo termine . Espero|41 .|10 nov . (trattenuta in busta|contributo del datore))$",
+    "reason": "Versamenti ledger: two sibling rows of the same fund (tuo and datore) carry the same title; 41 euro is the employer row and the Datore separato total of that one row (breakdown restating its total); the dates name each row."
+  },
+  {
+    "screen": "*month-2026-*",
+    "id": "",
+    "text": "^(150 .|28 set . da isybank|tuo|Versamento in Lungo termine .*|60 .)$",
+    "reason": "Flusso notes vs Versamenti ledger rows of the same synthetic contributions (flow and ledger levels, as the 150 and 60 euro entries on Mese) and sibling rows with the same source."
+  },
+  {
+    "screen": "*pillar-*",
+    "id": "",
+    "text": "^(7[.]800|3[.]200) .$",
+    "reason": "Pillar detail: the hero value and the same value as the newest dated row of that pillar (list item evidencing the hero)."
+  },
+  {
+    "screen": "*pillar-*",
+    "id": "",
+    "text": "^valore nominale . al [0-9]+ nov$|^al [0-9]+ nov$",
+    "reason": "Pillar detail: hero basis line vs the dated value row; the row is the evidence for the hero date."
+  },
+  {
+    "screen": "*plan-*",
+    "id": "",
+    "text": "^[0-9]+,[0-9]{2} .$",
+    "reason": "Plan page: equal instalments are sibling rows (each its own rata); the remaining and total amounts and the source subject quote the same synthetic order amount."
+  },
+  {
+    "screen": "*plan-*",
+    "id": "",
+    "text": "^(pagata il [0-9]+ [a-z]{3}|[0-9]+ [a-z]{3} . (email|PayPal))$",
+    "reason": "Rata paid date vs the date of the source email/receipt that evidences it: two facts (payment, document) that coincide in the synthetic archive."
+  },
+  {
+    "screen": "*plan-*",
+    "id": "",
+    "text": "^(da confermare|almeno|2 di 4 pagate|PayPal Paga in 3 rate|Klarna:|Acquisto Zalando|Scalapay:).*",
+    "reason": "Plan header/status vs the source line quoting the order or receipt subject; the source subject is quoted evidence, not a repeated figure."
+  },
+  {
+    "screen": "*review*",
+    "id": "",
+    "text": "^(Salta|1 . 23,40 .|1 . 35,00 .*|2 . 200,00 .*|[-+−]?[0-9]+,[0-9]{2} .|5 nov .*|con (isybank|Trade Republic) . 5 nov)$",
+    "reason": "Da rivedere: the section header states the total of its group (a group of one restates its item), every card has its own Salta action, and the two sides of a transfer pair each name the other."
+  }
+]

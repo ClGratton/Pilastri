@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex"><title>Pilastri</title><style>:root{color-scheme:light dark}body{font:16px/1.6 system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;text-align:center}h1{font-size:1.6rem}a.b{display:inline-block;margin-top:1rem;padding:.8rem 1.6rem;min-height:48px;box-sizing:border-box;border-radius:999px;background:#6b3fd4;color:#fff;text-decoration:none;font-weight:600}</style></head><body>
+<h1>Pilastri</h1>
+<p>Torna a Pilastri per completare il collegamento.</p>
+<a class="b" id="open" href="#">Apri Pilastri</a>
+<script>
+(function () {
+  var q = location.search;
+  var target = q
+    ? 'intent://pilastri.grtlabs.xyz/ritorno-banca.html' + q + '#Intent;scheme=https;package=xyz.grtlabs.pilastri;end'
+    : 'intent:#Intent;package=xyz.grtlabs.pilastri;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end';
+  if (q) { try { history.replaceState(null, '', location.pathname); } catch (e) {} }
+  var go = function () { location.href = target; };
+  document.getElementById('open').addEventListener('click', function (e) { e.preventDefault(); go(); });
+  go();
+})();
+</script>
+</body></html>

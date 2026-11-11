@@ -1,0 +1,9 @@
+[
+ {
+  "screen": "narrow-top-f",
+  "text": "^\\s*Sync\\s*$",
+  "reason": "sync label of the period navigation",
+  "decidedBy": "user",
+  "date": "2026-11-09"
+ }
+]

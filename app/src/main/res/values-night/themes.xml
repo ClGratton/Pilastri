@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Pilastri" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/pilastri_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+    <color name="pilastri_bg">#141119</color>
+</resources>

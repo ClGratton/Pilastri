@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:networkSecurityConfig="@xml/debug_network_security">
+        <!-- Debug-only motion lab for the redone UI; never in release builds. -->
+        <activity android:name=".MotionLabActivity" android:exported="true" android:enableOnBackInvokedCallback="true"
+            android:theme="@android:style/Theme.Material.Light.NoActionBar"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|density|keyboardHidden"/>
+        <!-- Debug-only: offers the synthetic "Dati di esempio" archive on an empty first run. Serves no data. -->
+        <provider android:name=".debug.SampleInstaller" android:authorities="xyz.grtlabs.pilastri.debug.sample" android:exported="false"/>
+        <!-- Debug-only bank-return proof (wave bank-browser-return): seeds a pending bank step; a fake bank app in its own process. -->
+        <activity android:name=".debug.FakeBankSeedActivity" android:exported="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".debug.FakeBankAppActivity" android:exported="true" android:process=":fakebank" android:theme="@android:style/Theme.Material.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fakebankapp"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

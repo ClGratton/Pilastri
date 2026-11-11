@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Network is used only for user-started provider syncs (Trade Republic, isybank) and the AI assistant. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Threshold and tick haptics play through Vibrator compositions (ui/Motion.kt Hx); a normal permission, no prompt. -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- Compose owns the IME inset (WindowInsets.ime, once, in AppRoot / WebChrome). The window default (adjustUnspecified) pans the whole window as well, which doubled it: adjustResize turns the system pan off. -->
+    <queries>
+        <!-- Custom Tabs: the default browser's service (BankBrowser). -->
+        <intent><action android:name="android.support.customtabs.action.CustomTabsService"/></intent>
+        <package android:name="com.google.android.gm" />
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.APP_EMAIL" />
+        </intent>
+    </queries>
+
+    <application android:name=".PilastriApp" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="false" android:label="Pilastri" android:theme="@style/Theme.Pilastri" android:supportsRtl="true">
+        <activity android:name=".MainActivity" android:exported="true" android:enableOnBackInvokedCallback="true" android:windowSoftInputMode="adjustResize" android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|density|keyboardHidden">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+            <!-- The bank's return (BankReturn): the site's static page hands back here. Verified App Link, host from gradle.properties, exact path, https only. singleTask: the return brings this task forward and closes the browser tab above it. -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="${siteHost}" android:path="/ritorno-banca.html"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".sync.tr.TrLoginActivity" android:exported="false" android:enableOnBackInvokedCallback="true" android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|density|keyboardHidden"/>
+        <activity android:name=".sync.isybank.IsybankWebActivity" android:exported="false" android:enableOnBackInvokedCallback="true" android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|density|keyboardHidden"/>
+        <activity android:name=".sync.paypal.PaypalWebActivity" android:exported="false" android:enableOnBackInvokedCallback="true" android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|density|keyboardHidden"/>
+        <!-- Notification access (optional, asked once in setup): reads a mail app's notification from Enable Banking only while the sign-in step waits. -->
+        <service android:name=".ui.setup.EbNotificationListener" android:exported="false" android:label="Pilastri" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter><action android:name="android.service.notification.NotificationListenerService"/></intent-filter>
+        </service>
+        <!-- Camera capture for attachments (Agente composer): a cache file shared with the camera app for one shot, no CAMERA permission. -->
+        <provider android:name="androidx.core.content.FileProvider" android:authorities="${applicationId}.attach" android:exported="false" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/attach_paths"/>
+        </provider>
+        <!-- Sign-in to the user's own Claude or ChatGPT account on the provider's site (AI owner). -->
+        <activity android:name=".ai.AiWebActivity" android:exported="false" android:enableOnBackInvokedCallback="true" android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|density|keyboardHidden"/>
+    </application>
+</manifest>

@@ -1,0 +1,16 @@
+{
+  "version": "2026-11-08",
+  "source": "Provisional list of banks commonly used in Italy, taken from design board 8b and widely used retail and online banks. Not read from Enable Banking: names are unverified against its ASPSP list and are replaced by the live list once the application is registered.",
+  "country": "IT",
+  "banks": [
+    {"id": "isybank", "name": "isybank", "initials": "iy"},
+    {"id": "scalable-capital", "name": "Scalable Capital", "initials": "SC"},
+    {"id": "fineco", "name": "Fineco", "initials": "FE"},
+    {"id": "intesa-sanpaolo", "name": "Intesa Sanpaolo", "initials": "IS"},
+    {"id": "unicredit", "name": "UniCredit", "initials": "UC"},
+    {"id": "n26", "name": "N26", "initials": "N2"},
+    {"id": "revolut", "name": "Revolut", "initials": "RE"},
+    {"id": "banco-bpm", "name": "Banco BPM", "initials": "BB"},
+    {"id": "bper-banca", "name": "BPER Banca", "initials": "BP"}
+  ]
+}

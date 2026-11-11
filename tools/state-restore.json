@@ -1,0 +1,759 @@
+{
+ "_doc": "State-restore manifest (SKILL K28, CR-95, DESIGN G-21). Checker: node tools/state-restore-check.mjs; test: FlowRestoreManifestTest. known_lost items do not fail; a restore test replaces its item.",
+ "roots": [
+  "app/src/main/java/xyz/grtlabs/pilastri"
+ ],
+ "tests_root": "app/src/test",
+ "flow_file_patterns": [
+  "^ui/setup/(SetupFlow|SetupFrame|BankReturn|EbSetupScreens|EbLinkChannels)\\.kt$",
+  "^ui/AppRoot\\.kt$",
+  "^ui/App\\.kt$",
+  "^ui/screens/Settings\\.kt$",
+  "^ai/AssistantPage\\.kt$",
+  "^sync/auto/AutoSyncCoordinator\\.kt$",
+  "Activity\\.kt$"
+ ],
+ "rules": [
+  {
+   "id": "R1-typed-input-in-memory",
+   "regex": "var\\s+\\w+\\s+by\\s+remember(\\([^)]*\\))?\\s*\\{\\s*mutableStateOf\\((\"\"|TextFieldValue\\()",
+   "why": "typed input kept in screen memory is lost on recreation and process death: rememberSaveable or a store"
+  },
+  {
+   "id": "R2-flow-position-in-memory",
+   "regex": "var\\s+(step|screen|stage|page|selected\\w*|mode(?!l)|tab|position)\\w*\\s+by\\s+remember(?!Saveable)",
+   "why": "the flow position kept in screen memory returns the person to the start"
+  },
+  {
+   "id": "R3-work-owner-in-remember",
+   "regex": "remember\\s*\\{\\s*\\w*(State|Session|Runner|Page|App)\\(",
+   "why": "an object that owns work, held in remember, dies with the screen: it must belong to a listed flow with a holder outside the screen"
+  },
+  {
+   "id": "R4-work-destroyed-on-dispose",
+   "regex": "(onDispose\\s*\\{[^}]*(destroy|cancel|clear|stopLoading)\\()|(onRelease\\s*=\\s*\\{[^}]*destroy\\()",
+   "why": "in-flight work destroyed when the screen leaves composition: resume by itself or named failure with retry"
+  },
+  {
+   "id": "R5-lifecycle-handler-assigns-flow-state",
+   "regex": "Lifecycle\\.Event\\.ON_(STOP|PAUSE|RESUME|START)|override\\s+fun\\s+on(Stop|Pause|Resume|Start|NewIntent)\\(",
+   "near": "\\b(model|step|screen|stack)\\s*=[^=]",
+   "window": 12,
+   "until": "^\\s*override\\s+fun\\s+on\\w+\\(.*\\{\\s*$",
+   "why": "a stop/resume/new-intent handler that assigns flow state can reset the flow on return"
+  },
+  {
+   "id": "R6-process-singleton-flow-state",
+   "regex": "^object\\s+\\w+",
+   "near": "^( {4}|\\t)(private |internal )?(@Volatile )?var\\s",
+   "window": 40,
+   "until": "^\\}",
+   "why": "a process singleton holding mutable flow state is lost with the process"
+  }
+ ],
+ "allow": [
+  {
+   "rule": "R1-typed-input-in-memory",
+   "file": "ai/AiConnections.kt",
+   "line_text": "var keyInput",
+   "reason": "secret (API key): kept out of saved state, logs and backups by design; the person re-types it"
+  },
+  {
+   "rule": "R1-typed-input-in-memory",
+   "file": "ai/AiConnections.kt",
+   "line_text": "var address",
+   "reason": "secret-adjacent connection address, same rule as the key"
+  },
+  {
+   "rule": "R1-typed-input-in-memory",
+   "file": "ai/AiConnections.kt",
+   "line_text": "var token",
+   "reason": "secret (token): kept out of saved state, logs and backups by design"
+  },
+  {
+   "rule": "R3-work-owner-in-remember",
+   "file": "ai/AssistantPage.kt",
+   "line_text": "MutableTransitionState",
+   "reason": "animation state, not flow state"
+  },
+  {
+   "rule": "R3-work-owner-in-remember",
+   "file": "ui/Halo.kt",
+   "line_text": "HaloState(",
+   "reason": "animation state, not flow state"
+  },
+  {
+   "rule": "R3-work-owner-in-remember",
+   "file": "ui/Period.kt",
+   "line_text": "PeriodState(",
+   "reason": "gesture and animation state of the period strip; the selected period is persisted by the screen (not a flow)"
+  },
+  {
+   "rule": "R6-process-singleton-flow-state",
+   "file": "sync/auto/PaypalPlanMapper.kt",
+   "line_text": "object PaypalPlanMapper",
+   "reason": "the var lines are inside an injected JavaScript string literal, not Kotlin state (line-based rule limit)"
+  },
+  {
+   "rule": "R6-process-singleton-flow-state",
+   "file": "sync/auto/SyncLog.kt",
+   "line_text": "object SyncLog",
+   "reason": "diagnostic switch, not a flow position"
+  },
+  {
+   "rule": "R6-process-singleton-flow-state",
+   "file": "ui/Appearance.kt",
+   "line_text": "object AppearanceStore",
+   "reason": "appearance preference, not a flow; its persistence is outside this audit (UNKNOWN)"
+  },
+  {
+   "rule": "R6-process-singleton-flow-state",
+   "file": "ui/CaptureHook.kt",
+   "line_text": "object CaptureHook",
+   "reason": "debug capture hook, not a flow"
+  },
+  {
+   "rule": "R6-process-singleton-flow-state",
+   "file": "ui/charts/ChartCanvas.kt",
+   "line_text": "object ChartLabels",
+   "reason": "draw-time label collector for the checker, not a flow"
+  },
+  {
+   "rule": "R6-process-singleton-flow-state",
+   "file": "ui/Motion.kt",
+   "line_text": "object Motion",
+   "reason": "platform animator scale cache, re-read at start, not a flow"
+  },
+  {
+   "rule": "R6-process-singleton-flow-state",
+   "file": "ui/SampleHook.kt",
+   "line_text": "object SampleHook",
+   "reason": "debug sample-data hook, not a flow"
+  },
+  {
+   "rule": "R6-process-singleton-flow-state",
+   "file": "ui/StartGate.kt",
+   "line_text": "object StartGate",
+   "reason": "start-up latch recomputed on every process start, not a person-visible flow"
+  }
+ ],
+ "flows": [
+  {
+   "flow": "setup-position",
+   "owner": "ui/setup/SetupFlow.kt:159-162",
+   "holder": "rememberSaveable(ModelSaver) + SetupProgressStore on disk",
+   "inputs": [
+    "step",
+    "answers"
+   ],
+   "work": "none",
+   "tests": {
+    "process": "EbResumeTest#storeAndCodecRoundTrip"
+   },
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "link",
+     "what": "flow has no return through a link or redirect",
+     "reason": "n/a (audit 2026-11-10)",
+     "size": "none"
+    }
+   ]
+  },
+  {
+   "flow": "setup-bank-renewal-run",
+   "owner": "ui/setup/SetupFrame.kt",
+   "holder": "none (plain remember bankMode, no store)",
+   "inputs": [
+    "bank-only renewal run"
+   ],
+   "work": "none",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "bank-only renewal run (bankMode) returns to the start",
+     "reason": "plain remember, no store (SetupFrame.kt:112)",
+     "size": "step"
+    },
+    {
+     "trigger": "process",
+     "what": "bank-only renewal run returns to the start",
+     "reason": "plain remember, no store",
+     "size": "step"
+    },
+    {
+     "trigger": "link",
+     "what": "flow has no return through a link or redirect",
+     "reason": "n/a (audit 2026-11-10)",
+     "size": "none"
+    }
+   ]
+  },
+  {
+   "flow": "setup-working-flags",
+   "owner": "ui/setup/SetupFlow.kt:163-215",
+   "holder": "none (plain remember)",
+   "inputs": [
+    "working",
+    "saveFailed",
+    "aspsps"
+   ],
+   "work": "consent-page push and begin re-run by LaunchedEffect",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "working flags reset and the begin effect re-runs",
+     "reason": "plain remember (SetupFlow.kt:161-170, effect :207)",
+     "size": "work"
+    },
+    {
+     "trigger": "process",
+     "what": "working flags reset and the begin effect re-runs",
+     "reason": "plain remember",
+     "size": "work"
+    },
+    {
+     "trigger": "link",
+     "what": "flow has no return through a link or redirect",
+     "reason": "n/a (audit 2026-11-10)",
+     "size": "none"
+    }
+   ]
+  },
+  {
+   "flow": "setup-bank-approve",
+   "owner": "ui/setup/SetupFlow.kt:205-232",
+   "holder": "model in rememberSaveable + store; the page is not stored",
+   "inputs": [
+    "bank step position"
+   ],
+   "work": "bank approval wait",
+   "tests": {
+    "process": "SetupModelTest#savedStateRoundTripsAndDropsProviderPages"
+   },
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "the bank step lost its place on a plain background and return (measured on the user run 2026-11-10: process alive, no recreation, 6 onRestart)",
+     "reason": "old consents step: SetupRules.back marks the bank failed (SetupModel.kt:200); the EB flow keeps it pending (EbConsentSessionsTest)",
+     "size": "step + work"
+    },
+    {
+     "trigger": "recreate",
+     "what": "consent page and wait restart",
+     "reason": "page destroyed on release, address not stored",
+     "size": "work"
+    },
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  },
+  {
+   "flow": "setup-consent-page",
+   "owner": "ui/setup/BankReturn.kt",
+   "holder": "ConsentSessions (flow-level, the live authorization address) + the encrypted client state's pending authorization (bank, state; survives the process) + BankReturnInbox (the finished return, persisted until the step takes it)",
+   "inputs": [
+    "bank authorization address (reopened in the browser) and the pending authorization"
+   ],
+   "work": "bank authorization in the person's browser; the return (App Link) completes the link in MainActivity",
+   "tests": {
+    "background": "BankReturnTest#backInPilastriWithoutAReturnKeepsTheStepAndStartsNoSecondAuthorization",
+    "recreate": "EbConsentSessionsTest#aModelEncodedAndDecodedInTheSameProcessStartsNothing",
+    "process": "BankReturnTest#afterProcessDeathTheStoredStepCompletesWithTheStoredReturn"
+   },
+   "known_lost": [
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  },
+  {
+   "flow": "eb-flow-model",
+   "owner": "ui/setup/EbSetupScreens.kt:132-134",
+   "holder": "remember + disk (EbFlowCodec via SetupProgressStore)",
+   "inputs": [
+    "EB flow position"
+   ],
+   "work": "none",
+   "tests": {
+    "process": "EbResumeTest#storeAndCodecRoundTrip"
+   },
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "process",
+     "what": "LINK and REGISTER fall back to EMAIL: the link wait is lost",
+     "reason": "by EbFlowCodec design (EbResumeTest#linkAndRegistrationFallBackToEmailAndApproveNeverKeepsAPage)",
+     "size": "step"
+    },
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  },
+  {
+   "flow": "eb-typed-inputs",
+   "owner": "ui/setup/EbSetupScreens.kt:134-141",
+   "holder": "none (plain remember)",
+   "inputs": [
+    "e-mail",
+    "pasted link"
+   ],
+   "work": "none",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "typed e-mail and paste field emptied",
+     "reason": "plain remember (EbSetupScreens.kt:139-144)",
+     "size": "input"
+    },
+    {
+     "trigger": "process",
+     "what": "typed e-mail and paste field emptied",
+     "reason": "plain remember",
+     "size": "input"
+    },
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  },
+  {
+   "flow": "eb-link-wait",
+   "owner": "ui/setup/EbSetupScreens.kt:143-259",
+   "holder": "none (scope in the screen)",
+   "inputs": [
+    "mail-link wait",
+    "countdown"
+   ],
+   "work": "wait for the sign-in link",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "wait and countdown restart",
+     "reason": "scope and state in the screen (EbSetupScreens.kt:148-264)",
+     "size": "work"
+    },
+    {
+     "trigger": "process",
+     "what": "wait and countdown restart",
+     "reason": "scope and state in the screen",
+     "size": "work"
+    },
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  },
+  {
+   "flow": "eb-inflight-act",
+   "owner": "ui/setup/EbSetupScreens.kt:129-131",
+   "holder": "none (scope + WebViewEbPage in remember, destroyed on dispose)",
+   "inputs": [
+    "register",
+    "open link",
+    "banks list"
+   ],
+   "work": "in-flight page act",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "in-flight act destroyed, no named failure",
+     "reason": "destroyed on dispose (EbSetupScreens.kt:134-166)",
+     "size": "work"
+    },
+    {
+     "trigger": "process",
+     "what": "in-flight act destroyed, no named failure",
+     "reason": "destroyed on dispose",
+     "size": "work"
+    },
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  },
+  {
+   "flow": "eb-link-inbox",
+   "owner": "ui/setup/EbLinkChannels.kt",
+   "holder": "process singleton EbLinkInbox",
+   "inputs": [
+    "sign-in link from the notification"
+   ],
+   "work": "link waiting",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "process",
+     "what": "link and waiting flag lost",
+     "reason": "process singleton",
+     "size": "work"
+    },
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  },
+  {
+   "flow": "setup-document-tray",
+   "owner": "ui/setup/SetupFlow.kt:381-460",
+   "holder": "none (DocReaderState in remember, tray cleared on dispose)",
+   "inputs": [
+    "attached documents"
+   ],
+   "work": "document reading",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "tray cleared on dispose",
+     "reason": "SetupFlow.kt:381-459",
+     "size": "input + work"
+    },
+    {
+     "trigger": "process",
+     "what": "tray cleared on dispose",
+     "reason": "SetupFlow.kt:381-459",
+     "size": "input + work"
+    },
+    {
+     "trigger": "link",
+     "what": "flow has no return through a link or redirect",
+     "reason": "n/a (audit 2026-11-10)",
+     "size": "none"
+    }
+   ]
+  },
+  {
+   "flow": "main-navigation",
+   "owner": [
+    "ui/AppRoot.kt:85-100",
+    "MainActivity.kt"
+   ],
+   "holder": "rememberSaveable (savedNav, savedMonth) re-applied to App",
+   "inputs": [
+    "destination",
+    "month",
+    "home scroll"
+   ],
+   "work": "none",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "process",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  },
+  {
+   "flow": "settings-inputs",
+   "owner": "ui/screens/Settings.kt:330-390",
+   "holder": "none (plain remember)",
+   "inputs": [
+    "new name and other typed inputs"
+   ],
+   "work": "none",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "typed inputs emptied",
+     "reason": "plain remember (Settings.kt:336,355,383)",
+     "size": "input"
+    },
+    {
+     "trigger": "process",
+     "what": "typed inputs emptied",
+     "reason": "plain remember",
+     "size": "input"
+    },
+    {
+     "trigger": "link",
+     "what": "flow has no return through a link or redirect",
+     "reason": "n/a (audit 2026-11-10)",
+     "size": "none"
+    }
+   ]
+  },
+  {
+   "flow": "assistant-conversation",
+   "owner": [
+    "ai/AssistantPage.kt:210-235",
+    "ai/AssistantPage.kt:336-340"
+   ],
+   "holder": "AssistantState owned by App (plain remember, AppRoot.kt:89)",
+   "inputs": [
+    "conversation",
+    "draft",
+    "pending request"
+   ],
+   "work": "running question",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "conversation, draft and pending request lost",
+     "reason": "plain remember (AssistantPage.kt:215-230)",
+     "size": "input + work"
+    },
+    {
+     "trigger": "process",
+     "what": "conversation, draft and pending request lost",
+     "reason": "plain remember",
+     "size": "input + work"
+    },
+    {
+     "trigger": "link",
+     "what": "flow has no return through a link or redirect",
+     "reason": "n/a (audit 2026-11-10)",
+     "size": "none"
+    }
+   ]
+  },
+  {
+   "flow": "pending-import-restore-prefill",
+   "owner": "ui/App.kt",
+   "holder": "none (plain state on App)",
+   "inputs": [
+    "pending import",
+    "restore candidate",
+    "prefill"
+   ],
+   "work": "none",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "pending import, restore and prefill dropped",
+     "reason": "plain state on App (App.kt:84-86)",
+     "size": "input"
+    },
+    {
+     "trigger": "process",
+     "what": "pending import, restore and prefill dropped",
+     "reason": "plain state on App",
+     "size": "input"
+    },
+    {
+     "trigger": "link",
+     "what": "flow has no return through a link or redirect",
+     "reason": "n/a (audit 2026-11-10)",
+     "size": "none"
+    }
+   ]
+  },
+  {
+   "flow": "auto-sync-run",
+   "owner": "sync/auto/AutoSyncCoordinator.kt",
+   "holder": "AutoSyncCoordinator (App scope)",
+   "inputs": [
+    "sync run"
+   ],
+   "work": "sync run",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "process",
+     "what": "run disappears with no named failure",
+     "reason": "AutoSyncCoordinator.kt:75-101",
+     "size": "work"
+    },
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  },
+  {
+   "flow": "connector-signin-activities",
+   "owner": [
+    "sync/tr/TrLoginActivity.kt",
+    "sync/isybank/IsybankWebActivity.kt",
+    "sync/paypal/PaypalWebActivity.kt",
+    "ai/AiWebActivity.kt",
+    "ai/ChatGptSignIn.kt"
+   ],
+   "holder": "restart from the launching intent",
+   "inputs": [
+    "sign-in page"
+   ],
+   "work": "sign-in and the running sync",
+   "tests": {},
+   "known_lost": [
+    {
+     "trigger": "background",
+     "what": "no restore test yet; survives by design per read-only audit 2026-11-10 (not verified by a test)",
+     "reason": "UNTESTED",
+     "size": "none expected"
+    },
+    {
+     "trigger": "recreate",
+     "what": "a running sync is cancelled with no named failure",
+     "reason": "activity restarts from the intent",
+     "size": "work"
+    },
+    {
+     "trigger": "process",
+     "what": "a running sync is cancelled with no named failure",
+     "reason": "activity restarts from the intent",
+     "size": "work"
+    },
+    {
+     "trigger": "link",
+     "what": "not audited",
+     "reason": "UNKNOWN",
+     "size": "unknown"
+    }
+   ]
+  }
+ ]
+}

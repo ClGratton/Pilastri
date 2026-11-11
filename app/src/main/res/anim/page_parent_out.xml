@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The app underneath shifts left about 28% and dims slightly, as the in-app stack does. -->
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="380">
+    <translate android:fromXDelta="0" android:toXDelta="-28%p" />
+    <alpha android:fromAlpha="1" android:toAlpha="0.9" />
+</set>

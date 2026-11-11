@@ -1,0 +1,1 @@
+<hierarchy><node resource-id="app:id/period-viewport" text="" clickable="false" scrollable="false" bounds="[0,100][300,200]" /><node resource-id="app:id/period-page-cur" text="" clickable="false" scrollable="false" bounds="[175,100][300,200]" /><node resource-id="app:id/period-page-prev" text="" clickable="false" scrollable="false" bounds="[0,100][6,200]" /></hierarchy>

@@ -1,0 +1,82 @@
+{
+ "tolerance": 1,
+ "wideLayouts": [
+  "wide"
+ ],
+ "narrowLayouts": [
+  "narrow"
+ ],
+ "naming": {
+  "topMarker": "-top-"
+ },
+ "tags": {
+  "container": "card",
+  "accentCard": "accent-card",
+  "primaryFigure": "primary-figure",
+  "secondaryFigure": "secondary-figure",
+  "statLabel": "stat-label",
+  "pageContent": "page-content",
+  "pageTitle": "page-title",
+  "pageSubtitle": "page-subtitle",
+  "pageTrailing": "page-trailing",
+  "chip": "chip",
+  "pill": "pill",
+  "cardTitle": "card-title",
+  "cardTrailing": "card-trailing",
+  "cardHeader": "card-header",
+  "cardBody": "card-body",
+  "cardBodyRows": "card-body-rows",
+  "contentRow": "content-row",
+  "attentionRow": "attention-row",
+  "actionRow": "action-row",
+  "dock": "dock",
+  "dockItem": "dock-item",
+  "island": "island",
+  "gear": "gear",
+  "paneLeft": "pane-left",
+  "paneRight": "pane-right",
+  "panePrefix": "pane-",
+  "chart": "chart",
+  "iconDisc": "icon-disc",
+  "periodViewport": "period-viewport",
+  "periodPagePrefix": "period-page-",
+  "periodPagePrev": "period-page-prev",
+  "periodPageNext": "period-page-next",
+  "periodLabelPrefix": "period-label-",
+  "periodLabelPrev": "period-label-prev",
+  "periodLabelNext": "period-label-next",
+  "periodLabelCur": "period-label-cur",
+  "periodTitle": "period-title",
+  "pageHeader": "page-header",
+  "periodChip": "period-chip",
+  "sectionLabel": "section-label"
+ },
+ "tokens": {},
+ "checks": {},
+ "singleton": [
+  {
+   "role": "primaryFigure",
+   "scope": "pane",
+   "max": 1
+  }
+ ],
+ "heightRatio": [
+  {
+   "role": "primaryFigure",
+   "over": "pageTitle",
+   "min": 1.01
+  }
+ ],
+ "alignRules": [
+  {
+   "role": "dock",
+   "layouts": "narrow",
+   "centreX": true
+  },
+  {
+   "role": "island",
+   "layouts": "wide",
+   "fromRightEdge": 12
+  }
+ ]
+}

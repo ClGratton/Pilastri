@@ -1,0 +1,39 @@
+{
+  "_comment": "Project values for the visual-integrity rules (design-method/scripts/addons/visual-integrity.mjs, SKILL section 2 K13). boundaryIds: containers drawn on screen whose edge is a visible boundary; allowClipIds: the declared pager neighbours (peeks); a loosening needs a reason in HANDOFF.",
+  "tolDp": 1,
+  "boundaryIds": [
+    "card",
+    "accent-card",
+    "pill",
+    "chip",
+    "action-row",
+    "attention-row",
+    "icon-disc",
+    "dock",
+    "island",
+    "gear"
+  ],
+  "allowClipIds": [
+    "period-page-prev",
+    "period-page-next"
+  ],
+  "allowHiddenIds": [
+    "period-page-*"
+  ],
+  "floatingIds": [
+    "dock",
+    "dock-item",
+    "island",
+    "gear"
+  ],
+  "scrollClip": true,
+  "controlMaxDp": 56,
+  "frames": true,
+  "overlapDockLabels": [
+    "Pilastri",
+    "Spese",
+    "Futuro",
+    "Agente",
+    "Impostazioni"
+  ]
+}

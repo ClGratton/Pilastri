@@ -1,0 +1,30 @@
+{
+  "rule": "pc.deduction.person_year",
+  "basis": "VERIFIED row pc.deduction.ceiling: EUR 5,300 from tax period 2026 (art. 8 c. 4 D.Lgs. 252/2005 as amended by L. 199/2025 art. 1 c. 201 lett. a n. 1, research source S59) and EUR 5,164.57 up to TY2025 (R1). Counts worker + employer + all forms, deduplicated by (fundId, period); TFR excluded. Synthetic contributions, public law values only.",
+  "review": "Computed by the slice-3 agent on 2026-11-01 from the parameter table; human review pending.",
+  "ceilingRow": "pc.deduction.ceiling",
+  "sourceUrl": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+  "caveat": "pc.deduction.ceiling.interplay",
+  "cases": [
+    {"name": "below the ceiling, TFR ignored", "year": 2026,
+     "contributions": [{"fundId": "fund-a", "period": "2026-01", "worker": "3000.00", "employer": "1500.00", "tfr": "2000.00"}],
+     "ceiling": "5300.00", "counted": "4500.00", "deductible": "4500.00", "excess": "0.00", "status": "EXACT", "dropped": 0},
+    {"name": "above the ceiling", "year": 2026,
+     "contributions": [{"fundId": "fund-a", "period": "2026-03", "worker": "4000.00", "employer": "2000.00"}],
+     "ceiling": "5300.00", "counted": "6000.00", "deductible": "5300.00", "excess": "700.00", "status": "EXACT", "dropped": 0},
+    {"name": "two forms summed", "year": 2026,
+     "contributions": [{"fundId": "fund-a", "period": "2026-01", "worker": "2000.00", "employer": "1000.00"},
+                       {"fundId": "fund-b", "period": "2026-01", "worker": "3000.00", "employer": "0.00"}],
+     "ceiling": "5300.00", "counted": "6000.00", "deductible": "5300.00", "excess": "700.00", "status": "EXACT", "dropped": 0},
+    {"name": "same (fundId, period) counted once", "year": 2026,
+     "contributions": [{"fundId": "fund-a", "period": "2026-02", "worker": "1000.00", "employer": "500.00"},
+                       {"fundId": "fund-a", "period": "2026-02", "worker": "1000.00", "employer": "500.00"}],
+     "ceiling": "5300.00", "counted": "1500.00", "deductible": "1500.00", "excess": "0.00", "status": "EXACT", "dropped": 1},
+    {"name": "TY2025 ceiling", "year": 2025,
+     "contributions": [{"fundId": "fund-a", "period": "2025-06", "worker": "5000.00", "employer": "1000.00"}],
+     "ceiling": "5164.57", "counted": "6000.00", "deductible": "5164.57", "excess": "835.43", "status": "EXACT", "dropped": 0},
+    {"name": "no contribution of the year: ceiling known, totals n/d", "year": 2026,
+     "contributions": [{"fundId": "fund-a", "period": "2025-12", "worker": "100.00", "employer": "50.00"}],
+     "ceiling": "5300.00", "counted": null, "deductible": null, "excess": null, "status": "ND", "dropped": 0}
+  ]
+}

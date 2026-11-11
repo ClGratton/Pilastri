@@ -1,0 +1,8 @@
+{
+ "_doc": "Config of the add-on design-method/scripts/addons/source-patterns.mjs (K22 / M8, G-15, CR-90). roots are scanned read-only by consistency-check.mjs.",
+ "roots": ["app/src/main"],
+ "sourcePatterns": [
+  { "id": "ime-inset-gate", "pattern": "ime\\b[^\\n]*getBottom\\([^)]*\\)\\s*(>|!=)\\s*0|isImeVisible", "glob": "\\.kt$", "allowFiles": ["/ImeSignal\\.kt$"], "reason": "a visibility gate on the animated keyboard inset stays true until the keyboard's last frame, so the control's own entrance starts after the keyboard has gone (user 2026-11-10); take the keyboard's animation target or progress from the shared helper (ImeSignal.kt)" },
+  { "id": "unbounded-js-callback", "pattern": "evaluateJavascript\\((?![^\\n]*,\\s*null\\))", "glob": "\\.kt$", "allowFiles": [], "unlessNear": { "pattern": "withTimeout(OrNull)?\\b", "linesAbove": 3 }, "reason": "K24 / CR-92 (Fold 2026-11-10 14:05): a WebView evaluateJavascript callback pending across a navigation may never come; the suspending wait needs its own withTimeout / withTimeoutOrNull on the same line or within 3 lines above, and ends as a named failure. Fire-and-forget calls (callback null) are not waits." }
+ ]
+}

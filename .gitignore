@@ -1,0 +1,42 @@
+.gradle/
+.idea/
+**/build/
+local.properties
+*.iml
+personal/
+hs_err_pid*.log
+replay_pid*.log
+# Build, test and device logs (AGENTS.md: logs go to an ignored output/ folder)
+output/
+
+# Giro 3 boards copied from the Design artifact (example figures may derive from real data)
+concepts/giro3/
+
+# not published (working papers, agent setup, design boards, device fixtures); files stay on disk
+/HANDOFF.md
+/TODO.md
+/REQUESTS.md
+/RULES-HISTORY.md
+/RESEARCH.md
+/AGENTS.md
+/COUNCIL.md
+/DESIGN.md
+/BANK-INTEGRATIONS.md
+/DATA-CONTRACT.md
+.claude/
+.agents/
+concepts/
+tools/fixtures/ant-real/
+tools/fixtures/hold/good-real/
+tools/fixtures/hold/real-spese/
+.kotlin/
+*.log
+**/*.apk
+**/*.aab
+**/*.jks
+**/*.keystore
+**/*.p12
+**/*.pem
+.env
+.env.*
+*.hprof

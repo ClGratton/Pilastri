@@ -1,0 +1,171 @@
+{
+ "_comment": "SELF-TEST ONLY: fixture values, not defaults. Every add-on and every check on.",
+ "tolerance": 1,
+ "adapter": "uiautomator",
+ "addons": [
+  "text-forbid"
+ ],
+ "allowAbsent": [],
+ "wideLayouts": [
+  "wide"
+ ],
+ "narrowLayouts": [
+  "narrow"
+ ],
+ "layoutLabels": {
+  "wide": "wide",
+  "narrow": "narrow"
+ },
+ "naming": {
+  "layoutSeparator": "-",
+  "topMarker": "-top-",
+  "setupMarker": "-setup-",
+  "fontScaleMarker": "-fs2",
+  "fontScaleLabel": "fs2"
+ },
+ "hierarchy": {
+  "accentScreens": [
+   "a",
+   "b",
+   "c"
+  ]
+ },
+ "floating": [
+  "dock",
+  "island",
+  "gear"
+ ],
+ "blockRoles": [
+  "container",
+  "accentCard",
+  "attentionRow"
+ ],
+ "clipBoxRoles": [
+  "pill",
+  "chip",
+  "container",
+  "actionRow"
+ ],
+ "clipRoles": [
+  "pageContent",
+  "periodViewport"
+ ],
+ "excludeRoles": {
+  "cardInset": [
+   "container",
+   "contentRow",
+   "accentCard",
+   "attentionRow",
+   "dockItem"
+  ],
+  "cardBody": [
+   "container",
+   "cardBody",
+   "cardBodyRows",
+   "cardHeader",
+   "contentRow",
+   "accentCard",
+   "attentionRow",
+   "dockItem",
+   "actionRow",
+   "pageContent"
+  ],
+  "overlap": [
+   "periodPagePrefix",
+   "pageContent"
+  ]
+ },
+ "tags": {
+  "container": "card",
+  "accentCard": "accent-card",
+  "primaryFigure": "primary-figure",
+  "secondaryFigure": "secondary-figure",
+  "statLabel": "stat-label",
+  "pageContent": "page-content",
+  "pageTitle": "page-title",
+  "pageSubtitle": "page-subtitle",
+  "pageTrailing": "page-trailing",
+  "chip": "chip",
+  "pill": "pill",
+  "cardTitle": "card-title",
+  "cardTrailing": "card-trailing",
+  "cardHeader": "card-header",
+  "cardBody": "card-body",
+  "cardBodyRows": "card-body-rows",
+  "contentRow": "content-row",
+  "attentionRow": "attention-row",
+  "actionRow": "action-row",
+  "dock": "dock",
+  "dockItem": "dock-item",
+  "island": "island",
+  "gear": "gear",
+  "paneLeft": "pane-left",
+  "paneRight": "pane-right",
+  "panePrefix": "pane-",
+  "chart": "chart",
+  "iconDisc": "icon-disc",
+  "periodViewport": "period-viewport",
+  "periodPagePrefix": "period-page-",
+  "periodPagePrev": "period-page-prev",
+  "periodPageNext": "period-page-next",
+  "periodLabelPrefix": "period-label-",
+  "periodLabelPrev": "period-label-prev",
+  "periodLabelNext": "period-label-next",
+  "periodLabelCur": "period-label-cur",
+  "periodTitle": "period-title",
+  "pageHeader": "page-header",
+  "periodChip": "period-chip",
+  "sectionLabel": "section-label"
+ },
+ "tokens": {
+  "cardInset": 14,
+  "headerRowH": 32,
+  "gutter": 16,
+  "gap": 8,
+  "attentionH": 56,
+  "minTouch": 48,
+  "maxCopy": 70,
+  "peekWide": 24,
+  "peekNarrow": 16,
+  "peekGap": 6,
+  "accentPad": 16,
+  "islandEdge": 12,
+  "islandCentreTol": 4,
+  "dockItems": 5,
+  "paneMinTexts": 3,
+  "paneSplitTol": 4,
+  "figureTopRatio": 0.4,
+  "ratioSecondary": 1.3,
+  "ratioLabel": 2,
+  "ratioSecondaryName": 1.5,
+  "ratioLabelName": 2.3
+ },
+ "checks": {
+  "textTemplates": true
+ },
+ "textTemplates": {
+  "placeholders": [
+   [
+    "(?:gen|feb|mar|apr|mag|giu|lug|ago|set|ott|nov|dic)[a-z]*",
+    "<m>"
+   ],
+   [
+    "[0-9]+",
+    "<d>"
+   ]
+  ],
+  "groups": [
+   {
+    "name": "coverage line",
+    "roles": [
+     "page-subtitle"
+    ],
+    "screens": ".",
+    "match": "^(dati (al|dal)|parziale)",
+    "allowed": {
+     "dati al <d> <m>": "user"
+    }
+   }
+  ]
+ }
+}

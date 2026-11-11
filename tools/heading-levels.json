@@ -1,0 +1,9 @@
+{
+ "_doc": "CR-83: heading levels, highest first (page title > period title > card title). Each level's line box must be at least minRatio x the next level's. Dumps carry no font size; line boxes are compared.",
+ "levels": [
+  "page-title",
+  "period-title",
+  "card-title"
+ ],
+ "minRatio": 1.2
+}

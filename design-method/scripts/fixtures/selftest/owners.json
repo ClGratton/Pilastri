@@ -1,0 +1,1 @@
+{"concepts":[{"name":"strip","owners":["ui/Strip.kt"],"signatures":["position\\.animateTo\\("],"known":[]}],"gestures":{"signatures":["\\.draggable\\("],"helper":"rememberCommitHaptics","exceptions":[]}}

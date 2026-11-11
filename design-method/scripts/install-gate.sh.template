@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# TEMPLATE: the ONLY way to put a build on a real device. Copy to the project's tools/ together with ONE platform part from scripts/platform/ (android.sh, ios.sh, desktop.sh),
+# replace every <PLACEHOLDER> (SKILL.md "Adapting the tools"). This file is platform-independent; everything device-specific lives in the platform part.
+# Refuses (non-zero exit, reason printed) unless ALL hold:
+#   1. the app is not in use on the target (platform_not_in_use; an install may kill it, and the user may be using it);
+#   2. the layout/unit tests pass;
+#   3. the newest <DUMP_ROOT>/*/REPORT.md is newer than the artifact, and the checker re-run on its dumps has 0 deviations outside the exceptions file.
+# Then: platform_install and platform_verify (the install really replaced the app). Never: uninstall, clear data, read private app storage.
+# Report header the gate parses: `Dumps: N (dir), scale S, density S, tolerance ...` (scale = px per layout unit; `density` is the deprecated alias).
+set -u
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"; cd "$ROOT" || exit 2
+ARTIFACT="<PATH/TO/BUILT/ARTIFACT>"            # the built app file for the platform
+DUMP_ROOT="<output/consistency-*>"             # folder pattern of the dump captures (each holds REPORT.md)
+CHECK="node tools/consistency-check.mjs"       # add --config <file> if it is not next to the script
+TEST_CMD=(<TEST_COMMAND>)                      # the real layout-test command of the project, as an array of words
+PLATFORM="${PLATFORM_PART:-tools/platform.sh}" # the platform part copied from scripts/platform/
+refuse() { echo "install-gate: REFUSED: $*" >&2; exit 1; }
+
+[ -f "$PLATFORM" ] || refuse "platform part $PLATFORM missing (copy scripts/platform/<your platform>.sh)"
+# shellcheck disable=SC1090
+. "$PLATFORM"
+platform_init || refuse "platform tools or target not reachable"
+[ -f "$ARTIFACT" ] || refuse "$ARTIFACT missing (build first)"
+
+# 1. Never disturb the app while the user is in it.
+platform_not_in_use || refuse "the app is in use on the target; an install would kill it. Tell the user first."
+
+# 2. Tests.
+mkdir -p output; LOG="output/install-gate-tests.log"
+"${TEST_CMD[@]}" >"$LOG" 2>&1; RC=$?; tail -n 15 "$LOG"
+[ $RC -eq 0 ] || refuse "tests failed (exit $RC); see $LOG"
+
+# 3. Dump report: newer than the artifact, and clean when re-run.
+REPORT="$(ls -1dt $DUMP_ROOT/ 2>/dev/null | head -n 1)"; [ -n "$REPORT" ] || refuse "no dump folder matching $DUMP_ROOT: capture dumps from THIS build first"
+REPORT="${REPORT%/}"; [ -f "$REPORT/REPORT.md" ] || refuse "$REPORT/REPORT.md missing"
+[ "$REPORT/REPORT.md" -nt "$ARTIFACT" ] || refuse "$REPORT/REPORT.md is older than $ARTIFACT: the dumps are not from this build"
+SCALE="$(sed -n 's/.*scale \([0-9.]*\),.*/\1/p' "$REPORT/REPORT.md" | head -n 1)"; [ -n "$SCALE" ] || refuse "scale not found in $REPORT/REPORT.md"
+$CHECK "$REPORT" --scale "$SCALE" --out "$REPORT/REPORT-recheck.md" >"$REPORT/recheck.log" 2>&1 \
+  || refuse "checker reports deviations on $REPORT; see $REPORT/REPORT-recheck.md"
+
+# 4. Install and verify (platform part).
+platform_install || refuse "install failed"
+platform_verify || refuse "the install did not replace the app"
+# Optional post-install step of the project (for example ahead-of-time compile). Do not launch the app: the user opens it.
+echo "install-gate: installed. Not launched."

@@ -1,0 +1,2386 @@
+{
+  "max_age_days": 90,
+  "source": {
+    "roots": [
+      "app/src/main"
+    ],
+    "host_pattern": "https?://([a-z0-9.-]+)",
+    "ignore_hosts": [
+      {
+        "host": "localhost",
+        "reason": "development host"
+      },
+      {
+        "host": "127.0.0.1",
+        "reason": "development host"
+      },
+      {
+        "host": "host",
+        "reason": "placeholder in a URL template, not a host"
+      },
+      {
+        "host": "",
+        "reason": "regex fragment, not a host"
+      },
+      {
+        "host": "mock.pilastri.test",
+        "reason": "test host of this project"
+      },
+      {
+        "host": "schemas.android.com",
+        "reason": "XML namespace, not called"
+      },
+      {
+        "host": "xml.org",
+        "reason": "XML namespace, not called"
+      },
+      {
+        "host": "apache.org",
+        "reason": "licence header text"
+      },
+      {
+        "host": "www.apache.org",
+        "reason": "licence header text"
+      },
+      {
+        "host": "scripts.sil.org",
+        "reason": "font licence text"
+      },
+      {
+        "host": "pilastri.grtlabs.xyz",
+        "reason": "the app's own site"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "enable-banking",
+      "uses": "bank account access (authorization, accounts, transactions) for banks in all its markets",
+      "hosts": [
+        "api.enablebanking.com",
+        "enablebanking.com"
+      ],
+      "docs_index": "https://enablebanking.com/sitemap.xml (68 /docs/ URLs) plus /docs/ hrefs of the downloaded pages; filtered list in output/eb-docs-2026-11-10/_index-pages.txt",
+      "docs_checked": "2026-11-10",
+      "pages": [
+        {
+          "url": "https://enablebanking.com/docs/markets/it/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 12226,
+          "chars_read": 12226,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/it.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/at/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 5911,
+          "chars_read": 5911,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-at.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/be/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 8632,
+          "chars_read": 8632,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-be.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/bg/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 6334,
+          "chars_read": 6334,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-bg.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/cy/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 5688,
+          "chars_read": 5688,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-cy.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/cz/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 6300,
+          "chars_read": 6300,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-cz.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/de/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 10425,
+          "chars_read": 10425,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-de.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/dk/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 9161,
+          "chars_read": 9161,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-dk.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/ee/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 8131,
+          "chars_read": 8131,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-ee.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/es/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 9477,
+          "chars_read": 9477,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-es.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/fi/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 14404,
+          "chars_read": 14404,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-fi.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/fr/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 9632,
+          "chars_read": 9632,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-fr.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/gr/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 6229,
+          "chars_read": 6229,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-gr.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/hr/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 6963,
+          "chars_read": 6963,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-hr.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/hu/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 8789,
+          "chars_read": 8789,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-hu.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/ie/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 7717,
+          "chars_read": 7717,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-ie.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/is/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 8213,
+          "chars_read": 8213,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-is.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/li/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 7641,
+          "chars_read": 7641,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-li.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/lt/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 8815,
+          "chars_read": 8815,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-lt.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/lu/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 7187,
+          "chars_read": 7187,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-lu.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/lv/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 7554,
+          "chars_read": 7554,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-lv.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/mt/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 6417,
+          "chars_read": 6417,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-mt.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/nl/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 8411,
+          "chars_read": 8411,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-nl.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/no/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 8808,
+          "chars_read": 8808,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-no.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/pl/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 7060,
+          "chars_read": 7060,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-pl.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/pt/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 7841,
+          "chars_read": 7841,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-pt.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/ro/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 8106,
+          "chars_read": 8106,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-ro.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/se/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 15040,
+          "chars_read": 15040,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-se.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/si/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 6240,
+          "chars_read": 6240,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-si.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/sk/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 6709,
+          "chars_read": 6709,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/m-sk.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 4493,
+          "chars_read": 4493,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/markets.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/api/reference/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 144236,
+          "chars_read": 144236,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/api-reference.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/api/reference/enablebanking-api.yaml",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 166446,
+          "chars_read": 166446,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/api.yaml"
+        },
+        {
+          "url": "https://enablebanking.com/docs/api/sandbox/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 7068,
+          "chars_read": 7068,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/api-sandbox.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/faq/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 53978,
+          "chars_read": 53978,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/faq.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/tpp/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 3160,
+          "chars_read": 3160,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/tpp.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/api/quick-start/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 14491,
+          "chars_read": 14491,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/api-quick-start.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/api/control-panel/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 9226,
+          "chars_read": 9226,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/api-control-panel.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/api/webhooks/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 5226,
+          "chars_read": 5226,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/api-webhooks.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/tpp/auth-flow/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 7853,
+          "chars_read": 7853,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/tpp-auth-flow.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/",
+          "needed": true,
+          "reason": "bank access flow, markets and API the app depends on",
+          "chars_total": 2200,
+          "chars_read": 2200,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/docs-index.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/api/linked-accounts",
+          "needed": true,
+          "reason": "restricted-mode activation of a production application: linked own accounts only until a contract",
+          "chars_total": 1622,
+          "chars_read": 1622,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-api_linked-accounts.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/api/quick-start/alt",
+          "needed": true,
+          "reason": "quick start: application registration, request log, session status values (AUTHORIZED, EXPIRED, ...)",
+          "chars_total": 5326,
+          "chars_read": 5326,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-api_quick-start_alt.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/api/widgets",
+          "needed": true,
+          "reason": "UI widgets (consent, ASPSP list, auth flow): origin whitelisting, events",
+          "chars_total": 9102,
+          "chars_read": 9102,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-api_widgets.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.1",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 112824,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-1.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.10",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 523352,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-10.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.11",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 561338,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-11.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.12",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 633651,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-12.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.13",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 785703,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-13.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.14",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 861506,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-14.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.15",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 944472,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-15.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.16",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 1112795,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-16.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.2",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 116113,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-2.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.3",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 118259,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-3.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.4",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 145669,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-4.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.5",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 192797,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-5.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.6",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 196562,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-6.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.7",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 220524,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-7.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.8",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 359972,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-8.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/0.9",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 363004,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_0-9.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/core/latest",
+          "needed": false,
+          "reason": "different product: the self-hosted \"aggregation core\" library (Java/JavaScript/Python SDK with per-bank connector settings, run by a licensed TPP); the app uses the hosted REST API through a control-panel application. Decided from the page title and navigation (2026-11-10); versions 0.1 to 0.16 are releases of the same document",
+          "chars_total": 1112795,
+          "chars_read": 0,
+          "evidence": "output/eb-docs-2026-11-10/p-core_latest.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/dipocket/latest",
+          "needed": true,
+          "reason": "second API reference (Open Banking for business partners v1): JWT, sessions, payments, ASPSP list",
+          "chars_total": 53665,
+          "chars_read": 53665,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-dipocket_latest.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/isms/information-security-policy",
+          "needed": true,
+          "reason": "public information security policy (ISMS); kept as needed by doubt, not a company or legal page in the sense of the table",
+          "chars_total": 37573,
+          "chars_read": 37573,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-isms_information-security-policy.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/tpp/getting-started",
+          "needed": true,
+          "reason": "TPP onboarding and TSP model (eIDAS, domains, timeline); needed by the table, read for the TSP facts",
+          "chars_total": 7570,
+          "chars_read": 7570,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-tpp_getting-started.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/tpp/migration-from-another-tsp",
+          "needed": true,
+          "reason": "migration between TSPs: consents and payment status checks",
+          "chars_total": 6517,
+          "chars_read": 6517,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-tpp_migration-from-another-tsp.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/tpp/operational-risk-management",
+          "needed": true,
+          "reason": "operational risk: data location in the EU, payment monitoring, BCP",
+          "chars_total": 20588,
+          "chars_read": 20588,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-tpp_operational-risk-management.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/tppapi/latest",
+          "needed": true,
+          "reason": "Open Banking aggregation API v1 reference: JWT, accounts, sessions, payments, ASPSP list",
+          "chars_total": 96326,
+          "chars_read": 96326,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-tppapi_latest.txt"
+        },
+        {
+          "url": "https://enablebanking.com/docs/unlisted",
+          "needed": true,
+          "reason": "page with navigation only; kept as needed by doubt (index entry was malformed)",
+          "chars_total": 206,
+          "chars_read": 206,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/p-unlisted.txt"
+        }
+      ],
+      "members": {
+        "what": "markets with a documentation page (banks named on them: 207, output/eb-docs-2026-11-10/bank-auth-notes.draft.json)",
+        "total": 30,
+        "recorded": 30,
+        "evidence": "output/eb-docs-2026-11-10/_index-pages.txt"
+      },
+      "index_pages": 67
+    },
+    {
+      "id": "trade-republic",
+      "uses": "broker positions and movements",
+      "hosts": [
+        "api.traderepublic.com",
+        "app.traderepublic.com",
+        "github.com"
+      ],
+      "docs_index": "partial: see output/reports/banks-broker-paypal-signin-research.md section 1",
+      "docs_checked": "2026-11-10",
+      "pages": [
+        {
+          "url": "https://support.traderepublic.com/",
+          "needed": false,
+          "reason": "help content not extracted (client-rendered); not read for content",
+          "chars_total": 428,
+          "chars_read": 0,
+          "read": "2026-11-10",
+          "evidence": "output/trade-republic-docs-2026-11-10/tr-home.txt"
+        }
+      ],
+      "members": null
+    },
+    {
+      "id": "gmail",
+      "uses": "mail notifications and sign-in links",
+      "hosts": [
+        "gmail.googleapis.com",
+        "www.googleapis.com",
+        "developers.google.com"
+      ],
+      "docs_index": [
+        "https://developers.google.com/workspace/gmail/api/guides",
+        "https://developers.google.com/workspace/gmail/api/reference/rest",
+        "https://developers.google.com/identity/authorization/android",
+        "https://developers.google.com/identity/protocols/oauth2/native-app",
+        "https://developers.google.com/identity/protocols/oauth2"
+      ],
+      "docs_checked": "2026-11-10",
+      "pages": [
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2",
+          "needed": true,
+          "chars_total": 18621,
+          "chars_read": 18621,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/identity_protocols_oauth2.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/cross-client-identity",
+          "needed": false,
+          "reason": "a sign-in flow the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow",
+          "needed": false,
+          "reason": "a sign-in flow the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/limited-input-device",
+          "needed": false,
+          "reason": "a sign-in flow the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/native-app",
+          "needed": false,
+          "reason": "a sign-in flow the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/openid-connect",
+          "needed": false,
+          "reason": "a sign-in flow the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/policies",
+          "needed": true,
+          "chars_total": 12318,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/identity_protocols_oauth2_policies.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/production-readiness/overview",
+          "needed": true,
+          "chars_total": 5645,
+          "chars_read": 5645,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/identity_protocols_oauth2_production-readiness_overview.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/production-readiness/policy-compliance",
+          "needed": true,
+          "chars_total": 9417,
+          "chars_read": 9417,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/identity_protocols_oauth2_production-readiness_policy-compliance.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/resources/best-practices",
+          "needed": true,
+          "chars_total": 8592,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/identity_protocols_oauth2_resources_best-practices.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/resources/granular-permissions",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/resources/loopback-migration",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/resources/oob-migration",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/scopes",
+          "needed": true,
+          "chars_total": 110578,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/identity_protocols_oauth2_scopes.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/service-account",
+          "needed": false,
+          "reason": "a sign-in flow the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/protocols/oauth2/web-server",
+          "needed": false,
+          "reason": "a sign-in flow the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/auth/scopes",
+          "needed": true,
+          "chars_total": 5518,
+          "chars_read": 5518,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_auth_scopes.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/auth/web-server",
+          "needed": false,
+          "reason": "a sign-in flow the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/downloads",
+          "needed": false,
+          "reason": "another platform or language",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides",
+          "needed": true,
+          "chars_total": 4161,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_guides.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/alias_and_signature_settings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/batch",
+          "needed": true,
+          "chars_total": 6822,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_guides_batch.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server",
+          "needed": false,
+          "reason": "a product the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/delegate_settings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/drafts",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/filter_settings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/filtering",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/forwarding_settings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/handle-errors",
+          "needed": true,
+          "chars_total": 10030,
+          "chars_read": 10030,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_guides_handle-errors.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/labels",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/language-settings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/list-messages",
+          "needed": true,
+          "chars_total": 3540,
+          "chars_read": 3540,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_guides_list-messages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/migrate-from-email-settings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/performance",
+          "needed": true,
+          "chars_total": 16639,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_guides_performance.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/pop_imap_settings",
+          "needed": false,
+          "reason": "a product the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/push",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/sending",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/smime_certs",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/sync",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/threads",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/uploads",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/guides/vacation_settings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/quickstart/apps-script",
+          "needed": false,
+          "reason": "another platform or language",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/quickstart/go",
+          "needed": false,
+          "reason": "another platform or language",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/quickstart/java",
+          "needed": false,
+          "reason": "another platform or language",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/quickstart/js",
+          "needed": false,
+          "reason": "another platform or language",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/quickstart/nodejs",
+          "needed": false,
+          "reason": "another platform or language",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/quickstart/python",
+          "needed": false,
+          "reason": "another platform or language",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/query-parameters",
+          "needed": true,
+          "chars_total": 280,
+          "chars_read": 280,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_reference_query-parameters.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/quota",
+          "needed": true,
+          "chars_total": 8147,
+          "chars_read": 8147,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_reference_quota.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest",
+          "needed": true,
+          "chars_total": 11668,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_reference_rest.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/AutoForwarding",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/Format",
+          "needed": true,
+          "chars_total": 750,
+          "chars_read": 750,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_reference_rest_v1_Format.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/ImapSettings",
+          "needed": false,
+          "reason": "a product the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/InternalDateSource",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/LanguageSettings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/PopSettings",
+          "needed": false,
+          "reason": "a product the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/VacationSettings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/create",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/send",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/update",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.history",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.history/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.labels",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.labels/create",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.labels/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.labels/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.labels/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.labels/patch",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.labels/update",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages",
+          "needed": true,
+          "chars_total": 5839,
+          "chars_read": 5839,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_reference_rest_v1_users.messages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages.attachments",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages.attachments/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/batchDelete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/batchModify",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/get",
+          "needed": true,
+          "chars_total": 1391,
+          "chars_read": 1391,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_reference_rest_v1_users.messages_get.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/import",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/insert",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/list",
+          "needed": true,
+          "chars_total": 2421,
+          "chars_read": 2421,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_reference_rest_v1_users.messages_list.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/modify",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/send",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/trash",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/untrash",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.identities",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.identities/create",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.identities/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.identities/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.identities/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.identities/patch",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.keypairs",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.keypairs/create",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.keypairs/disable",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.keypairs/enable",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.keypairs/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.keypairs/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.cse.keypairs/obliterate",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.delegates",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.delegates/create",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.delegates/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.delegates/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.delegates/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.filters",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.filters/create",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.filters/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.filters/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.filters/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.forwardingAddresses",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.forwardingAddresses/create",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.forwardingAddresses/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.forwardingAddresses/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.forwardingAddresses/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs.smimeInfo",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs.smimeInfo/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs.smimeInfo/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs.smimeInfo/insert",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs.smimeInfo/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs.smimeInfo/setDefault",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs/create",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs/patch",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs/update",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings.sendAs/verify",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/getAutoForwarding",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/getImap",
+          "needed": false,
+          "reason": "a product the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/getLanguage",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/getPop",
+          "needed": false,
+          "reason": "a product the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/getVacation",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/updateAutoForwarding",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/updateImap",
+          "needed": false,
+          "reason": "a product the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/updateLanguage",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/updatePop",
+          "needed": false,
+          "reason": "a product the app does not use",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.settings/updateVacation",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.threads",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.threads/delete",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.threads/get",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.threads/list",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.threads/modify",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.threads/trash",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.threads/untrash",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users/getProfile",
+          "needed": true,
+          "chars_total": 1463,
+          "chars_read": 1463,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_reference_rest_v1_users_getProfile.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users/stop",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/reference/rest/v1/users/watch",
+          "needed": false,
+          "reason": "the app does not call this method",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/samples",
+          "needed": false,
+          "reason": "another platform or language",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/_index-pages.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/support",
+          "needed": true,
+          "chars_total": 2068,
+          "chars_read": 0,
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_support.txt"
+        },
+        {
+          "url": "https://developers.google.com/workspace/gmail/api/troubleshoot-authentication-authorization",
+          "needed": true,
+          "chars_total": 2641,
+          "chars_read": 2641,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/workspace_gmail_api_troubleshoot-authentication-authorization.txt"
+        },
+        {
+          "url": "https://developers.google.com/identity/authorization/android",
+          "needed": true,
+          "chars_total": 18092,
+          "chars_read": 18092,
+          "read": "2026-11-10",
+          "evidence": "output/service-docs-2026-11-10/gmail/pages/identity_authorization_android.txt"
+        }
+      ],
+      "members": null,
+      "index_pages": 156
+    },
+    {
+      "id": "anthropic",
+      "uses": "AI provider sign-in and API",
+      "hosts": [
+        "api.anthropic.com",
+        "claude.ai"
+      ],
+      "docs_index": null,
+      "docs_checked": "",
+      "pages": [],
+      "members": null
+    },
+    {
+      "id": "paypal",
+      "uses": "payment history",
+      "hosts": [
+        "www.paypal.com"
+      ],
+      "docs_index": "partial: see output/reports/banks-broker-paypal-signin-research.md section 1",
+      "docs_checked": "2026-11-10",
+      "pages": [
+        {
+          "url": "https://developer.paypal.com/docs/log-in-with-paypal/",
+          "needed": true,
+          "reason": "sign-in method and eligibility",
+          "chars_total": 3385,
+          "chars_read": 3385,
+          "read": "2026-11-10",
+          "evidence": "output/paypal-docs-2026-11-10/developer_paypal_com_docs_log-in-with-paypal_.txt"
+        },
+        {
+          "url": "https://developer.paypal.com/docs/log-in-with-paypal/integrate/",
+          "needed": true,
+          "reason": "token call and scopes for sign-in",
+          "chars_total": 9829,
+          "chars_read": 9829,
+          "read": "2026-11-10",
+          "evidence": "output/paypal-docs-2026-11-10/developer_paypal_com_docs_log-in-with-paypal_integrate_.html"
+        },
+        {
+          "url": "https://developer.paypal.com/docs/api/identity/v1/",
+          "needed": true,
+          "reason": "identity endpoints; client-rendered, partial",
+          "chars_total": 1304,
+          "chars_read": 1304,
+          "read": "2026-11-10",
+          "evidence": "output/paypal-docs-2026-11-10/developer_paypal_com_docs_api_identity_v1_.html"
+        },
+        {
+          "url": "https://developer.paypal.com/docs/transaction-search/",
+          "needed": true,
+          "reason": "the only transaction API; partner-network note; client-rendered, partial",
+          "chars_total": 1719,
+          "chars_read": 1719,
+          "read": "2026-11-10",
+          "evidence": "output/paypal-docs-2026-11-10/developer_paypal_com_docs_transaction-search_.html"
+        },
+        {
+          "url": "https://developer.paypal.com/api/rest/authentication/",
+          "needed": true,
+          "reason": "server token call; partial",
+          "chars_total": 4082,
+          "chars_read": 4082,
+          "read": "2026-11-10",
+          "evidence": "output/paypal-docs-2026-11-10/developer_paypal_com_api_rest_authentication_.html"
+        },
+        {
+          "url": "https://developer.paypal.com/docs/log-in-with-paypal/integrate/server-side/",
+          "needed": false,
+          "reason": "HTTP 404",
+          "chars_total": 0,
+          "chars_read": 0,
+          "read": "2026-11-10",
+          "evidence": ""
+        },
+        {
+          "url": "https://developer.paypal.com/docs/log-in-with-paypal/integrate/android/",
+          "needed": false,
+          "reason": "HTTP 404 (Android sign-in page not found)",
+          "chars_total": 0,
+          "chars_read": 0,
+          "read": "2026-11-10",
+          "evidence": ""
+        }
+      ],
+      "members": null
+    },
+    {
+      "id": "isybank",
+      "uses": "bank web page (sign-in blocked; bank goes through Enable Banking)",
+      "hosts": [
+        "www.isybank.com"
+      ],
+      "docs_index": "partial: see output/reports/banks-broker-paypal-signin-research.md section 1",
+      "docs_checked": "2026-11-10",
+      "pages": [
+        {
+          "url": "https://psd2.intesasanpaolo.com/it/homepage/faqs.html",
+          "needed": true,
+          "reason": "TPP interface scope for Intesa, Isybank, Fideuram",
+          "chars_total": 1288,
+          "chars_read": 1288,
+          "read": "2026-11-10",
+          "evidence": "output/isybank-docs-2026-11-10/intesa-psd2-faqs.html"
+        },
+        {
+          "url": "https://enablebanking.com/docs/markets/it/",
+          "needed": true,
+          "reason": "Intesa and isybank flow via Enable Banking",
+          "chars_total": 12226,
+          "chars_read": 12226,
+          "read": "2026-11-10",
+          "evidence": "output/eb-docs-2026-11-10/it.txt"
+        },
+        {
+          "url": "https://isbd.openbanking.intesasanpaolo.com/en/api_docs/cib",
+          "needed": false,
+          "reason": "TPP specifications only for a registered TPP",
+          "chars_total": 0,
+          "chars_read": 0,
+          "read": "2026-11-10",
+          "evidence": ""
+        }
+      ],
+      "members": null
+    },
+    {
+      "id": "italian-public-sources",
+      "uses": "tax, pension and statistics rule-pack sources and NoiPA",
+      "hosts": [
+        "noipa.mef.gov.it",
+        "normattiva.it",
+        "www.normattiva.it",
+        "www.agenziaentrate.gov.it",
+        "www.finanze.gov.it",
+        "www1.finanze.gov.it",
+        "www.gazzettaufficiale.it",
+        "www.inps.it",
+        "www.istat.it",
+        "www.lavoro.gov.it",
+        "www.covip.it",
+        "www.mefop.it",
+        "www.fondoespero.it",
+        "www.allianz.it",
+        "www.assolombarda.it",
+        "www.brocardi.it",
+        "www.dirittobancario.it",
+        "www.fiscoetasse.com",
+        "edotto.com"
+      ],
+      "docs_index": null,
+      "docs_checked": "",
+      "pages": [],
+      "members": null
+    },
+    {
+      "id": "openai-chatgpt",
+      "uses": "ChatGPT sign-in and ChatGPT plan usage through the Responses API (assistant routes), and token refresh",
+      "hosts": [
+        "auth.openai.com",
+        "api.openai.com",
+        "chatgpt.com",
+        "openai.com"
+      ],
+      "docs_index": "https://developers.openai.com/siwc/llms.txt; https://developers.openai.com/llms.txt; https://developers.openai.com/codex/llms.txt",
+      "docs_checked": "2026-11-10",
+      "pages": [
+        {
+          "url": "https://developers.openai.com/siwc/llms.txt",
+          "needed": true,
+          "reason": "index of the Sign in with ChatGPT docs (page list)",
+          "chars_total": 3239,
+          "chars_read": 3239,
+          "read": "2026-11-10",
+          "evidence": "output/openai-docs-2026-11-10/siwc-llms.txt"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/llms-full.txt",
+          "needed": true,
+          "reason": "single-file export of every Sign in with ChatGPT page; read whole (1737 lines), the per-page entries below point at its line ranges",
+          "chars_total": 104237,
+          "chars_read": 104237,
+          "read": "2026-11-10",
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/account-security-notification.md",
+          "needed": true,
+          "reason": "OIDC back-channel logout: needs a public server endpoint, which the app does not have; read to decide",
+          "chars_total": 9631,
+          "chars_read": 9631,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:7-245",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/chatgpt-plugin.md",
+          "needed": false,
+          "reason": "ChatGPT plugin connector flow; Pilastri is not a ChatGPT plugin",
+          "chars_total": 11484,
+          "chars_read": 0,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:246-528"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/quickstart.md",
+          "needed": true,
+          "reason": "integration choice, scopes, sign-in steps (the same text as the combined file)",
+          "chars_total": 4326,
+          "chars_read": 4326,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:529-608",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/request-client-id.md",
+          "needed": true,
+          "reason": "eligibility: client ID only through the waitlist or interest form",
+          "chars_total": 242,
+          "chars_read": 242,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:609-615",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/token-sharing-open-source.md",
+          "needed": true,
+          "reason": "ChatGPT plan usage overview: client vs host, first launch flow, host ID formats",
+          "chars_total": 7189,
+          "chars_read": 7189,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:616-679",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/token-sharing-open-source/profiles-and-sessions.md",
+          "needed": true,
+          "reason": "accounts, switching, refresh (30 days), revocation, credential security, usage limits",
+          "chars_total": 6205,
+          "chars_read": 6205,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:680-740",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/token-sharing-open-source/codex-app-server.md",
+          "needed": false,
+          "reason": "Codex app-server child process; the app does not run it",
+          "chars_total": 2952,
+          "chars_read": 0,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:741-775"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/token-sharing-open-source/errors-and-recovery.md",
+          "needed": true,
+          "reason": "every error and refresh code the app must handle",
+          "chars_total": 7750,
+          "chars_read": 7750,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:776-827",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/token-sharing-open-source/models-and-inference.md",
+          "needed": true,
+          "reason": "model list and Responses API request (the path the assistant uses)",
+          "chars_total": 3824,
+          "chars_read": 3824,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:828-921",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/token-sharing-open-source/preview-limitations.md",
+          "needed": true,
+          "reason": "unsupported fields, tools and inputs on the plan route",
+          "chars_total": 2714,
+          "chars_read": 2714,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:922-945",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/token-sharing-open-source/sign-in.md",
+          "needed": true,
+          "reason": "registration, authorization URL parameters, code exchange, ID token and scope checks, local credential file",
+          "chars_total": 16151,
+          "chars_read": 16151,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:946-1050",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/token-sharing-open-source/self-hosted-vms.md",
+          "needed": false,
+          "reason": "remote VM host; the app runs on the phone",
+          "chars_total": 1165,
+          "chars_read": 0,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:1051-1079"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/token-sharing-open-source/token-reference.md",
+          "needed": true,
+          "reason": "token lifetimes (access 1 h, refresh 30 days) and claims",
+          "chars_total": 4088,
+          "chars_read": 4088,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:1080-1138",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/ui-ux-guidelines.md",
+          "needed": true,
+          "reason": "required texts and placement for plan use, usage link and limit state",
+          "chars_total": 5613,
+          "chars_read": 5613,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:1139-1238",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/siwc/website.md",
+          "needed": true,
+          "reason": "identity-only sign-in (openid profile email): ID token verification rules; the backend steps are read but do not apply as written",
+          "chars_total": 20639,
+          "chars_read": 20639,
+          "evidence": "output/openai-docs-2026-11-10/siwc-full.txt:1239-1737",
+          "read": "2026-11-10"
+        },
+        {
+          "url": "https://developers.openai.com/codex/auth.md",
+          "needed": true,
+          "reason": "Codex sign-in options (browser, device code, API key) as OpenAI documents them for its own client; not a third-party path",
+          "chars_total": 17334,
+          "chars_read": 17334,
+          "read": "2026-11-10",
+          "evidence": "output/openai-docs-2026-11-10/codex-auth.md"
+        },
+        {
+          "url": "https://developers.openai.com/codex/auth",
+          "needed": false,
+          "reason": "HTML twin of codex/auth.md; the .md was read",
+          "chars_total": 611735,
+          "chars_read": 0,
+          "evidence": "output/openai-docs-2026-11-10/index.html"
+        },
+        {
+          "url": "https://developers.openai.com/codex/llms.txt",
+          "needed": false,
+          "reason": "index of all Codex docs; only the auth page is needed",
+          "chars_total": 34335,
+          "chars_read": 0,
+          "evidence": "output/openai-docs-2026-11-10/codex-llms.txt"
+        },
+        {
+          "url": "https://developers.openai.com/llms.txt",
+          "needed": true,
+          "reason": "hub index used to find the Sign in with ChatGPT and Codex indexes",
+          "chars_total": 6201,
+          "chars_read": 6201,
+          "read": "2026-11-10",
+          "evidence": "output/openai-docs-2026-11-10/llms.txt"
+        },
+        {
+          "url": "https://developers.openai.com/sitemap.xml",
+          "needed": false,
+          "reason": "returned 404 on 2026-11-10; the llms.txt indexes were used instead",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/openai-docs-2026-11-10/sitemap.xml"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/codex/main/docs/authentication.md",
+          "needed": true,
+          "reason": "404 on 2026-11-10: not located; the Codex auth doc on developers.openai.com was read instead",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/openai-docs-2026-11-10/codex-readme.md"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/openai/codex/main/codex-rs/login/README.md",
+          "needed": false,
+          "reason": "404 on 2026-11-10",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": "output/openai-docs-2026-11-10/codex-auth-readme.md"
+        },
+        {
+          "url": "https://openai.com/policies/terms-of-use/",
+          "needed": true,
+          "reason": "governs use of OpenAI services; NOT READ: fetch failed (curl 000, 2026-11-10). Must be read whole before launch",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": null
+        },
+        {
+          "url": "https://openai.com/policies/usage-policies/",
+          "needed": true,
+          "reason": "usage rules for the API and plan route; NOT READ: fetch failed (curl 000, 2026-11-10)",
+          "chars_total": null,
+          "chars_read": 0,
+          "evidence": null
+        },
+        {
+          "url": "https://developers.openai.com/plugins/deploy/desktop-only.md",
+          "needed": true,
+          "reason": "local (stdio) MCP plugins: desktop only, approved partners; read whole",
+          "chars_total": 3271,
+          "chars_read": 3271,
+          "read": "2026-11-10",
+          "evidence": "output/openai-docs-2026-11-10/plugins_deploy_desktop-only.md"
+        },
+        {
+          "url": "https://developers.openai.com/plugins/build/auth.md",
+          "needed": true,
+          "reason": "MCP OAuth 2.1 for ChatGPT-as-host; NOT READ whole (grep only, 2026-11-10)",
+          "chars_total": 40182,
+          "chars_read": 0,
+          "read": null,
+          "evidence": "output/openai-docs-2026-11-10/plugins_build_auth.md (grep only)"
+        },
+        {
+          "url": "https://developers.openai.com/plugins/deploy/app-review.md",
+          "needed": true,
+          "reason": "remote MCP server requirements for public review; NOT READ",
+          "chars_total": 21988,
+          "chars_read": 0,
+          "read": null,
+          "evidence": "output/openai-docs-2026-11-10/plugins_deploy_app-review.md (downloaded, not read)"
+        },
+        {
+          "url": "https://developers.openai.com/apps-sdk/llms.txt",
+          "needed": true,
+          "reason": "index of the plugins/Apps SDK docs; grep only",
+          "chars_total": 5423,
+          "chars_read": 0,
+          "read": null,
+          "evidence": "output/openai-docs-2026-11-10/apps-sdk-llms.txt (grep only)"
+        }
+      ],
+      "members": null,
+      "index_pages": null
+    }
+  ]
+}

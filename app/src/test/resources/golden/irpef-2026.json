@@ -1,0 +1,19 @@
+{
+  "rule": "irpef.gross",
+  "basis": "Hand-computed from VERIFIED rows irpef.bracket.1.upto (28000), irpef.bracket.1.rate (0.23), irpef.bracket.2.upto (50000), irpef.bracket.2.rate (0.33 from TY2026, L. 199/2025 art. 1 c. 3; 0.35 for TY2025, AE 730/2026 istruzioni t. 1), irpef.bracket.3.rate (0.43). Public law values only.",
+  "review": "Computed by the slice-3 agent on 2026-11-01 from the parameter table; human review pending.",
+  "cases": [
+    {"year": 2026, "taxable": "0.00", "expected": "0.00", "status": "EXACT", "working": "no income"},
+    {"year": 2026, "taxable": "15000.00", "expected": "3450.00", "status": "EXACT", "working": "15000 x 0.23"},
+    {"year": 2026, "taxable": "28000.00", "expected": "6440.00", "status": "EXACT", "working": "boundary 1: 28000 x 0.23"},
+    {"year": 2026, "taxable": "28000.01", "expected": "6440.00", "status": "EXACT", "working": "6440 + 0.01 x 0.33 = 6440.0033, cent rounding half-up"},
+    {"year": 2026, "taxable": "28001.00", "expected": "6440.33", "status": "EXACT", "working": "6440 + 1 x 0.33"},
+    {"year": 2026, "taxable": "50000.00", "expected": "13700.00", "status": "EXACT", "working": "boundary 2: 28000 x 0.23 + 22000 x 0.33 = 6440 + 7260"},
+    {"year": 2026, "taxable": "50000.01", "expected": "13700.00", "status": "EXACT", "working": "13700 + 0.01 x 0.43 = 13700.0043, cent rounding half-up"},
+    {"year": 2026, "taxable": "50001.00", "expected": "13700.43", "status": "EXACT", "working": "13700 + 1 x 0.43"},
+    {"year": 2026, "taxable": "100000.00", "expected": "35200.00", "status": "EXACT", "working": "13700 + 50000 x 0.43"},
+    {"year": 2025, "taxable": "28001.00", "expected": "6440.35", "status": "EXACT", "working": "TY2025 second bracket 0.35: 6440 + 1 x 0.35"},
+    {"year": 2025, "taxable": "50000.00", "expected": "14140.00", "status": "EXACT", "working": "TY2025: 6440 + 22000 x 0.35"},
+    {"year": 2024, "taxable": "50000.00", "expected": null, "status": "ND", "working": "no sourced TY2024 brackets in the pack"}
+  ]
+}

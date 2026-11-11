@@ -1,0 +1,19 @@
+{
+  "max_age_days": 90,
+  "source": { "roots": ["app/src/main"], "host_pattern": "https?://([a-z0-9.-]+)", "ignore_hosts": [{ "host": "localhost", "reason": "development host, not a service" }] },
+  "services": [
+    {
+      "id": "service-name",
+      "uses": "what the product uses of it",
+      "hosts": ["api.example.com"],
+      "docs_index": "https://docs.example.com/ (index or sitemap)",
+      "index_pages": 0,
+      "docs_checked": "YYYY-MM-DD",
+      "pages": [
+        { "url": "https://docs.example.com/page", "needed": true, "reason": "", "chars_total": 0, "chars_read": 0, "read": "YYYY-MM-DD", "evidence": "path of the saved full text" },
+        { "url": "https://docs.example.com/other", "needed": false, "reason": "why the product does not depend on it" }
+      ],
+      "members": { "what": "every bank / market / plan / region the service covers", "total": 0, "recorded": 0, "evidence": "path of the coverage table" }
+    }
+  ]
+}

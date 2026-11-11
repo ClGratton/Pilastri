@@ -1,0 +1,47 @@
+{
+ "_doc": "Manifest for tools/flow-effort-check.mjs (SKILL K31, K32, K34; CR-97; DESIGN G-22). STATE DESCRIBED: the tree AFTER the ChatGPT fix of polish3u (output/reports/polish3u-code.md: the setup choice, the assistant page and the connections card all call ChatGptSignIn.start; WebAccount.webSignIn is false for CHATGPT, so its in-app page is unreachable). Everything else is the tree as output/reports/signin-inventory.md describes it (row numbers in each note); rows 6, 8 and 9 were classified there from grep, not read. The kind of the two bank steps is the manifest author's reading of inventory rows 4 and 11. Method tables exist only where a research report gives the methods; a function with no table is a finding, not a gap to hide. No filters and no exceptions: a finding stays until the flow is fixed or a real reason is recorded.",
+ "flow_list": [
+  "setup-ai-claude-web", "assistant-relink-claude-web", "setup-ai-chatgpt", "assistant-chatgpt",
+  "bank-authorization", "eb-signin-link-paste", "gmail-connect", "gmail-magic-link-read", "trade-republic-login", "isybank-web-login", "paypal-web-login",
+  "auto-login-offscreen", "ai-api-key"
+ ],
+ "flows": [
+  { "id": "setup-ai-claude-web", "function": "ai-sign-in:claude",
+    "steps": [ { "id": "web-sign-in", "actor": "person", "surface": "third-party-in-app", "kind": "sign-in", "provider": "claude", "hideable": false, "note": "inventory row 1: SetupFlow -> AiWebActivity" } ] },
+  { "id": "assistant-relink-claude-web", "function": "ai-sign-in:claude",
+    "steps": [ { "id": "web-sign-in", "actor": "person", "surface": "third-party-in-app", "kind": "sign-in", "provider": "claude", "hideable": false, "note": "inventory row 2: same AiWebActivity" } ] },
+  { "id": "setup-ai-chatgpt", "function": "ai-sign-in:chatgpt",
+    "steps": [ { "id": "app-sign-in", "actor": "person", "surface": "browser", "kind": "sign-in", "provider": "chatgpt", "hideable": false, "note": "polish3u-code.md: the setup choice calls ChatGptSignIn.start; default browser, the provider's documented sign-in for local apps (inventory row 3)" },
+               { "id": "token-store", "actor": "system", "surface": "own-ui", "kind": "wait", "provider": "chatgpt", "hideable": false, "note": "status line under the row while the app waits and stores the tokens" } ],
+    "return": { "address": "loopback 127.0.0.1 listener opened by the app, the return the provider documents for local apps (inventory row 3; chatgpt-methods-research.md method A)", "owned": true, "pending_state": "ChatGptSignIn process-wide scope (listener, PKCE attempt, job), outside any screen; lost on process death (polish3u-code.md)" },
+    "methods": [
+      { "id": "A-plan-sign-in-browser-loopback", "permitted": true, "first": 2, "later": 1, "chosen": true, "source": "output/reports/chatgpt-methods-research.md table 2 row A: first time sign in and review permissions; later an account selector unless id_token_hint is accepted. Counts read from that row by the manifest author, not measured on a device" },
+      { "id": "B-device-code", "permitted": false, "chosen": false, "source": "same report, row B: not stated for third-party clients" },
+      { "id": "D-identity-only", "permitted": false, "chosen": false, "source": "same report, row D: needs a backend and gives no plan access" },
+      { "id": "website-in-an-in-app-page", "permitted": false, "chosen": false, "source": "K32: the provider documents a sign-in for apps, so its website in an in-app page is not a permitted method" } ] },
+  { "id": "assistant-chatgpt", "function": "ai-sign-in:chatgpt",
+    "steps": [ { "id": "app-sign-in", "actor": "person", "surface": "browser", "kind": "sign-in", "provider": "chatgpt", "hideable": false, "note": "inventory row 3 and polish3u-code.md: assistant page and connections card, the same ChatGptSignIn.start" },
+               { "id": "token-store", "actor": "system", "surface": "own-ui", "kind": "wait", "provider": "chatgpt", "hideable": false } ],
+    "return": { "address": "loopback 127.0.0.1 listener opened by the app (inventory row 3)", "owned": true, "pending_state": "ChatGptSignIn process-wide scope, outside any screen; lost on process death (polish3u-code.md)" } },
+  { "id": "bank-authorization", "function": "bank-authorization",
+    "steps": [ { "id": "step1-aggregator-page", "actor": "person", "surface": "third-party-in-app", "kind": "consent", "provider": "enable-banking", "hideable": false, "note": "inventory row 4: WebViewEbPage in the app (the user's case: bank step 1 in an in-app page)" },
+               { "id": "step2-bank-authorization", "actor": "person", "surface": "browser", "kind": "consent", "provider": "enable-banking", "hideable": false, "note": "inventory row 11: default browser, app-link return" } ],
+    "return": { "address": "verified app link, https path /ritorno-banca.html (inventory row 11)", "owned": true, "pending_state": "encrypted client state's pending authorization (bank, state) plus BankReturnInbox (tools/state-restore.json, flow setup-consent-page)" } },
+  { "id": "eb-signin-link-paste", "function": "eb-sign-in-link",
+    "steps": [ { "id": "paste-link", "actor": "person", "surface": "own-ui", "kind": "input", "provider": "enable-banking", "hideable": true, "reason": "fallback behind the mail read (inventory rows 5 and 13); used when mail access is not granted" } ] },
+  { "id": "gmail-connect", "function": "mail-access",
+    "steps": [ { "id": "consent-sheet", "actor": "person", "surface": "other-app", "kind": "consent", "provider": "google", "hideable": false, "note": "inventory row 12: Play services consent sheet, required by the provider" } ] },
+  { "id": "gmail-magic-link-read", "function": "eb-sign-in-link-read",
+    "steps": [ { "id": "read-mail", "actor": "system", "surface": "own-ui", "kind": "wait", "provider": "google", "hideable": false, "note": "inventory row 13" } ] },
+  { "id": "trade-republic-login", "function": "broker-sign-in:trade-republic",
+    "steps": [ { "id": "web-sign-in", "actor": "person", "surface": "third-party-in-app", "kind": "sign-in", "provider": "trade-republic", "hideable": false, "note": "inventory row 6 (classified from grep, not opened)" } ] },
+  { "id": "isybank-web-login", "function": "bank-sign-in:isybank",
+    "steps": [ { "id": "web-sign-in", "actor": "person", "surface": "third-party-in-app", "kind": "sign-in", "provider": "isybank", "hideable": false, "note": "inventory row 7: code still present; AGENTS.md says this sign-in is blocked and off" } ] },
+  { "id": "paypal-web-login", "function": "payment-sign-in:paypal",
+    "steps": [ { "id": "web-sign-in", "actor": "person", "surface": "third-party-in-app", "kind": "sign-in", "provider": "paypal", "hideable": false, "note": "inventory row 8 (classified from grep, not opened)" } ] },
+  { "id": "auto-login-offscreen", "function": "session-renewal",
+    "steps": [ { "id": "offscreen-login", "actor": "system", "surface": "own-ui", "kind": "wait", "provider": "various", "hideable": false, "note": "inventory row 9: offscreen WebView, invisible to the person" } ] },
+  { "id": "ai-api-key", "function": "ai-api-key",
+    "steps": [ { "id": "paste-key", "actor": "person", "surface": "own-ui", "kind": "input", "provider": "ai-api", "hideable": false, "note": "inventory row 14: no sign-in exists for a key" } ] }
+ ]
+}

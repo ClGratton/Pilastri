@@ -1,0 +1,1590 @@
+{
+ "format": 1,
+ "note": "Text excerpts as recorded by the Council 4 research (c4-params.md table rows and c4-research/RESEARCH.md lines), not full-page captures of the sources.",
+ "snapshots": [
+  {
+   "hash": "sha256:00f505f96c5ad2499ef5524a3f1dee73eb07b4569a90bfef178667b90097ceb0",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| irpef.highincome.oneri19.cut | detrazioni on 19% oneri reduced by 440 EUR if R > 200000 (art.16-ter c.5-bis TUIR); sanitarie spese excluded | 2026-01-01 | all | S30 art.1 c.4 | verified |"
+  },
+  {
+   "hash": "sha256:0182d08ffb5b1a4757f9455197b68d241aca14a106ae26f15cd11bb50207f895",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=2&art.versione=1&art.codiceRedazionale=18G00172&art.dataPubblicazioneGazzetta=2018-12-31&art.idGruppo=3&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=1",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.ateco.altre_attivita | 0.67 (01-03; 05-09; 12-33; 35; 36-39; 49-53; 58-63; 77-82; 84; 90-93; 94-96; 97-98; 99) | 2019-01-01 | autonomo_forfettario | S36 | verified |"
+  },
+  {
+   "hash": "sha256:0189cad38e317df08722911bcd339b67f1a3470f2cfaa72eda78807088db738e",
+   "url": "https://edotto.com/articolo/rivalutazione-tfr-pubblicato-il-coefficiente-di-dicembre-2025",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| tfr.reval.formula | at 31/12: reval = TFR_accumulated_at_prev_31_12 * (0.015 + 0.75 * (FOI_t/FOI_Dec_prev - 1)); variable part not below 0 in deflation; quota of the same year excluded; month fractions of 15 days or more count as a full month; within the year the same rate is pro-rated by month | in force | dipendente_privato | S66 (secondary) | unverified |"
+  },
+  {
+   "hash": "sha256:047ee4116dd77d496f415603e41ad1925e53eb4f546a35e419484cf7b4370d7c",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=2&art.versione=1&art.codiceRedazionale=18G00172&art.dataPubblicazioneGazzetta=2018-12-31&art.idGruppo=3&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=1",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.ateco.commercio_ambulante_altri | 0.54 (47.82-47.89) | 2019-01-01 | autonomo_forfettario | S36 | verified |"
+  },
+  {
+   "hash": "sha256:05949aee14532c1164a63663871a8bf1b59a1c64584c09112bc3d4bb8ec62e7c",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15199/Allegati/16640_Circolare-numero-28-del-16-03-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.age.anticipata.ordinaria | contributions only: men 42y11m, women 41y11m in 2027; men 43y1m, women 42y1m in 2028 and from 2029 (adjustable) | 2027-01-01 | all | S56 | verified |"
+  },
+  {
+   "hash": "sha256:062c5ee673df1ca30ab2b3e4743ba14461802ee74fb78e0125df0158b555f4d2",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| addiz.comunale.acconto.domicile | S33 gives 1/1/2025 residence for the 2026 acconto rate in one sentence and 1/1/2026 domicile in another | in force | all | S33 | incerto |"
+  },
+  {
+   "hash": "sha256:07c165b00c07ea276a52c6bc240217fdb05322c2503ecfbf28abe4bb97c005e5",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| tfr.treasury_fund.threshold.base | TFR of employees not in a complementary fund goes to the Fondo di Tesoreria INPS for employers with at least 50 employees (art. 1 c. 755–756 L. 296/2006); the number 50 not in the text read | in force | dipendente_privato | S59 (c. 203 refers to the threshold only) | unverified |"
+  },
+  {
+   "hash": "sha256:07f6fc006f54d41f27fe598488e15cb287e65b2e1e0f9f88fe82310cc8433d5a",
+   "url": "https://www.mefop.it/cms/doc/7659/ATT00197.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| inps.fpld.rate.total | 33% IVS | 2026-01-01 | dipendente_privato | S67 (Mefop, INPS circ. 2013); 2026 circ. 6 body not read (S54) | unverified |"
+  },
+  {
+   "hash": "sha256:0c323eaccb31f3309fed8bbed7cb7696779883b1e068cc41dc55628f92309bff",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49902.i-contributi-dei-dipendenti-pubblici.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.pub.extra1pct_and_massimale | whether public staff follow the +1 point above 56224 and the 122295 cap: not stated on the INPS page | 2026-01-01 | dipendente_pubblico | S55 | incerto |"
+  },
+  {
+   "hash": "sha256:0d99ed83dddb71662bf9794c7fcd04deb08a723d4b21d12d6579f3e0c1506466",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.autoenroll.destination | collective fund named by collective agreements; if several, the one with most employees in the firm; without agreements, the residual form (DM 31/3/2020 n. 85); 100% TFR plus employer and worker contributions as set by the agreements | 2026-07-01 | dipendente_privato | S59 (c. 7-bis, 7-ter) | verified |"
+  },
+  {
+   "hash": "sha256:0e1140fcc79a284543041bb50ecbeed0e6accf094ba08d38a8e4d6ee52183708",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| ti.2026.status | no amendment of the trattamento integrativo found in L. 199/2025 (searched), but no explicit 2026 confirmation read | 2026-01-01 | dipendente_privato, dipendente_pubblico | S30 | incerto |"
+  },
+  {
+   "hash": "sha256:0e15f5e480865b10eac7e4ba38d7ca0a87bdc7c8f3835fb9b1ce055a31d5bd9a",
+   "url": "https://www.fiscoetasse.com/files/21403/messaggio-707-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.capitalization.series | coefficient by montante date: 2012 1.001643; 2013 1.000000; 2014 1.005058; 2015 1.004684; 2016 1.005205; 2017 1.013478; 2018 1.018254; 2019 1.019199; 2020 1.000000; 2021 1.009756; 2022 1.023082; 2023 1.036622; 2024 1.040445 (earlier years in S58 table: 1996 1.055871 down to 2011 1.011344) | 2026-01-01 (decorrenza) | all | S58 | verified |"
+  },
+  {
+   "hash": "sha256:0f6b5ccda7111b1d94b4a11d10f5ec5e84220063d3fe4482d70744f3c82ac81c",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.massimale.contributivo | 122295 per year (cap on contribution base and pensionable base for anyone with no contributions before 1/1/1996; not splittable by month) | 2026-01-01 | dipendente_privato, dipendente_pubblico, artigiano_commerciante, autonomo_ordinario, autonomo_forfettario, collaboratore | S50, S51 | verified |"
+  },
+  {
+   "hash": "sha256:10945c3849c31be312a3b54e25a7870f351d6c0b051d92974684f0d5e045b742",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.deduction.firstjob.unused | unused room = total deductible in the first 5 years minus contributions actually paid (old base 25822.85 = 5 * 5164.57 replaced); per-year vs fixed base not settled | TY2026 | all | S59, R2 | incerto |"
+  },
+  {
+   "hash": "sha256:1283964499451e377ff7752229a1d5911aac099d897d98abbc07f77c964c90c6",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.split.prof | 100% worker; F24 at tax deadlines (saldo 2025, two acconti 2026) | 2026-01-01 | autonomo_ordinario, autonomo_forfettario | S50 | verified |"
+  },
+  {
+   "hash": "sha256:1491c37a0f76655a7f19422db8a581b01ce886986be1bce6e8115bef9246ab7a",
+   "url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef6",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.acconto.threshold | single payment by 30 Nov if total acconto <= 206 (ISA and forfettari), else two equal instalments (30 Jun, 30 Nov); general rule below | in force | autonomo_forfettario | S37 (summary only) | verified |"
+  },
+  {
+   "hash": "sha256:14ebc650375b35e114bbe2ac6de8f7fa7a646ae384e83681094a443fa4decb52",
+   "url": "https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Fiscalita-locale/Elenco-annuale-addizionale-comunale-IRPEF-2025-13-marzo-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| addiz.comunale.exemption | per-comune income threshold (examples: 8200 Scanzorosciate, 15000 Calenzano, 12000 Abano Terme); lookup only | 2026 | all except autonomo_forfettario | S44 (summary only) | unverified |"
+  },
+  {
+   "hash": "sha256:179473b60bda5ae89f730e183aa9b74bddde18677ff16c3fda0c30b98adce382",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| addiz.regionale.default_rate | 0.0123 statewide default; regions may raise it, set brackets and exemptions | in force | all | S33 Quadro RV | verified |"
+  },
+  {
+   "hash": "sha256:188814deba0aed1e911c0bbd569e93f8911d385fb0fc90ca1cb7f4f90041ff2f",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.autoenroll.worker_waiver | worker contribution not compulsory if gross annual pay is below the assegno sociale | 2026-07-01 | dipendente_privato | S59 (c. 7-bis) | verified |"
+  },
+  {
+   "hash": "sha256:18e0009b8836d5e909c611eb212d7d4f6260d3a342d5b01ccd5228a32b0c5c73",
+   "url": "https://www.lavoro.gov.it/documenti-e-norme/normativa/decreto-direttoriale-16102026-coefficienti-trasformazione-montante",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.coef.revision_cycle | revised every two years (decree preamble); previous decrees 2012, 2015, 2018, 2020, 2022, 2024-11-20; next revision date derived 2029-01-01 | 2027-01-01 | all | S57 | verified |"
+  },
+  {
+   "hash": "sha256:1a7881ea2a1c46db32ffc0cf2181d1bda14397f32d0d5912fcb7490fa1984e09",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| sost.rinnovi_ccnl.rate | 0.05 imposta sostitutiva (IRPEF + addizionali) on incrementi retributivi paid in 2026 from rinnovi contrattuali signed 1/1/2024-31/12/2026; private sector only; reddito di lavoro dipendente 2025 <= 33000; written waiver possible | 2026-01-01 to 2026-12-31 | dipendente_privato | S30 art.1 c.7 | verified |"
+  },
+  {
+   "hash": "sha256:1ad76ca3ff5be81a8385c536577982ffe5bc2d2d622ee8a5f4406744603cb214",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15199/Allegati/16640_Circolare-numero-28-del-16-03-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.age.vecchiaia.2026 | 67y (not printed in the table read; implied by the +1 month step) | 2026-01-01 | all | S56 (implied) | unverified |"
+  },
+  {
+   "hash": "sha256:1b3f6110226ce6ed430c2ce30cfc86594ab0c782ad0fbee8640d4e040d665047",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| tfr.tax.payout | separate taxation at payout (artt. 17, 19 TUIR); rate mechanics not researched | in force | dipendente_privato, dipendente_pubblico | none this session | incerto |"
+  },
+  {
+   "hash": "sha256:1c10c0c0812b824886d3219f3b71d163ef929b8c3a08eadf1a290c4c8023858e",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| fringe.buoni_pasto.electronic | art.51 c.2 lett.c TUIR: 10 EUR/day (was 8) for electronic meal vouchers; effective date not stated in the comma text | 2026-01-01 | dipendente_privato, dipendente_pubblico | S30 art.1 c.14 | incerto |"
+  },
+  {
+   "hash": "sha256:1e57391b9eebf93912ecf902f676d692c9972fa0558f6e413d5992d7710b2dea",
+   "url": "https://www.lavoro.gov.it/documenti-e-norme/normativa/decreto-direttoriale-16102026-coefficienti-trasformazione-montante",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.coef.discount_rate | 1.5% (tasso di sconto in the decree table) | 2027-01-01 | all | S57 | verified |"
+  },
+  {
+   "hash": "sha256:20fc1dd8dccfc12483ac88c37e63c7501884c0442e742b0daae61d4b260ba112",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49902.i-contributi-dei-dipendenti-pubblici.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.tfr.pub.contrib | ENPAS TFR 9.6% and INADEL TFR 6.1%, employer only, same base; items added by collective bargaining for TFR only: 6.91% employer | page dated 2025-08-01 | dipendente_pubblico | S55 | verified |"
+  },
+  {
+   "hash": "sha256:21aabcc662a8ea548d7faa9185f73fd5c5b2ed3b68acfec3b8cb47d4ad5b68b8",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| artcomm.rate.commercianti | 24.48% up to 56224; 25.48% above (24% + 0.48% = 0.46 indennizzo cessazione fund + 0.02 gestione) | 2026-01-01 | artigiano_commerciante | S51 | verified |"
+  },
+  {
+   "hash": "sha256:21ee4b65c83b8b20bb452437e70ae0ec3f5c88253e06b70a114005802cf6da76",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.riscatto-della-laurea-ai-fini-pensionistici-gestioni-dipendenti-privati-50145.riscatto-della-laurea-ai-fini-pensionistici-gestioni-dipendenti-privati.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| riscatto.tax_treatment | secondary pages conflict (full deduction vs 50% detrazione over 5 years, the latter usually for dependent family members); left to the IRPEF agent | 2026-01-01 | studente | S60 area (secondary) | incerto |"
+  },
+  {
+   "hash": "sha256:22fb915e0b9ffbf5f4f718082c4774f0a6f14cd2fd2ca0306352cf8903df2f41",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| sost.rinnovi_ccnl.public | NOT applicable to public-sector employees (text: \"soltanto ai lavoratori del settore privato\") | 2026-01-01 | dipendente_pubblico | S30 art.1 c.7 | verified |"
+  },
+  {
+   "hash": "sha256:241b594cc93b91bebd04f74cd430c89898ba9d7831bab50c20ae4c6f86542f3b",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/295696/Decreto+del+Presidente+della+Repubblica+del+29_09_1973+n.+600+-+.pdf/4f92a234-eb0b-9751-e68b-7e7c3225a8ec",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| ord.ritenuta.rate | 0.20 ritenuta d'acconto on compensi professionali paid by sostituti d'imposta (art.25 DPR 600/1973) | in force | autonomo_ordinario | S48 (search summary; PDF not opened) | unverified |"
+  },
+  {
+   "hash": "sha256:24cf84804e844c398e89d8ae5622d4bb8d20f0a99bb3f70c3117f030d1b5316d",
+   "url": "https://www.lavoro.gov.it/documenti-e-norme/normativa/decreto-direttoriale-16102026-coefficienti-trasformazione-montante",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.coef.table.2027 | age:coefficient% (divisor) 57:4.153 (24.080); 58:4.254 (23.507); 59:4.361 (22.929); 60:4.475 (22.345); 61:4.596 (21.756); 62:4.725 (21.163); 63:4.863 (20.565); 64:5.009 (19.963); 65:5.166 (19.357); 66:5.334 (18.747); 67:5.514 (18.136); 68:5.707 (17.523); 69:5.914 (16.908); 70:6.139 (16.290); 71:6.382 (15.669). Pension per year = montante * coefficient | 2027-01-01 (pensions with decorrenza from this date) | all (contributory share of any pension) | S57 | verified |"
+  },
+  {
+   "hash": "sha256:258731c9ac443ce8c679239d4fac63aebe2f18ff958d862c0d7836426402a93d",
+   "url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.tax.rate.startup | 0.05 for the first five years if: no artistic, professional or business activity in the previous three years; not a mere continuation of previous employment or self-employment (except compulsory practice); if taking over an activity, predecessor revenues in the previous year within the cap | in force (start date not read) | autonomo_forfettario | S35 | verified |"
+  },
+  {
+   "hash": "sha256:2606f68fa647a019ff91727bbbe412e071ce80fe4ad0036553fddaa0c3bf84d0",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410823/Circolare+lavoro+dipendente+LB2025+DD+IRPEF+n.+4+del+16+maggio+2025.pdf/36979eaa-9fc5-a4ec-a7aa-136497c53f91",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| cuneo.somma.scope | art.49 TUIR employees only, pensions excluded; assimilati (art.50, e.g. co.co.co.) are not named in c.4 text | 2025-01-01 | dipendente_privato, dipendente_pubblico | S31, S40 | verified |"
+  },
+  {
+   "hash": "sha256:27f6b7307c79d7fdbcfd01f71207b4d175fce7f666967221d38a45c3a5293935",
+   "url": "https://www.covip.it/per-il-cittadino/educazione-previdenziale/faq/come-tassato-riscatto",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| pc.anticipazioni.conditions | after 8 years of participation, up to 75% of the position (guide); health-expense timing and 30% cap for other needs from general knowledge | in force | all | S63 (summary) | unverified |"
+  },
+  {
+   "hash": "sha256:2c8c9fe15292f7826bc9d1d477bf4c3b18c2b50043a156be208aa9119cc8a2cd",
+   "url": "https://www.mefop.it/cms/doc/7659/ATT00197.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| inps.fpld.rate.worker | 9.19% | 2026-01-01 | dipendente_privato | S67 | unverified |"
+  },
+  {
+   "hash": "sha256:2d0db27db1b32fdf9450649d0e58f2e2a42ec9870574c701ba87d72f2fb163af",
+   "url": "https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=10",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| addiz.regionale.lookup | https://www1.finanze.gov.it/finanze2/dipartimentopolitichefiscali/fiscalitalocale/addregirpef/addregirpef.php?reg=NN (NN = region code, e.g. 10 Lombardia) | 2026 | all | S43 | verified |"
+  },
+  {
+   "hash": "sha256:2d5ce502789f7ae373b731b746cf089abaa0317c2d71cc3fb976de97c26a4153",
+   "url": "https://www.fondoespero.it/cms/resource/open/584/documento-regime-fiscale-20261014.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.deduction.excess_notice | notify the fund by 31/12 of the following year about contributions not deducted | in force | all | R3 (S2, S22) | verified |"
+  },
+  {
+   "hash": "sha256:2ef24495603794fc7f0672176c29bda3f02cafc2a7b6cab366cd1844f32fe02a",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| ord.isa.basics | ISA = indici sintetici di affidabilita (score 1-10, benefits at high scores) | in force | autonomo_ordinario | not researched | incerto |"
+  },
+  {
+   "hash": "sha256:3010a6e6881e25be671ac8df49710f885704798bceb1dce1d9ef49b7bba6b77d",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.autoenroll.start | payments start the month after the 60 days and cover the time since hiring; membership dates from hiring | 2026-07-01 | dipendente_privato | S59 (c. 7-quinquies) | verified |"
+  },
+  {
+   "hash": "sha256:30c230846cbbcd01fafae5ebfed29325221d5a7431dfa9ce0ed9c7428b0eedeb",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| fam.threshold.maximum_age_figli | detrazione for figli only if aged 21 to under 30; figli with disability certified (L. 104/1992 art.3) also at 30+ | 2025-01-01 | all | S32 \"Cosa c'e di nuovo\" + t.4 | verified |"
+  },
+  {
+   "hash": "sha256:34cfd5d8885dd3fa8e72f412e50931079e2d169cd5696babd90ea7f990bf812e",
+   "url": "https://www.covip.it/per-il-cittadino/educazione-previdenziale/faq/come-tassato-riscatto",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| pc.anticipazioni.tax | reduced rate 15% -> 9% for one category of anticipation (general knowledge: serious health expenses); all other anticipations 23% | in force | all | S63 (summary) | unverified |"
+  },
+  {
+   "hash": "sha256:35a16f64bcb44d2c668bb8053b2a0613aa7540d8bc119e9f799d2358a65b4cff",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| riscatto.ordinario.cost | contributory method: pay of the last 12 months * 33% * years redeemed (no 2026 INPS figure read) | 2026-01-01 | studente, dipendente_privato | none this session | unverified |"
+  },
+  {
+   "hash": "sha256:3660053d0e78e35bf959e0dd5b29a1be27d0b30a7286225f0237fec60e354548",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| addiz.regionale.domicile | domicilio fiscale at 1 January of the tax year | in force | all | S33 Quadro RV | verified |"
+  },
+  {
+   "hash": "sha256:37da0b496e2a87f9096aaf97044b50fa47b0f8f90518d8598e8a2d981a882287",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.minimale.reddito.formula | 312 * minimale_giornaliero + 671.39, revalued by ISTAT +1.4% (Jan–Dec 2025 vs 2024) = 18808.00 | 2026-01-01 | artigiano_commerciante | S51 | verified |"
+  },
+  {
+   "hash": "sha256:38351cb34d451be4c9102abbb51c5dea33ac25e25948c43d9c349e51b5262909",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.autoenroll.window_days | 60 days from first hiring to refuse: keep TFR under art. 2120 c.c. or conferral to another fund of choice; revocable later | 2026-07-01 | dipendente_privato | S59 (art. 8 c. 7-quater) | verified |"
+  },
+  {
+   "hash": "sha256:3871f4c2649103631cb0a41bcd49e86aa4e5ce416233bb6d444c6bd3eb20ce99",
+   "url": "https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef6",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| ord.acconto.isa | ISA subjects: threshold 206 instead of 257.52; above it two EQUAL instalments (50% / 50%) | in force | autonomo_ordinario, autonomo_forfettario | S37 (summary only) | verified |"
+  },
+  {
+   "hash": "sha256:38fb9e1e77af268a502d9255e24f5e85f65c695d6a7c8607a99cda7b7fef5d51",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.accrual.full_year.contrib | contribution that credits a full year: 24% -> 4513.92; 26.07% -> 4903.25 (pensionistic part 4702.00); 33.72% -> 6342.06 (6206.64); 35.03% -> 6588.44 (6206.64) | 2026-01-01 | collaboratore, autonomo_ordinario, autonomo_forfettario, studente | S50 | verified |"
+  },
+  {
+   "hash": "sha256:3a5f58d3b846e9f5c0bc74dfd61041d3025958163aa80bb124cf9b6c795d6050",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| cassa.minimi | yearly minimum notices and maternity contributions per cassa; Inarcassa 2015 figures (2280 soggettivo, 675 integrativo) are historic and must not be used | 2026-01-01 | professionista_cassa | S69 | incerto |"
+  },
+  {
+   "hash": "sha256:3acbd3718bfbf0fd64217804d671adc4f9994a1adf71f869a1ffa0604cd0c880",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410823/Circolare+lavoro+dipendente+LB2025+DD+IRPEF+n.+4+del+16+maggio+2025.pdf/36979eaa-9fc5-a4ec-a7aa-136497c53f91",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| coco.classification | reddito assimilato, art.50 c.1 lett.c-bis; Quadro C sez.I; ritenute IRPEF; addizionali due; detr.dipendente applies pro-rated | in force | collaboratore | S31 fn.4, S32 | verified |"
+  },
+  {
+   "hash": "sha256:3b29cab6a301627839a3d8ba636f693e4498c5a9c224805762d7b8c279a12cea",
+   "url": "https://www.fondoespero.it/cms/resource/open/1803/scheda-i-destinatari-e-i-contributi.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.employer_contribution.rule | employer contribution only when a collective agreement or contract provides it (fondi negoziali; fondi aperti/PIP only on collective membership); individual membership of fondo aperto/PIP has none | in force | dipendente_privato, dipendente_pubblico | R4 (S3); general rule not re-read | unverified |"
+  },
+  {
+   "hash": "sha256:3cdcd6d35704fafe0c6cb66b6d7b67e55199dcc6f50d0d95cf62af46db2f65ad",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| detr.altri.piecewise | R<=5500: 1265; 5500<R<=28000: 500 + 765*(28000-R)/22500; 28000<R<=50000: 500*(50000-R)/22000; R>50000: 0. NOT pro-rated to the period of work | 2025-01-01 | autonomo_ordinario, studente (lavoro occasionale), collaboratore (only sez.II assimilati) | S32 t.8, S33 RN7 col.4 | verified (TY2025 text) |"
+  },
+  {
+   "hash": "sha256:3d68b50caf51dc207807a9e93bc6d496f162955c03054d13e9a3b013ea42a01c",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=2&art.versione=1&art.codiceRedazionale=18G00172&art.dataPubblicazioneGazzetta=2018-12-31&art.idGruppo=3&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=1",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.ateco.commercio_ambulante_alimentari | 0.40 (47.81) | 2019-01-01 | autonomo_forfettario | S36 | verified |"
+  },
+  {
+   "hash": "sha256:3e6cb16f31454322db82e1fd04fc54a7824d3beb8f8055769a79085a1e31b07d",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| irpef.bracket.1.rate | 0.23 | 2025-01-01 | all | S30, S32 t.1 | verified |"
+  },
+  {
+   "hash": "sha256:3e794168597d14336cd3d0fba7e6a2396529f340f6e7dcbf65edcf5234d525b9",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.autoenroll.not_first_hire | employer informs and checks the earlier choice; a member of a fund may indicate within 60 days which fund gets the TFR; default is the automatic mechanism | 2026-07-01 | dipendente_privato | S59 (art. 8 c. 9-bis) | verified |"
+  },
+  {
+   "hash": "sha256:3e9a5c9eb73f4fa0d6a6c16f374a01b2dcf88e71265764df69bd6cc351d83ae6",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410823/Circolare+lavoro+dipendente+LB2025+DD+IRPEF+n.+4+del+16+maggio+2025.pdf/36979eaa-9fc5-a4ec-a7aa-136497c53f91",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| detr.dipendente.assimilati_scope | same detrazione also for art.50 c.1 TUIR lett. a (soci cooperative), b (indennita da terzi), c (borse/assegni di studio non esenti), c-bis (co.co.co., amministratori, collegi), d (sacerdoti), h-bis (prestazioni pensionistiche complementari), l (lavori socialmente utili) | 2025-01-01 | collaboratore, studente | S31 fn.4, S32 Quadro C sez.I | verified |"
+  },
+  {
+   "hash": "sha256:40d08c52125e7cc822e0f2fd771fee26bdf73cdd245a217edcdc42dec0b6f431",
+   "url": "https://edotto.com/articolo/rivalutazione-tfr-pubblicato-il-coefficiente-di-dicembre-2025",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| tfr.reval.datapoint.2025 | total coefficient 2.311148% at 31/12/2025 on the TFR at 31/12/2024 (check against ISTAT before use) | 2025-12-31 | dipendente_privato | S66 (secondary) | unverified |"
+  },
+  {
+   "hash": "sha256:42a8d2a3675085c92b0db941cbb17cb093e6c570ae3eb09b6fc950394c5e69a6",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| tfr.treasury_fund.threshold.2026_2027 | obligation also covers employers that reach the size threshold after starting the activity (previous-year average); for 2026–2027 only if the average is not below 60 workers | 2026-01-01 | dipendente_privato | S59 (c. 203) | verified |"
+  },
+  {
+   "hash": "sha256:4550389acbd087dd37215bfb2095b9c1fda78aeb0b8c9a28abddb82d64dac3e9",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.deduction.firstjob.cap | extra limit = min(unused deductible room of the first 5 years, 0.5 * 5300) = at most 2650 per year, in years 6–25, for first work after 2007-01-01 | TY2026 | all | S59 (c. 201 a n. 2), R2 | verified |"
+  },
+  {
+   "hash": "sha256:45880ded9c56799ee48c4fa1fe3cfba736367821adf032f95021db5c77715979",
+   "url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.table_valid_2026 | S36 is the GU text of 31/12/2018 (Allegato 2 L. 145/2018); S35 (updated 2026-07-21) still cites Allegato 2 of L. 145/2018 for coefficients; ATECO 2025 code mapping not checked | 2026-01-01 | autonomo_forfettario | S35, S36 | incerto |"
+  },
+  {
+   "hash": "sha256:479747353f84999d85ff0f3b6ddcd62ec4c09138c826af1146c3acf9ed3e74ef",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=2&art.versione=1&art.codiceRedazionale=18G00172&art.dataPubblicazioneGazzetta=2018-12-31&art.idGruppo=3&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=1",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.ateco.costruzioni_immobiliari | 0.86 (41-43; 68) | 2019-01-01 | autonomo_forfettario | S36 | verified |"
+  },
+  {
+   "hash": "sha256:47bc536c2199b76f88b00bb0ee7ddce26f72b05d6c9b8c1101435e01dded44b0",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| addiz.regionale.brackets | per-region lookup (table \"Tabella aliquote dell'addizionale regionale\", end of Fascicolo 1). Regions may keep the old four brackets (15000/28000/50000) for TY2025-2027 (L. 207/2024 c.727-728); if a region adopts nothing, the previous year's brackets apply. Example Lombardia: 0.0123 to 15000; 0.0158 to 28000; 0.0172 to 50000; 0.0173 above | 2025-01-01 to 2027-12-31 | all except autonomo_forfettario | S33, S31 sez.addizionali, S43 (year of S43 table inferred 2026, not stated) | verified |"
+  },
+  {
+   "hash": "sha256:4a1e267b8c1d5c10e14589965987ff74e6acacd1da0d36ac1674afd667085246",
+   "url": "https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Fiscalita-locale/Elenco-annuale-addizionale-comunale-IRPEF-2025-13-marzo-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| addiz.comunale.lookup | https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Fiscalita-locale/Elenco-annuale-addizionale-comunale-IRPEF-2025-13-marzo-2026.pdf (list \"updated 13 March 2026\", all comuni, with exemptions); per-comune search under www1.finanze.gov.it fiscalitalocale | 2026 | all | S44 | unverified |"
+  },
+  {
+   "hash": "sha256:4c96aadf0bde55e5b36145f93783b66e9435c065cd6df2fa7a40a2ad71e7611c",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_NOTE_LINE",
+   "summaryOnly": false,
+   "text": "- **Deduction ceiling.** Art. 8 c. 4 D.Lgs. 252/2005 as amended by L. 199/2025 art. 1 c. 201 lett. a) n. 1 (S59 text): \"A decorrere dal periodo d'imposta 2026\" the limit is **€5,300** (was €5,164.57). Confirms R1 from the law text itself. Art. 11 c. 8 also changes €5,164.57 to €5,300 (its content was not read). Comma 202 says the provisions of c. 201 apply from **1 July 2026**; the explicit TY2026 wording of n. 1 and the COVIP/Espero notes (S2, S8) decide for the ceiling, but the interaction is **[incerto]**."
+  },
+  {
+   "hash": "sha256:4d437b5a20b1316eec5999b2603e93e41e14f694ddbbe10a16bdf401b7d5eeaf",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| detr.altri.bonus50 | +50 if 11000<R<=17000, only for art.50 c.1 lett. e, f, g, h, i (not for autonomi) | 2025-01-01 | collaboratore | S33 RN7 (S32 t.8 n.3 states it without the restriction) | verified |"
+  },
+  {
+   "hash": "sha256:4e0118416c8c0a905117415cd95155de7a34d89ad402badad0625a661616926b",
+   "url": "https://www.fiscoetasse.com/files/21403/messaggio-707-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.capitalization.next | rate for decorrenza 2027 (montante at 2025-12-31) not found: use as user scenario input, label \"ipotesi\" | 2027-01-01 | all | S58 | incerto |"
+  },
+  {
+   "hash": "sha256:4f42ce1e658cf99226622057c33968c9bdbab2a4c78cfaf0fe69a0853a0399c9",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| addiz.dovuta.min | not due if imposta lorda net of detrazioni and foreign tax credits <= 10.33 EUR; not due on exempt, sostitutiva-only or separately taxed income | in force | all | S33 Quadro RV | verified |"
+  },
+  {
+   "hash": "sha256:4fcb8304b3f0bda277c7a36bf62632dfe5b4fdb4493ad07b895b2a8baec08384",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/5718712/Circolare_n_32_Regime+forfetario_05_12_2023.pdf/23d1370d-6bba-0eb7-70b8-d1d24d5a1c0f",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| forf.labour_cost_cap | gross spending on lavoro accessorio, dipendenti, collaboratori (art.50 c.1 lett.c, c-bis) <= 20000 in the previous year (access requirement) | in force (start date not read) | autonomo_forfettario | S45, S35 | verified |"
+  },
+  {
+   "hash": "sha256:52acc3a7a8192b28a92ababff397a48396743965ad80248223ae2cdeb3890eaa",
+   "url": "https://www.fondoespero.it/cms/resource/open/584/documento-regime-fiscale-20261014.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.benefit.tax.standard | 15% - 0.30 points per year of participation after the 15th, floor 9% (max 6 points); contributions from 2007-01-01; fixed-term annuity and withdrawals follow the capital regime (art. 11 c. 6-bis) | in force | all | R15 (S2), S63, S59 | verified |"
+  },
+  {
+   "hash": "sha256:5771bbf2d3134ef151aceba07d0a03a86baa4f19dc8013a95ad6883420ce1afc",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9680917/Risposta+n.+53_2026/36fac8f3-42a8-500d-9d91-bc232d4154f3",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| stud.assegni_ricerca.irpef | art.22 c.7 L. 240/2010 applies art.4 L. 476/1984 for tax: treated as IRPEF-exempt by AE principio 8/2023 (summary) | 2011-01-01 | studente | S47 (summary only) | unverified |"
+  },
+  {
+   "hash": "sha256:57eecbc3e76d5f31cf0aeb1a933cb6218883a55898c83fed54ee13b89148fa7d",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.minimale.giornaliero | 58.13 per day (S53 summary: 9.5% of 611.85 monthly minimum pension) | 2026-01-01 | dipendente_privato | S51, S53 | verified |"
+  },
+  {
+   "hash": "sha256:5a9d0869c4457d7b61ce2521f1939dd2f3100b49b655ec43c9c871e2e4e493a0",
+   "url": "https://edotto.com/articolo/rivalutazione-tfr-pubblicato-il-coefficiente-di-dicembre-2025",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| tfr.accrual.divisor | 13.5 (quota annua = retribuzione dovuta per l'anno / 13.5); art. 2120 c.c. primary text not obtained | in force | dipendente_privato | S66 (secondary); S64, S65 failed | unverified |"
+  },
+  {
+   "hash": "sha256:6018941639ec960253627c5276a2f146608e09cdca5f3abc23a69c491a8a479d",
+   "url": "https://www.fondoespero.it/cms/resource/open/584/documento-regime-fiscale-20261014.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.fund.returns.tax | 20% on yearly fund result; 12.5% on the share from government bonds and equivalent | in force | all | R15 (S2), S63 | verified |"
+  },
+  {
+   "hash": "sha256:6100518aee5b44c34ce6e788609a7e67fd670721f5d81983c98c7c62e1ba59be",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| artcomm.maternita | 7.44 per year (0.62 per month), fixed | 2026-01-01 | artigiano_commerciante | S51 | verified |"
+  },
+  {
+   "hash": "sha256:6147cfe2e702fc36e2b8a622105d0da681cb493c948c3c4d6fe4d1792cd8ef12",
+   "url": "https://www.covip.it/per-il-cittadino/educazione-previdenziale/faq/come-tassato-riscatto",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| pc.forms.definitions | fondo negoziale (collective, closed), fondo aperto (open, individual or collective), PIP (insurance product), fondo preesistente; structure only, COVIP guide not read in full | in force | all | S63 (guide located) | unverified |"
+  },
+  {
+   "hash": "sha256:6410b47d1666a1ba9e6e50650ce9d65d0c080cd381bf049878a5051069d2d59f",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49902.i-contributi-dei-dipendenti-pubblici.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.cpdel.rate | total 32.65%, employer 23.8%, worker 8.85% (CPDEL, CPS, CPI, CPUG) | page dated 2025-08-01 | dipendente_pubblico | S55 | verified |"
+  },
+  {
+   "hash": "sha256:64e121c784ec1c3d8a1349148097ed2f5883fe31504c9bc7a39d534eb0472835",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| addiz.comunale.acconto | 30% x (imponibile of previous year x comune rate); S33 Quadro RV gives the 30% rule and says addizionali are paid with the IRPEF saldo terms; the dipendenti payslip instalment plan was not read | in force | all except autonomo_forfettario | S33 Quadro RV | verified |"
+  },
+  {
+   "hash": "sha256:65bcf84bb9571699e2553b5c0bdf8d2e1e0e28678c3314cef1a41a3d9f910c23",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| detr.dipendente.piecewise | R<=15000: 1955; 15000<R<=28000: 1910 + 1190*(28000-R)/13000; 28000<R<=50000: 1910*(50000-R)/22000; R>50000: 0. Pro-rated by days of work/365 | 2025-01-01 (1955 from 2024 via D.Lgs. 216/2023, a regime since L. 207/2024) | dipendente_privato, dipendente_pubblico, collaboratore (assimilati list below), studente (if employed) | S32 t.6, S31 | verified (TY2025 text) |"
+  },
+  {
+   "hash": "sha256:660270f88f5ac7bf58764d06b5e40d29bcd21b1652d3e21d505373a38a75ff08",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| ord.irpef.reddito_base | reddito di lavoro autonomo = compensi incassati - spese inerenti (art.54 TUIR); contributi previdenziali deductible as oneri; taxed at scaglioni plus addizionali | in force | autonomo_ordinario | recalled; Quadro RE routing in S33 RN7 | unverified |"
+  },
+  {
+   "hash": "sha256:66d37a598e560e35d9da04f683497c69fc8b44a8433ffb13c38fc09d12f3d0fd",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=2&art.versione=1&art.codiceRedazionale=18G00172&art.dataPubblicazioneGazzetta=2018-12-31&art.idGruppo=3&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=1",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.ateco.commercio | 0.40 (45; 46.2-46.9; 47.1-47.7; 47.9) | 2019-01-01 | autonomo_forfettario | S36 | verified |"
+  },
+  {
+   "hash": "sha256:69fa889c1d78474712b7b85edc0b877d14abd628e4110394e1622af833faabb5",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15199/Allegati/16640_Circolare-numero-28-del-16-03-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.age.anticipata.precoci | 41y1m in 2027; 41y3m in 2028 and from 2029 (adjustable) | 2027-01-01 | all | S56 | verified |"
+  },
+  {
+   "hash": "sha256:6b3c85dff3371dbcfeb3f2d0c1ce179f4c3890ac5915d9dd9af2a5ad63e50af8",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| ord.acconto.irpef | due if imposta dichiarata net of detrazioni, crediti, ritenute, eccedenze > 51.65; amount = 100% of previous-year imposta; < 257.52: single by 30 Nov; >= 257.52: 40% by 30 Jun (30 Jul +0.40%) and 60% by 30 Nov. Same structure and 103 EUR first-rata floor stated for cedolare secca | in force | autonomo_ordinario, dipendente (with Redditi), pensionato | S37 (AE page updated 2026-03-12, summary only), S33 LC2 (cedolare) | verified |"
+  },
+  {
+   "hash": "sha256:6b543e4ec58d99406848cbb94431f6f07d46645db3fb487e3329d72fe1e19ea0",
+   "url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.tax.rate | 0.15 imposta sostitutiva (IRPEF, addizionali, IRAP) | in force (start date not read) | autonomo_forfettario | S35 | verified |"
+  },
+  {
+   "hash": "sha256:6c031d4825344b3477207a1c9bbaa7d547f41be857b7b7460eca01591d0f11b1",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.minimale | 18808.00 per year | 2026-01-01 | collaboratore, autonomo_ordinario, autonomo_forfettario | S50 | verified |"
+  },
+  {
+   "hash": "sha256:6c479952ab3ad09a282106b008a1a5424a1b80e64b44eebf849fda7b7f893fad",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.deduction.ceiling | 5300 per year (art. 8 c. 4 D.Lgs. 252/2005 as amended by L. 199/2025 art. 1 c. 201 lett. a n. 1) from tax period 2026; 5164.57 up to TY2025. Counts worker + employer + dependants + all forms; TFR excluded. Art. 11 c. 8 also moves 5164.57 to 5300 (content not read) | TY2026 | all | S59, S2, S8, R1 | verified |"
+  },
+  {
+   "hash": "sha256:6ccd9347df4dee904cb4164896ee4dfe94a2d85bedfd320bc5b7b60228ec228a",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| artcomm.forfettari.minimale_applies | whether the fixed minimale contribution applies under the reduced regime: not in the text read | 2026-01-01 | autonomo_forfettario | S51 (silent) | incerto |"
+  },
+  {
+   "hash": "sha256:6f5af8d3d13e4e2d5099f48707c4deb2f75255ea98f9f8ec10801d6a3c6e12ad",
+   "url": "https://www.lavoro.gov.it/documenti-e-norme/normativa/decreto-direttoriale-16102026-coefficienti-trasformazione-montante",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.coef.table.2025_2026 | decree 2024-11-20: age 67 = 5.608% (other ages not retrieved; age 57 = 4.204% with divisor 23.789 from a search snippet) | 2025-01-01 to 2026-12-31 | all | S57 (cites the decree), secondary press | unverified |"
+  },
+  {
+   "hash": "sha256:6fd66282803c373fbbaf8a0db4b91676ea3cc4ce4d5717ae8e61cbf07b068146",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.massimale | 122295 per year | 2026-01-01 | collaboratore, autonomo_ordinario, autonomo_forfettario | S50 | verified |"
+  },
+  {
+   "hash": "sha256:70e772d16e8c0b76b885531bdd1fd20663979bbad7f5bd84ff94b265fd541cb2",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15199/Allegati/16640_Circolare-numero-28-del-16-03-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.contrib.min_years.vecchiaia | 20 years of contributions for vecchiaia (secondary summary of INPS pages); not printed in the circ. 28 text read | 2027-01-01 | all | S56 (summary) | unverified |"
+  },
+  {
+   "hash": "sha256:71aa50614f8a552805ef55e08fd5b7cac73448aa8dc4241d49082a18d9914d3e",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.rate.collab.other_cover | IVS 24% when another mandatory cover exists or the person is a pensioner; add-ons 0.72 (+1.31 where DIS-COLL applies) read only in the magistrati onorari row (26.03); totals for ordinary collaboratori calculated 24.72 / 26.03 | 2026-01-01 | collaboratore, pensionato | S50 | incerto |"
+  },
+  {
+   "hash": "sha256:71eadc4603092441e629c532a38134579a50c051135134a5ce9fead0754b87b0",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49893.i-contributi-dei-lavoratori-autonomi-occasionali.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| cpo.rates | Contratto di prestazione occasionale: user pays 33% Gestione Separata + 3.5% INAIL on the fee; yearly limit 5000 per worker across users; other CPO limits not verified | 2026-01-01 | studente, pensionato, collaboratore | S61 (summary) | unverified |"
+  },
+  {
+   "hash": "sha256:730cc58b10844fc2a40bf21f3d0f2031a7c89db4cb0f7eb562b1078ab6a3ca75",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/5718712/Circolare_n_32_Regime+forfetario_05_12_2023.pdf/23d1370d-6bba-0eb7-70b8-d1d24d5a1c0f",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| forf.revenue.cap.entry | 85000 revenues/compensi of the previous year, annualised; sum across ATECO codes | 2023-01-01 | autonomo_forfettario | S35, S45 | verified |"
+  },
+  {
+   "hash": "sha256:739ac2606c02cb294e0f19cf23c5c640ca6087d76a70ca00782a13a095017d00",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.rate.prof.no_other | 26.07% = 25.00 IVS + 0.72 + 0.35 ISCRO (professionisti senza cassa with own partita IVA, no other cover) | 2026-01-01 | autonomo_ordinario, autonomo_forfettario (senza cassa) | S50 | verified |"
+  },
+  {
+   "hash": "sha256:73e69471bfecb64b6b42127dc0ba62f3578cb95e20bf7acd8d4455bbb9996557",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| fam.threshold.general | familiare a carico if reddito complessivo <= 2840.51 (gross of oneri deducibili) | in force | all | S32 | verified |"
+  },
+  {
+   "hash": "sha256:76c4067437017bbd69fe9949ba7e521ffe8b58caa4ab6857bea270c07bcd7527",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| sost.premi_produttivita.rate | 0.01 imposta sostitutiva on premi di produttivita and partecipazione agli utili (art.1 c.182 L. 208/2015) paid in 2026 and 2027, up to 5000 EUR total; the 5% rate of L. 207/2024 c.385 is limited to 2025 | 2026-01-01 | dipendente_privato | S30 art.1 c.8-9 | verified |"
+  },
+  {
+   "hash": "sha256:76cc0e0511b9500317eda5acb9087c8100da48858fd2475274e1c26b060bb842",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49902.i-contributi-dei-dipendenti-pubblici.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.tfs.contrib | ENPAS TFS 9.6% = employer 7.1% + worker 2.5%; INADEL TFS 6.1% = employer 3.6% + worker 2.5%; base 80% of contributory items | page dated 2025-08-01 | dipendente_pubblico | S55 | verified |"
+  },
+  {
+   "hash": "sha256:7af44f7545caa3d5f95eb51895c4baf0324d19e14ac6dec3a103cf77cf7145c9",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| riscatto.agevolato.cost_per_year | cost per year = 0.33 * minimale_artcomm(year of application) = 6206.64 for applications filed in 2026 (2025: 6123.15) | 2026-01-01 | studente | S50 (6206.64), S60 | verified |"
+  },
+  {
+   "hash": "sha256:81cb23182ab4d040f0d7ef88111aa78bfb9ac499a345e922063156d488347154",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| ti.amount | 1200 EUR per year (trattamento integrativo), paid by employer from January, recalculated in 730/Redditi | 2020-07-01 (amended 2025) | dipendente_privato, dipendente_pubblico, collaboratore (taluni assimilati) | S32 Quadro C sez.V | verified (TY2025 text) |"
+  },
+  {
+   "hash": "sha256:82123e3b05c50d1cc4d0586a048fd5b8cac6304d9161632f66b8d5f970d95847",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| cassa.contrib.soggettivo | percentage of net professional income with a yearly minimum, set by each cassa (D.Lgs. 509/1994, 103/1996); no table verified | 2026-01-01 | professionista_cassa | S69 (historic snippets) | unverified |"
+  },
+  {
+   "hash": "sha256:83021d4a5f113e54f37ed1829e0f38b4607ff62e4abd948119b36e475bb159cd",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| addiz.comunale.deliberated_only | due only if the comune deliberated; no delibera by 20 Dec: previous year's rates and brackets apply (TY2025-2027); comuni may use differentiated rates by income bracket | 2025-01-01 to 2027-12-31 | all except autonomo_forfettario | S33, S31 c.750-752 | verified |"
+  },
+  {
+   "hash": "sha256:83b6b122690dc924a89809b331dcbe0e9b75b96fd9f07b299055422823ebfd4b",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| tfr.treasury_fund.threshold.2032 | threshold becomes 40 workers | 2032-01-01 | dipendente_privato | S59 (c. 203) | verified |"
+  },
+  {
+   "hash": "sha256:85367e64bf2c561b479e3f8f2fc6df76c87c8237f2fcb538401149ea9dbcb1be",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.fpld.extra.rate | +1 point on pay above inps.pension.bracket1.threshold (worker-borne per secondary sources); contribution = 0.0919*min(pay,56224) + 0.1019*max(0,min(pay,122295)-56224) for the worker share | 2026-01-01 | dipendente_privato | S53 (summary), S51 (art. 3-ter DL 384/1992 for autonomi) | unverified |"
+  },
+  {
+   "hash": "sha256:85f13d1246a17cf0e3c042de806673ca20cb69242fffca7b2a5dfebcf35ebe79",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| pc.selfemployed | no TFR and no employer contribution; fondo aperto or PIP; same 5300 deduction ceiling | in force | autonomo_ordinario, autonomo_forfettario, artigiano_commerciante, professionista_cassa, collaboratore | none this session | incerto |"
+  },
+  {
+   "hash": "sha256:867e015c8725ac5afdf616951f73c54680ccc4dac8766c7f0e75305b1a7ad552",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| forf.acconto.codes | tributo 1790 (acconto 1st rata), 1791 (2nd rata or single), 1792 (saldo) | in force | autonomo_forfettario | S33 | verified |"
+  },
+  {
+   "hash": "sha256:895ac50721290122d93882e0b09a75ef2a79c4e72ce5ac98ae813bd1b51005aa",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.riscatto-della-laurea-ai-fini-pensionistici-gestioni-dipendenti-privati-50145.riscatto-della-laurea-ai-fini-pensionistici-gestioni-dipendenti-privati.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| riscatto.agevolato.eligibility | legal course length only; not out-of-course; no overlap with other contributions or redemptions in any regime; requirement of no contributions before 1996 and instalment rules not read | 2026-01-01 | studente | S60 (summary) | incerto |"
+  },
+  {
+   "hash": "sha256:89f17ff519f9d65ae183e591456541c1599df835e21b5a9aca6f944b90529f7b",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/5718712/Circolare_n_32_Regime+forfetario_05_12_2023.pdf/23d1370d-6bba-0eb7-70b8-d1d24d5a1c0f",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| forf.revenue.exit.inyear | > 100000 in the year: regime ends the same year (IVA on the operation that exceeds) | 2023-01-01 | autonomo_forfettario | S35, S45 | verified |"
+  },
+  {
+   "hash": "sha256:8ac2ee835236b513d4ebd7780cac76fdc2158880caed9f4e3c0c7ee853de3eb8",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| detr.pensione.min | not below 713 | 2025-01-01 | pensionato | S32 t.7 n.3 | verified (TY2025 text) |"
+  },
+  {
+   "hash": "sha256:8c18ceca39fa91bf64b93fdfbb21ed859a6d4876239a19affed16cbcdd643019",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| detr.dipendente.min | after pro-rating not below 690 (tempo indeterminato) or 1380 (tempo determinato) | 2025-01-01 | dipendente_privato, dipendente_pubblico | S32 t.6 n.3 | verified (TY2025 text) |"
+  },
+  {
+   "hash": "sha256:8c468eda6912df2ef975c99eb7853d139fe6ca1bc51e8f2572edd45fd36f3e2c",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/255456/Articolo+12+del+Dpr+917_1986_articolo_12_Tuir.pdf/7224c483-95a6-f2b3-a2be-68fdf30c5b54",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| fam.figli.extras | +400 per figlio disabile; +200 per figlio from the first if more than three figli; +1200 if at least four figli (c.1-bis): taken from the 2013 text, current amounts not re-checked | 2013-01-01 | all | S39 | unverified |"
+  },
+  {
+   "hash": "sha256:8d51d15d6585090565ead187b26eafb7a7df3640144484a174972fb05cf5f2e9",
+   "url": "https://www.fondoespero.it/cms/resource/open/1803/scheda-i-destinatari-e-i-contributi.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| tfr.public.accrual | 6.91% accrual, figurative at INPS; revaluation 1.5% + 75% of inflation (non-members); paid at cessation | in force | dipendente_pubblico | R6, R8 (S3, S11) | verified |"
+  },
+  {
+   "hash": "sha256:8d6adffafaa020995d078b2cdee9e36a104f35085376c576efd4c3b1b0d4bf1d",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/255456/Articolo+12+del+Dpr+917_1986_articolo_12_Tuir.pdf/7224c483-95a6-f2b3-a2be-68fdf30c5b54",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| fam.coniuge.piecewise | R<=15000: 800 - 110*R/15000; 15000<R<=40000: 690 (+10 if 29000<R<=29200; +20 if 29200<R<=34700; +30 if 34700<R<=35000; +20 if 35000<R<=35100; +10 if 35100<R<=35200); 40000<R<=80000: 690*(80000-R)/40000; R>80000: 0 | in force | all | S39, S32 t.3 | verified |"
+  },
+  {
+   "hash": "sha256:8ff7d7b7c7e9627e0489bcd2aca56839df5566431df280544f568ba28375675a",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.rate.collab.no_other | 33.72% = IVS 33 + 0.50 (maternity/ANF/illness) + 0.22 (maternity DM 12/7/2007); with DIS-COLL (+1.31) 35.03%. Codes with 33.72: participants in commissions, amministratori enti locali, venditori porta a porta, occasional (code 09), associati in partecipazione, formazione specialistica | 2026-01-01 | collaboratore, studente | S50 | verified |"
+  },
+  {
+   "hash": "sha256:930c79894d60486ce6e5d1dbe18022b13e9d9b91e32fb9282df793b685480ca9",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| addiz.base | reddito complessivo net of oneri deducibili (same base for regional and municipal) | in force | all except autonomo_forfettario | S33 Quadro RV | verified |"
+  },
+  {
+   "hash": "sha256:94038f7f3d0d016f91f1548aef895b52dfa58d7a1d737faa4dc5fb3d7edc0e0f",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=2&art.versione=1&art.codiceRedazionale=18G00172&art.dataPubblicazioneGazzetta=2018-12-31&art.idGruppo=3&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=1",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.ateco.alloggio_ristorazione | 0.40 (55-56) | 2019-01-01 | autonomo_forfettario | S36 | verified |"
+  },
+  {
+   "hash": "sha256:9505017b948c1635e26da6cbe1e79ea008f5a2f2ccd2af7a3d72373cd0557e37",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.payout.capital_max | up to 60% of the final montante as capital (was 50%), the rest as lifetime annuity; if annuity from at least 70% of montante is below 50% of assegno sociale, 100% as capital allowed | 2026-07-01 | all | S59 (c. 201 b) | verified |"
+  },
+  {
+   "hash": "sha256:9568e94a7331e36a186293a4de6ac6f7f79a967a81c095678250c12a50e7403c",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| occ.autonomo.irpef | income art.67 c.1 lett.l TUIR goes in Redditi rigo RL14-RL16 and gets detr.altri (not pro-rated) | in force | studente | S33 RN7 | verified |"
+  },
+  {
+   "hash": "sha256:95ab1eab2a19c7e8b74642b19abc969627d70c46c1e01829ea84bcb1cacd13e2",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| pension.anticipata.amount_threshold | contributiva at 64: pension at least 3 x assegno sociale (lower with children); not read | 2027-01-01 | all (contributivo puro) | none this session | incerto |"
+  },
+  {
+   "hash": "sha256:971e33fc6531e0aac29e41252de8627eb3faaf3fbdbc3a4c477e73677a6c3f0a",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| ord.saldo.deadline | saldo + first acconto by 30 June 2026, or by 30 July with +0.40%; second acconto 30 November; weekends/holidays roll to the next working day | TY2025 filing, in force | autonomo_ordinario, autonomo_forfettario, all with Redditi | S33 | verified |"
+  },
+  {
+   "hash": "sha256:9cc4e2d9caec8ffea4f14c14ac3c826c94ea01a905b92ef142538f9926133dad",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.gestioni-artigiani-e-commercianti-i-contributi-per-il-2026.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| artcomm.installments | contributo minimo paid in 4 instalments: 2026-05-18, 2026-08-20, 2026-11-17, 2027-02-16 | 2026-01-01 | artigiano_commerciante | S52 (summary) | unverified |"
+  },
+  {
+   "hash": "sha256:9f89eae9032e2dd2756519543bc12ec51b3cbb7aeb2595fcba21fea8dd1064d3",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| addiz.regionale.payment | with the IRPEF saldo (30 June, or 30 July +0.40%); via payslip for dipendenti from the July conguaglio (730 with sostituto); no regional acconto found in the sources read | in force | all | S33, S37 | unverified |"
+  },
+  {
+   "hash": "sha256:9fb7d1593db2e98c22be05fcb91886dac25d91d92fa68658886df4cf996cd84b",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.autoenroll.valid_from | automatic enrolment of new hires and the other c. 204 changes apply from 2026-07-01; COVIP updates its instructions by the same date (not retrieved) | 2026-07-01 | dipendente_privato | S59 (c. 205) | verified |"
+  },
+  {
+   "hash": "sha256:a0083704c3b0bbf3696755ec6dfa1f96deddf4ffd36caa57abf5e426957adb1a",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15199/Allegati/16640_Circolare-numero-28-del-16-03-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.life_expectancy.step | +1 month in 2027, +2 more months in 2028 (+3 in total); basis MEF decree 2025-12-19 and L. 199/2025 art. 1 c. 180–181, 185–190; usuranti and precoci exempt; lavori gravosi keep their own requirement | 2027-01-01 | all | S56 | verified |"
+  },
+  {
+   "hash": "sha256:a18d59d787f5af51ca1694a56e7b2dc56dccf36b4da6a8d5d7a9791c33dbd16c",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9680917/Risposta+n.+53_2026/36fac8f3-42a8-500d-9d91-bc232d4154f3",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| stud.postdoc.borse | AE Risposta 53/2026: post-doc research outside dottorato exempt only via incarichi ex art.22-ter L. 240/2010; borse post-dottorato no longer provided; applies to conferimenti from 2025-06-05 | 2025-06-05 | studente | S47 (summary only) | unverified |"
+  },
+  {
+   "hash": "sha256:a1c86a16e735abca5df09d946be7a3ae19ff20f5739cc2a059dd52c6869ba06d",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| fam.figli.detrazione | 950 EUR per figlio aged 21 <= age < 30 (or disabled >= 21); 0 for age < 21 (Assegno Unico Universale replaces it from 2022-03-01); monthly rateo | 2025-01-01 | all | S32 t.4 | verified |"
+  },
+  {
+   "hash": "sha256:a4723657560fcd90f478363688d58023cbc58a899608e8838457f4d68633b596",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| fam.altri.ascendenti | 750*(80000-R)/80000, only ascendenti conviventi (other familiari no longer eligible from 2025) | 2025-01-01 | all | S32 t.5 + \"Cosa c'e di nuovo\" | verified |"
+  },
+  {
+   "hash": "sha256:a528e29f7a6a5890935717dbdff403aa406d38db60f189b4a9fa481016caf7bc",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| artcomm.forfettari.reduction | 35% contribution reduction (regime previdenziale agevolato, art. 1 c. 77–84 L. 190/2014); optional; kept automatically in 2026 by 2025 beneficiaries who still meet the tax requirements; new 2025 starters opted in by 2026-02-28; renunciation by 2026-02-28 restores ordinary regime from 2026-01-01 | 2026-01-01 | autonomo_forfettario (artigiano_commerciante) | S51 | verified |"
+  },
+  {
+   "hash": "sha256:a6663425fa802122da74d8b39db5ad65cddfd75185e29fb5ca0859a49a541b70",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/255456/Articolo+12+del+Dpr+917_1986_articolo_12_Tuir.pdf/7224c483-95a6-f2b3-a2be-68fdf30c5b54",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| fam.figli.reduction | x (95000 + 15000*(N-1) - R)/95000, N = number of figli (AE copy of art.12 c.1 lett.c, version \"in vigore dal 1/1/2013\"; age bands superseded by S32) | in force | all | S39 | verified |"
+  },
+  {
+   "hash": "sha256:a685801c7943a8f48a4ebabe895c706fbfb6da1bb7fe1d1300f3a61c3d9360b4",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15199/Allegati/16640_Circolare-numero-28-del-16-03-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.vecchiaia.amount_threshold | contributivo puro at 67: pension at least 1.5 x assegno sociale (general rule); circ. 28 allegato 2 ties a threshold to the assegno sociale, text not read | 2027-01-01 | all (contributivo puro) | S56 (allegato 2 not read) | incerto |"
+  },
+  {
+   "hash": "sha256:a6c80b52769dd5abb221f3834e30a7151780556773b48a13a029d692fddaec3b",
+   "url": "https://www.covip.it/per-il-cittadino/educazione-previdenziale/faq/come-tassato-riscatto",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| pc.riscatto.tax | 15% -> 9% for art. 14 c. 2–3 causes (unemployment over 12 months, mobilita, CIG, disability below one third, death); 23% for other reasons | in force | all | S63 (summary) | unverified |"
+  },
+  {
+   "hash": "sha256:a7a071829f7d583c823d7c46af65af3e0102ad1cb0caa5b66302c407c1385884",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.autoenroll.scope | private-sector employees \"di prima assunzione\", domestic workers excluded; meaning of \"prima assunzione\" not defined in the text read | 2026-07-01 | dipendente_privato | S59 (art. 8 c. 7) | verified |"
+  },
+  {
+   "hash": "sha256:a87c4d0958a166a08e9bd03fc3652a62b7cf494c094ab0d011d3f816a9423abb",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| pension.assegno_sociale.2026 | monthly amount not found | 2026-01-01 | pensionato, all | none | incerto |"
+  },
+  {
+   "hash": "sha256:a9d23022840db20f2c38648bc5409786a02ca98092afbc7e7e8fd5ff3e1369e9",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| irpef.bracket.3.rate | 0.43 (above 50000) | 2025-01-01 | all | S30, S32 t.1 | verified |"
+  },
+  {
+   "hash": "sha256:ac83176de8c76f3256244842b1d3043423cae6620d953e22f2feba0c916de227",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.payout.new_forms | fixed-term annuity over remaining life expectancy, free withdrawals within accrued instalments, fractioned payout over at least 5 years | 2026-07-01 | all | S59 (c. 201 b) | verified |"
+  },
+  {
+   "hash": "sha256:ace2922b71865affcc37dfe23d411d8864822df73609fa8719f7a547da672815",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| forf.employment_cap | 35000 (30000 ordinary) for redditi di lavoro dipendente/assimilati of the previous year, years 2025 and 2026; not applied if the employment ended in the previous year and no pension or other employment income | 2025-01-01 to 2026-12-31 | autonomo_forfettario | S35, S30 art.1 c.27 (amends L. 207/2024 c.12), S49 | verified |"
+  },
+  {
+   "hash": "sha256:af5f6c36fff6273475cdb2bf2d87c0282de51c6744474352595af6d60a65d768",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_NOTE_LINE",
+   "summaryOnly": false,
+   "text": "- TY2026: 23% to 28,000; **33%** to 50,000; 43% above (S30 art.1 c.3 amends art.11 c.1 lett.b TUIR from 35% to 33%). TY2025: 23/35/43 (S32 table 1). Cumulative tax at 28,000 is 6,440; at 50,000 it is 13,700 for TY2026 (calculated), 14,140 for TY2025."
+  },
+  {
+   "hash": "sha256:afb40c9eda95b2accd4a6bbc13e2c37c257ff8c1fa4e5090ec7c38ab48d6225d",
+   "url": "https://www.mefop.it/cms/doc/7659/ATT00197.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| inps.fpld.rate.employer | 23.81% | 2026-01-01 | dipendente_privato | S67 | unverified |"
+  },
+  {
+   "hash": "sha256:b04ef9d1a9ab5bbaa2b54f8187be6f8427b4653d4feca59a87739f4b49c61f7b",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| sost.turni_notturno.rate | 0.15 imposta sostitutiva on maggiorazioni and indennita for night work, festive/rest days, turni (CCNL), up to 1500 EUR per year in 2026; private sector payers; reddito di lavoro dipendente 2025 <= 40000; waiver possible; not for compensi that replace ordinary pay | 2026-01-01 to 2026-12-31 | dipendente_privato | S30 art.1 c.10-11 | verified |"
+  },
+  {
+   "hash": "sha256:b1b3420b846af94e05c12bc37e16f7204cb9ead0b0d488a0a728fd34081b75c1",
+   "url": "https://www.fondoespero.it/cms/resource/open/1803/scheda-i-destinatari-e-i-contributi.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| tfr.public.regime.rule | permanent staff hired before 2001-01-01 in TFS (unless joined a complementary fund, which forces TFR); hired from 2001-01-01 or fixed-term: TFR; read \"Tipo liquidazione\" on the payslip | in force | dipendente_pubblico | R5, R9 (S3, S4, S12, S16) | verified |"
+  },
+  {
+   "hash": "sha256:b1fe8ed0014b97034996b0fe2fbc6b51ab0256b25e667d9d7694f1236bbaad92",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| irpef.oneri.cap.16ter | R 75000-100000: base 14000; R > 100000: base 8000; multiplier by figli a carico 0 / 1 / 2 / 3+ = 0.5 / 0.7 / 0.85 / 1 (e.g. 7000 / 9800 / 11900 / 14000 for the 75-100k band) | 2025-01-01 | all | S32 t.11 | verified |"
+  },
+  {
+   "hash": "sha256:b3c0c6ad4dc2a95fc07bbb6042bd8d291fed17a2668c59c37209812d0f0f5c39",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| forf.employment_cap.2027 | after 2026 the limit reverts to 30000 unless extended | 2027-01-01 | autonomo_forfettario | inferred from S30 c.27 wording \"gli anni 2025 e 2026\" | incerto |"
+  },
+  {
+   "hash": "sha256:b3e2ae2afa35dba5ea64ebe6f63311b1d7a52a27f04444bf76125bbdb9ad0ca8",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=2&art.versione=1&art.codiceRedazionale=18G00172&art.dataPubblicazioneGazzetta=2018-12-31&art.idGruppo=3&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=1",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.ateco.professionali_sanitarie_istruzione_finanza | 0.78 (64-66; 69-75; 85; 86-88) | 2019-01-01 | autonomo_forfettario | S36 | verified |"
+  },
+  {
+   "hash": "sha256:b488a2106099f9566fafb6ffcd2ac8669f9903ff44a26e84edc1cac8f8b01d9a",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/5718712/Circolare_n_32_Regime+forfetario_05_12_2023.pdf/23d1370d-6bba-0eb7-70b8-d1d24d5a1c0f",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| forf.revenue.exit.next_year | between 85001 and 100000: regime continues in the year, ends from the next year | 2023-01-01 | autonomo_forfettario | S45 (index entries only), secondary summaries | unverified |"
+  },
+  {
+   "hash": "sha256:b60f0f4e47127316746aba6f9bdd633df5755dde54cc10710a3952acb10069cd",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| ti.cond.mid | 15000<R<=28000: TI = min(1200, sum of listed detrazioni - imposta lorda) if positive; listed = carichi famiglia, lavoro, mutui/spese pre-2022 rateizzate etc. | 2025-01-01 | dipendente_privato, dipendente_pubblico, collaboratore | S32 Quadro C sez.V | verified (TY2025 text) |"
+  },
+  {
+   "hash": "sha256:b6b17a6726fba3aa3c67b8e52e285f0c7839de5de708d5907d4c874bcb460981",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.accrual.months.formula | credited_months = min(12, floor(contributory_income / (minimale/12))) (general INPS rule; not printed in the text read) | 2026-01-01 | collaboratore, autonomo_ordinario, autonomo_forfettario | S50 (partial) | incerto |"
+  },
+  {
+   "hash": "sha256:b8d59e4130f73367115b5b1c6b5cdccb9751611ce3d0d9175278f2aa48a0a496",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| detr.altri.scope | Quadro RE (lavoro autonomo), RL14-RL16 (occasionale, obblighi di fare/non fare), altri redditi di lavoro autonomo RL sez.III, RG (impresa semplificata, not sostitutiva), RD, assimilati sez.II | 2025-01-01 | autonomo_ordinario, studente, collaboratore | S33 RN7 | verified |"
+  },
+  {
+   "hash": "sha256:b8d8a5f0ce7f5abeb87325cb80e599116fcbbc115eff93992cde91b8b08730de",
+   "url": "https://edotto.com/articolo/rivalutazione-tfr-pubblicato-il-coefficiente-di-dicembre-2025",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| tfr.tax.reval | 17% imposta sostitutiva on the yearly revaluation, paid by the employer by F24: acconto by 16 Dec (code 1712), saldo by 16 Feb (code 1713); legal reference not read | in force | dipendente_privato | S66 (secondary) | unverified |"
+  },
+  {
+   "hash": "sha256:b9ef25f5c8435f2005e3405f8192110f85aa4706400cd2eed1830838f95b14d6",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=2&art.versione=1&art.codiceRedazionale=18G00172&art.dataPubblicazioneGazzetta=2018-12-31&art.idGruppo=3&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=1",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.ateco.intermediari_commercio | 0.62 (46.1) | 2019-01-01 | autonomo_forfettario | S36 | verified |"
+  },
+  {
+   "hash": "sha256:ba75a23feff6fd63fa54a8ef9e15a03e3fc4fcde0ad07119c8204c44656ea0c9",
+   "url": "https://www.fiscoetasse.com/files/21403/messaggio-707-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.montante.rule | montante = sum of yearly contributions each revalued by the capitalisation coefficients of the following years; contributions of the last two years before decorrenza are added without revaluation | 2026-01-01 | all | S58 | verified |"
+  },
+  {
+   "hash": "sha256:ba8facb6f2f795e5548411b5fe06a30ed712129ca31c1f922626bd23dbf771c1",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| artcomm.rate.artigiani | 24% up to 56224; 25% on the part above 56224 | 2026-01-01 | artigiano_commerciante | S51 | verified |"
+  },
+  {
+   "hash": "sha256:bd6ee46fdabf4282621b68e9dca94473f14914fbc11a281db09d41e81dd82fe4",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49902.i-contributi-dei-dipendenti-pubblici.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.ctps.rate | total 33%, employer 24.2%, worker 8.8% (State employees; NoiPA payslip \"INPDAP 8.80%\") | page dated 2025-08-01 | dipendente_pubblico | S55, R10 | verified |"
+  },
+  {
+   "hash": "sha256:bde52b224ddd284ec67c1256285e667cb42e7832a79bd84f93a9f18922f607ac",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.rate.collab.dis_coll | +1.31% for co.co.co., amministratori/sindaci/revisori/liquidatori, dottorato/assegno/borsa, collaboratori di giornali, incarichi di ricerca (art. 22-ter L. 240/2010), consulente parlamentare | 2026-01-01 | collaboratore | S50 | verified |"
+  },
+  {
+   "hash": "sha256:be5881efc691a3fad32958d96c549ee5c6ffd308def3d62b1247cbcada14533b",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410823/Circolare+lavoro+dipendente+LB2025+DD+IRPEF+n.+4+del+16+maggio+2025.pdf/36979eaa-9fc5-a4ec-a7aa-136497c53f91",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| cuneo.somma.threshold | R<=20000 (R computed per c.9, S31) | 2025-01-01 | dipendente_privato, dipendente_pubblico | S31 sez.1.2, S40 | verified |"
+  },
+  {
+   "hash": "sha256:bf7cf8753e52e7e43ebe8f68e9bae93768eb368235b6fb329112f47c56f12a9d",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| tfs.ibu.formula | IBU = 1/12 * 0.8 * last annual pay (with 13th) * years of service; cap 240000 | in force | dipendente_pubblico | R7 (S12) | verified |"
+  },
+  {
+   "hash": "sha256:bfce59f2c5fb6fbf0d9a500f337ba1b63523259ca605aa434b092334e5451d83",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| stud.borse.exempt | exempt: regional borse (D.Lgs. 68/2012) for universitari; university borse L. 398/1989 for perfezionamento, specializzazione, dottorato, post-dottorato; Socrates sums <= 7746.85; Specializzandi medicina D.Lgs. 257/1991; Fondazione Articolo 34 borse; Erasmus+ mobility; borse to victims of terrorism/crime | in force | studente | S32 Appendice \"redditi esenti\" | verified |"
+  },
+  {
+   "hash": "sha256:c272aa56c9019032032156b6b4dffffe742de01e57c10240373c03dfbc4a1bff",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| tfr.accrual.fpld_deduction | quota_netta = pay_due/13.5 - 0.005 * contributory_pay (0.50% FPLD-linked deduction from the quota); legal reference not verified | in force | dipendente_privato | user brief; no source read | incerto |"
+  },
+  {
+   "hash": "sha256:c4375bb7f090ae566f34ebbefd5c3b6b114a52d8e6cfdb213bb202572d66b18d",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| artcomm.contrib.formula | IVS = r1*min(income,56224) + r2*max(0,min(income,massimale)-56224), r1 = 24% (24.48%), r2 = 25% (25.48%); never below the contributo minimo computed on 18808; massimale 93707 (pre-1996 insured) or 122295 (post-1995); income = total business income reported for IRPEF, per person | 2026-01-01 | artigiano_commerciante | S51 | verified |"
+  },
+  {
+   "hash": "sha256:c4b6d3476007c2066428ae11af7fe71898c9183bc71a9f947014ab2ff8526d5a",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| stud.dottorato.contributi | borse di dottorato: Gestione Separata contributions due (MUR DM 247/2022, via search summary); IRPEF-exempt per S32 for L. 398/1989 courses | in force | studente | S32, S47 (summary only) | unverified |"
+  },
+  {
+   "hash": "sha256:c4d0e47a3fe8fb6efc14dcce4991bb9bc2c318da3ee26a733b52a454e537e37f",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15199/Allegati/16640_Circolare-numero-28-del-16-03-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.age.anticipata.contributiva | first accrual from 1996-01-01: age 64y1m with 20y1m effective contributions (2027); 64y3m with 20y3m (2028 and from 2029, adjustable) | 2027-01-01 | all (contributivo puro) | S56 | verified |"
+  },
+  {
+   "hash": "sha256:c600d07e9f62a7a9c4da9579b1b322fe4423e128d4c4b21b421b49bbc3fd3dc0",
+   "url": "https://www.fiscoetasse.com/files/21403/messaggio-707-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.capitalization.rate | 0.040445 (coefficient 1.040445) = ISTAT average annual compound nominal GDP growth over the five years before 2025; applies to the montante at 2024-12-31 for pensions with decorrenza in 2026 | 2026-01-01 (decorrenza) | all | S58 | verified |"
+  },
+  {
+   "hash": "sha256:c710212a820f853a2e43ef450083ff117015a38ae5198b22c935a398282d5c5f",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410823/Circolare+lavoro+dipendente+LB2025+DD+IRPEF+n.+4+del+16+maggio+2025.pdf/36979eaa-9fc5-a4ec-a7aa-136497c53f91",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| cuneo.detrazione.ulteriore | 20000<R<=32000: 1000; 32000<R<=40000: 1000*(40000-R)/8000; R>40000: 0. Pro-rated to period of work | 2025-01-01 | dipendente_privato, dipendente_pubblico | S31 sez.1.2 (art.1 c.6 L. 207/2024) | verified |"
+  },
+  {
+   "hash": "sha256:c765145a0d999cdf379457dd2963cc77a3dd69f39b8203e5eafcbdeaa306f6e7",
+   "url": "https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/Fiscalita-locale/Elenco-annuale-addizionale-comunale-IRPEF-2025-13-marzo-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| addiz.comunale.rate.max | 0.008 (0.8%) | in force | all except autonomo_forfettario | S44 examples only (rates 0.7-0.8 seen); statutory cap not read | unverified |"
+  },
+  {
+   "hash": "sha256:caa62141dff49b737e04cd26e6a4cef1bfe831f58c8ee2f3fbe6faa816270072",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| detr.pensione.piecewise | R<=8500: 1955; 8500<R<=28000: 700 + 1255*(28000-R)/19500; 28000<R<=50000: 700*(50000-R)/22000; R>50000: 0; +50 if 25000<R<=29000. Pro-rated by days of pension/365; not cumulable with detr.dipendente for the same period | 2025-01-01 | pensionato | S32 t.7, S33 RN7 | verified (TY2025 text) |"
+  },
+  {
+   "hash": "sha256:cb71f8871281986f9c2bf3149a7543f53a187a6b05d2fad33aeb708c85764b25",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410823/Circolare+lavoro+dipendente+LB2025+DD+IRPEF+n.+4+del+16+maggio+2025.pdf/36979eaa-9fc5-a4ec-a7aa-136497c53f91",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| cuneo.somma.scope.assimilati | whether co.co.co. / borse get the somma and the ulteriore detrazione: c.4 and c.6 text names art.49 only | 2025-01-01 | collaboratore, studente | S31, S40 | incerto |"
+  },
+  {
+   "hash": "sha256:cb8e677c830af05d9a37b1e01d9671e173d2d9aeddac5bf2fcf2c1e23cf57247",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| artcomm.contrib_minimo | on the minimale: artigiani 4521.36 (4513.92 IVS + 7.44); commercianti 4611.64 (4604.20 + 7.44); monthly 376.78 and 384.31 | 2026-01-01 | artigiano_commerciante | S51 | verified |"
+  },
+  {
+   "hash": "sha256:cfeddd431f221550967b33f80314e4cd6b9dab55e64219e837a5db4e6beede54",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.occasional.rate | 33.72% (code 09, rapporti occasionali autonomi art. 44 L. 326/2003), split 1/3 worker 2/3 committente | 2026-01-01 | collaboratore, studente | S50 | verified |"
+  },
+  {
+   "hash": "sha256:d20ee4c2a70a2597167027ffcae54db14c8dfc527c686d12520ab703d0ad94e8",
+   "url": "https://www.fiscoetasse.com/files/21403/messaggio-707-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.capitalization.floor | coefficient not lower than 1 (secondary summaries; consistent with the 1.000000 rows) | 2026-01-01 | all | S58 (rows only) | unverified |"
+  },
+  {
+   "hash": "sha256:d27f805c6b9eb6b70f48f9918ba1f5b2cb6afaaef8614e365fd51abfd8e18f4c",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.minimale.reddito | 18808.00 per year (minimale for artigiani/commercianti; also used for Gestione Separata accrual and riscatto agevolato) | 2026-01-01 | artigiano_commerciante, collaboratore, autonomo_ordinario, autonomo_forfettario, studente | S50, S51 | verified |"
+  },
+  {
+   "hash": "sha256:d47afb9f85b12d00f47e11b3cfa45267cc530a46e2a6940740967e85d55b6c2c",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| fam.threshold.figli_le24 | figli aged <= 24: <= 4000 | in force | all, studente | S32 | verified |"
+  },
+  {
+   "hash": "sha256:d6c6ce8d0116e4e1bdbfc20dd4ab76ea8f3fa653f7c00e6d704c6f123d6a10a4",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410823/Circolare+lavoro+dipendente+LB2025+DD+IRPEF+n.+4+del+16+maggio+2025.pdf/36979eaa-9fc5-a4ec-a7aa-136497c53f91",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| stud.borse.taxable | borse/assegni/premi/sussidi for study not exempt and not from an employer = reddito assimilato art.50 c.1 lett.c: taxed at scaglioni, with detr.dipendente | in force | studente | S31 fn.4, S32 Quadro C | verified |"
+  },
+  {
+   "hash": "sha256:d93d33dfce2357595030a74d781becabc9990b80f99a20e26ec1e9941def7e10",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.rate.prof.other_cover | 24% (art. 53 TUIR income, pensioners or other mandatory cover) | 2026-01-01 | autonomo_ordinario, autonomo_forfettario, pensionato | S50 | verified |"
+  },
+  {
+   "hash": "sha256:d94709b6403f321ac6eaa0cf07d85ab6fcace47e8141adee2efd769edc03c65c",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.progressivo=0&art.idArticolo=2&art.versione=1&art.codiceRedazionale=18G00172&art.dataPubblicazioneGazzetta=2018-12-31&art.idGruppo=3&art.idSottoArticolo1=10&art.idSottoArticolo=1&art.flagTipoArticolo=1",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.coeff.ateco.industrie_alimentari | 0.40 (ATECO 2007: 10-11) | 2019-01-01 | autonomo_forfettario | S36 | verified |"
+  },
+  {
+   "hash": "sha256:db51420a0c1c41acba31fc28a8e95507cb76c0d495bf3cf4ba26c2376ef41d4c",
+   "url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| addiz.forfettario | none: imposta sostitutiva 15% / 5% replaces IRPEF, addizionali and IRAP | in force | autonomo_forfettario | S35 | verified |"
+  },
+  {
+   "hash": "sha256:df6f5f87fb27a72749d0b51ac69c30fdf51a8a98a30e02d83c057aba9b7c49d8",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| irpef.bracket.2.rate.ty2025 | 0.35 (kept for comparisons and 2025 data) | 2025-01-01 to 2025-12-31 | all | S32 t.1 | verified |"
+  },
+  {
+   "hash": "sha256:df913b15c4501995fc664d08f78540eb21f76795b923500c4840136d5e7c1b61",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15199/Allegati/16640_Circolare-numero-28-del-16-03-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.age.vecchiaia | 67y1m in 2027; 67y3m in 2028; 67y3m from 2029 (subject to further adjustment); applies to AGO, substitute and exclusive funds, Gestione Separata | 2027-01-01 | dipendente_privato, dipendente_pubblico, autonomo_ordinario, autonomo_forfettario, artigiano_commerciante, collaboratore | S56 | verified |"
+  },
+  {
+   "hash": "sha256:dfefa1e1a54ba2af1acbc93b602d027a17ece7b368b461a78ccd384d2608992e",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| artcomm.pensioner_over65.reduction | 50% contribution reduction for artigiani/commercianti over 65 already INPS pensioners (art. 59 c. 15 L. 449/1997) continues in 2026 | 2026-01-01 | artigiano_commerciante, pensionato | S51 | verified |"
+  },
+  {
+   "hash": "sha256:e513f0335372d553d43d9bd3dca7a3a050b63fcfb328e199adfc9c06e503c299",
+   "url": "https://www.istat.it/it/archivio/30440",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| tfr.reval.foi.base | FOI index excluding tobacco: base 2025=100 from January 2026 data; linking coefficient to base 2015=100 is 1.214 (ISTAT page text); do not use base 2015 for 2026 onward | 2026-01-01 | dipendente_privato, dipendente_pubblico | S25 (RESEARCH.md) | verified |"
+  },
+  {
+   "hash": "sha256:e68c162b41f33fbbe2b650c017e5a9c8f2f9cdc1f212cf2ce30ffe4c588a09f0",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/8410823/Circolare+lavoro+dipendente+LB2025+DD+IRPEF+n.+4+del+16+maggio+2025.pdf/36979eaa-9fc5-a4ec-a7aa-136497c53f91",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| cuneo.somma.rate | percentage on actual reddito di lavoro dipendente: 7.1% if annualised reddito<=8500 (max 603.50); 5.3% if 8500<..<=15000 (max 795); 4.8% if >15000 (max 960 at 20000). Annualised = reddito/days*365, used only to pick the percentage | 2025-01-01 | dipendente_privato, dipendente_pubblico | S31 sez.1.2, S40 (maxima from S42, summary only) | verified |"
+  },
+  {
+   "hash": "sha256:e6928da8cb34dcaa06fef3fee9f1bed2ad51a9236518266b427749017b9807ad",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| sost.premi_produttivita.eligibility | income cap and sector conditions of L. 208/2015 c.182 not read | 2026-01-01 | dipendente_privato | S30 | incerto |"
+  },
+  {
+   "hash": "sha256:e98f20ffee2a6ef24a087bdcf26cacf4e5d5e8be48d3496d23ddb04c1cc412f9",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15199/Allegati/16640_Circolare-numero-28-del-16-03-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pension.age.vecchiaia.71 | first contribution from 1996-01-01 and only 5 effective years: 71y1m (2027), 71y3m (2028 and from 2029, adjustable) | 2027-01-01 | all (contributivo puro) | S56 | verified |"
+  },
+  {
+   "hash": "sha256:ec5687453f3db1a7199bc106795c96ee29181b39690c880b17f8c6dff4e8db4d",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| irpef.bracket.2.rate | 0.33 (TY2025 and earlier: 0.35) | 2026-01-01 | all | S30 art.1 c.3 (amends art.11 c.1 lett.b TUIR) | verified |"
+  },
+  {
+   "hash": "sha256:ec7bbccbc2cc7257e492cfa595c326c7cc8f5eb63d6e80fa93b9560e1ec82f0b",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| irpef.bracket.1.upto | 28000 | 2025-01-01 | all | S30, S32 t.1 | verified |"
+  },
+  {
+   "hash": "sha256:ed2956b82d7cf4efd5e65bb0781606000242c2a57cdec0d1c3fb10a91b497273",
+   "url": null,
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| cassa.contrib.integrativo | surcharge on invoices (historically 2–5%) with a yearly minimum, set by each cassa | 2026-01-01 | professionista_cassa | S69 (historic snippets) | unverified |"
+  },
+  {
+   "hash": "sha256:ed745fec4bc3cd5ad2ae9fbc4f5ab9b420048c8f3e9828704ca197d3a4a76d78",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| irpef.bracket.2.upto | 50000 | 2025-01-01 | all | S30, S32 t.1 | verified |"
+  },
+  {
+   "hash": "sha256:ef468ba366e17ad6feb97c60b9693617c0304ffc94e8778f75746f060b1111e2",
+   "url": "https://www.lavoro.gov.it/temi-e-priorita/rapporti-di-lavoro-e-relazioni-industriali/focus-on/disciplina-rapporto-lavoro/pagine/prestazioni-occasionali",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| cpo.limits | contratto di prestazione occasionale (art.54-bis D.L. 50/2017), distinct from lavoro autonomo occasionale: <= 5000 per prestatore across all utilizzatori; <= 2500 per prestatore per single utilizzatore | in force | studente | S46 (search summary only) | unverified |"
+  },
+  {
+   "hash": "sha256:f2a18c391bc68d09db3bc9b31c4e113a01aa2f4fe87d59121a9c51f7c7b951a4",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| ti.cond.low | R<=15000 AND imposta lorda on dipendente/assimilati > detrazione lavoro dipendente reduced by 75 EUR (pro-rated) | 2025-01-01 | dipendente_privato, dipendente_pubblico, collaboratore | S32 Quadro C sez.V, S31 | verified (TY2025 text) |"
+  },
+  {
+   "hash": "sha256:f3fe2a3f232e91644a2d44997fc69bdda5c6f31b443a2807f2770faa57918399",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| gs.split.collab | worker 1/3, committente 2/3; committente pays by F24 on the 16th of the following month | 2026-01-01 | collaboratore | S50 | verified |"
+  },
+  {
+   "hash": "sha256:f4b525730b75958efb06f8ad0fe80d7db1d4db1a4b6ed76ada7afaee5d671bc2",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/9764684/730_+istruzioni_2026.pdf/2ac8d27a-fa3d-ed9e-ffc1-9bf61457661e?t=1772183775348",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| detr.dipendente.bonus65 | +65 if 25000<R<=35000 (pro-rated) | 2025-01-01 | dipendente_privato, dipendente_pubblico, collaboratore | S32 t.6 n.4, S33 | verified (TY2025 text) |"
+  },
+  {
+   "hash": "sha256:f60093b383650929c392e0dc6b9acc03988e0935ca8a5b88afd014e6562308f6",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| artcomm.contrib.max | maximum yearly IVS: post-1995 insured artigiani 30011.51, commercianti 30598.53; pre-1996 insured 22864.51 and 23314.31 | 2026-01-01 | artigiano_commerciante | S51 | verified |"
+  },
+  {
+   "hash": "sha256:f6534993a98869f7e9ee6b467f7fda77665b6b7bb82cff944b205cd0a589612e",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49893.i-contributi-dei-lavoratori-autonomi-occasionali.html",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| occ.autonomo.inps_threshold | first 5000 EUR/year of lavoro autonomo occasionale: franchigia, no Gestione Separata contribution; above it the worker must tell the committenti and register to Gestione Separata (contributions on the excess per INPS circ. 103/2004, via search summary) | in force | studente, collaboratore, all | S38 | verified |"
+  },
+  {
+   "hash": "sha256:f77bedb6acad132c7ebb783ceceec8ec12cf1357d64897f7e00e63abb5484fe1",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026_agg-28-05-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| ord.versamento.min | no payment or compensation if an imposta or addizionale <= 12 EUR | in force | all | S33 | verified |"
+  },
+  {
+   "hash": "sha256:f97a962be8d7064d467083b46963393a82222ff567da36d65e1817156542c23a",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.deduction.ceiling.interplay | c. 202 says c. 201 applies from 2026-07-01 while n. 1 says tax period 2026; ceiling taken as TY2026 | TY2026 | all | S59 | incerto |"
+  },
+  {
+   "hash": "sha256:f9c7655941232374273e0083af6d8fba4dac8405c4d36047af18388a5b47da46",
+   "url": "https://www.assolombarda.it/servizi/lavoro-e-previdenza/informazioni/previdenza-complementare-nuovo-silenzio-assenso-dal-1-luglio-2026",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| pc.silent_consent.old_window_months | previous window to choose: 6 months from hiring, then TFR goes by silent consent | before 2026-07-01 | dipendente_privato | S68 (secondary) | unverified |"
+  },
+  {
+   "hash": "sha256:fa436f4236fe809b525cd652393ddcc673ed87a6ad75005f6ec4ac6ca99467b3",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| cuneo.2026.in_force | benefits of art.1 c.4 and c.6 L. 207/2024 apply for TY2026 (INPS msg 2829 of 2026-09-14: paid from the October 2026 payroll, arrears from 1 Jan 2026); not amended by L. 199/2025 | 2026-01-01 | dipendente_privato, dipendente_pubblico | S41, S42 (summary only), S30 | unverified |"
+  },
+  {
+   "hash": "sha256:fb0da794a42db98ef627d502637971e77a84648be74f425825c1fcb89a51c1c2",
+   "url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| forf.reddito.formula | reddito = ricavi/compensi incassati x coefficiente - contributi previdenziali obbligatori; excess contributions deductible from reddito complessivo | in force (start date not read) | autonomo_forfettario | S35, S36 | verified |"
+  },
+  {
+   "hash": "sha256:fbf1bb27e2d7adb6e7f392a3bb9be482cb87bd0bcdf007445a684072aaa3539e",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.pension.bracket1.threshold | 56224 per year (first pensionable bracket; monthly 4685 only in S53) | 2026-01-01 | dipendente_privato, artigiano_commerciante | S51 (artigiani/commercianti), S53 | verified |"
+  },
+  {
+   "hash": "sha256:fcb7cd7fdb778af089f36a7bcaf285e1fbd8dd1aa2819cfa5885bae382954a89",
+   "url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/Legge-30-dicembre-2025-n.-199-estratto-della-Gazzetta-Ufficiale.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| pc.benefit.tax.frazionata | 20% - 0.25 points per year after the 15th, max reduction 5 points (floor 15%), for fractioned payout (art. 11 c. 6-ter) | 2026-07-01 | all | S59 (c. 201 b n. 4) | verified |"
+  },
+  {
+   "hash": "sha256:fd147ce60043e2f5b1be004a6e9fbbbaae0984f53782d9353bea5086116f035a",
+   "url": "https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| detr.forfettario | none: imposta sostitutiva replaces IRPEF; whether detrazioni/oneri apply is not read | 2023-01-01 | autonomo_forfettario | S35 | unverified |"
+  },
+  {
+   "hash": "sha256:fdb3a1d9f8944257ae75afffcbd3bed73ca3ddb6c8580c2766e9d0c9166c568b",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/295696/Decreto+del+Presidente+della+Repubblica+del+29_09_1973+n.+600+-+.pdf/4f92a234-eb0b-9751-e68b-7e7c3225a8ec",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": true,
+   "text": "| occ.autonomo.ritenuta | 20% ritenuta d'acconto on compensi (art.25 DPR 600/1973), including occasional | in force | studente, collaboratore, autonomo_ordinario | S48 (search summary; PDF not opened) | unverified |"
+  },
+  {
+   "hash": "sha256:fdf8b988ed0a9e4cab9baf7dba473c5d29c8d94eb11ec14d9c0492e9a0a8dea6",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf",
+   "recordedOn": "2026-10-31",
+   "kind": "RESEARCH_TABLE_ROW",
+   "summaryOnly": false,
+   "text": "| inps.massimale.artcomm.pre1996 | 93707 per year = 56224 + 56224*2/3 (rounded, S51 prints 37483 for the second part); individual limit, not per business | 2026-01-01 | artigiano_commerciante (insured before 1/1/1996) | S51 | verified |"
+  }
+ ]
+}

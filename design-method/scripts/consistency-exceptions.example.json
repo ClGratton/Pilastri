@@ -1,0 +1,10 @@
+[
+  {
+    "rule": "substring of the rule name",
+    "screen": "dump name: substring, or a glob when it contains *",
+    "text": "substring of the element text",
+    "reason": "the user's decision, with quote",
+    "decidedBy": "user",
+    "date": "YYYY-MM-DD"
+  }
+]

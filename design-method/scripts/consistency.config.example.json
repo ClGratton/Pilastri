@@ -1,0 +1,27 @@
+{
+  "_comment": "MINIMAL EXAMPLE. naming.fontScaleMarker / fontScaleValue: dumps whose name carries the marker are captured at that system font scale; above heuristics.wrapAboveScale (default 1.3) the roles in wrapRoles (default pageSubtitle, pageTrailing, chip) are compared per line (box height / line count), page and period titles stay one line and keep the box height. currencySplit: a digit joined to one of currencySymbols by a breakable space flags (use U+00A0).duplicateScreens (optional): screen globs the duplicate check applies to; repetition is judged per single screen, so list only single-screen layouts (a wide two-pane layout shows the same text in two panes, which is not a repetition); duplicateScope may instead name a JSON file {screens:[...]}; absent = every screen; the report states the scope; never use filters for this. Copy to the project as consistency.config.json and replace every placeholder (tags, token values) with the project's own. The full all-checks configs live only in fixtures/selftest (self-test-only, fixture values). tags: role -> the test tag (resource-id, accessibility id) the app exposes; a role with no tag is listed under 'Checks skipped', and an enabled check whose tag never appears in the dumps FAILS (nothing was checked). tokens: dp values from the project's token table; an enabled check with a missing token exits 2. checks: base checks, see RULES.md. addons: opt-in files of addons/ (frame-dock-island, pager-peek, pager-period, hierarchy-opinions, visual-integrity: wrong edges, overlaps, hidden content, config block visualIntegrity, SKILL K13); none needed here. adapter: dump parser of adapters/ (uiautomator = Android XML, json-nodes = JSON node export). naming: dump file names are <layout><layoutSeparator><screen>; topMarker marks top-level pages (empty = none). ruleIds: optional project ids printed after rule names. locale / dateLocale: keys of locales.json (stop words and units for duplicates; months for the dateRanges add-on). Generic mechanisms below are arrays of rules by tag: singleton (at most/exactly N per screen or pane), heightRatio (role at least min x over), heightEquals, forbidInside, alignRules (tagged element centred or at a distance from an edge). Every number the base uses is a named value under heuristics (RULES.md); minTouch is the PLATFORM minimum (Android/Material 48 dp, iOS 44 pt, WCAG 2.2 web 24 px).",
+  "adapter": "uiautomator",
+  "addons": [],
+  "tolerance": 1,
+  "wideLayouts": ["wide"],
+  "narrowLayouts": ["narrow"],
+  "naming": { "layoutSeparator": "-", "topMarker": "-top-", "fontScaleMarker": "-fs2", "fontScaleLabel": "fs2", "fontScaleValue": 2 },
+  "wrapRoles": ["pageSubtitle", "pageTrailing", "chip"],
+  "currencySymbols": ["€", "$", "£"],
+  "tags": {
+    "container": "card",
+    "cardTitle": "card-title",
+    "pageContent": "page-content",
+    "pageTitle": "page-title",
+    "pageSubtitle": "page-subtitle",
+    "primaryFigure": "primary-figure",
+    "dock": "dock"
+  },
+  "_periodHeader": "pager-period add-on only (tags pageHeader, periodChip, periodSubtitle): { header, headerMembers, members } role names, defaults shown",
+  "tokens": { "cardInset": 16, "minTouch": 48, "maxCopy": 70 },
+  "duplicateScreens": ["narrow-*"],
+  "checks": { "cardInset": true, "pageHeader": true, "firstContent": true, "touch": true, "copy": true, "duplicate": true, "currencySplit": true },
+  "singleton": [ { "role": "primaryFigure", "scope": "pane", "max": 1 } ],
+  "heightRatio": [ { "role": "primaryFigure", "over": "pageTitle", "min": 1.2 }, { "role": "pageTitle", "over": "periodTitle", "min": 1.2, "id": "H7" }, { "role": "periodTitle", "over": "cardTitle", "min": 1.2, "id": "H7" } ],
+  "alignRules": [ { "role": "dock", "layouts": "narrow", "centreX": true } ]
+}

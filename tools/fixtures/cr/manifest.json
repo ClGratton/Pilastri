@@ -1,0 +1,395 @@
+[
+ {
+  "cr": "CR-08",
+  "name": "versamenti-title-top",
+  "bad": "CR-08/versamenti-title-top-bad",
+  "good": "CR-08/versamenti-title-top-good",
+  "rule": "card-title top inset",
+  "note": "Versamenti title 6 dp lower than Flusso (user: versamenti is too high while flusso is good)"
+ },
+ {
+  "cr": "CR-09",
+  "name": "versamenti-bottom",
+  "bad": "CR-09/versamenti-bottom-bad",
+  "good": "CR-09/versamenti-bottom-good",
+  "rule": "card-inset bottom",
+  "note": "last row 6 dp short of the card bottom inset (user: same goes for the bottom)"
+ },
+ {
+  "cr": "CR-65",
+  "name": "card-body-left",
+  "bad": "CR-65/card-body-left-bad",
+  "good": "CR-65/card-body-left-good",
+  "rule": "card-body: inset left is 14 dp (CR-65)",
+  "note": "card body inset differs from 14 dp"
+ },
+ {
+  "cr": "CR-66",
+  "name": "salta-clipped",
+  "bad": "CR-66/salta-clipped-bad",
+  "good": "CR-66/salta-clipped-good",
+  "rule": "clip: text box wider than its chip (CR-66)",
+  "note": "\"Salta\" wider than its pill"
+ },
+ {
+  "cr": "CR-69",
+  "name": "ottobre-novembre",
+  "bad": "CR-69/ottobre-novembre-bad",
+  "good": "CR-69/ottobre-novembre-good",
+  "rule": "clip: texts overlap (CR-69)",
+  "note": "Ottob over Novembre (hero strip)"
+ },
+ {
+  "cr": "CR-05",
+  "name": "header-x",
+  "bad": "CR-05/header-x-bad",
+  "good": "CR-05/header-x-good",
+  "rule": "page-header page-title x",
+  "note": "page title x differs between pages (user: dimensioni, posizioni e allineamento diversi)"
+ },
+ {
+  "cr": "CR-05",
+  "name": "header-y",
+  "bad": "CR-05/header-y-bad",
+  "good": "CR-05/header-y-good",
+  "rule": "page-header page-title y",
+  "note": "page title y differs between pages"
+ },
+ {
+  "cr": "CR-05",
+  "name": "subtitle-height",
+  "bad": "CR-05/subtitle-height-bad",
+  "good": "CR-05/subtitle-height-good",
+  "rule": "page-header page-subtitle height",
+  "note": "subtitle height differs between pages"
+ },
+ {
+  "cr": "CR-06",
+  "name": "chip-height",
+  "bad": "CR-06/chip-height-bad",
+  "good": "CR-06/chip-height-good",
+  "rule": "chip height",
+  "note": "chips of one type differ in height"
+ },
+ {
+  "cr": "CR-06",
+  "name": "section-label-left",
+  "bad": "CR-06/section-label-left-bad",
+  "good": "CR-06/section-label-left-good",
+  "rule": "label section left minus card left",
+  "note": "section label not on the card left edge"
+ },
+ {
+  "cr": "CR-06",
+  "name": "card-right-edge",
+  "bad": "CR-06/card-right-edge-bad",
+  "good": "CR-06/card-right-edge-good",
+  "rule": "card-edge right (per pane)",
+  "note": "card right edge differs"
+ },
+ {
+  "cr": "CR-62",
+  "name": "gap-8",
+  "bad": "CR-62/gap-8-bad",
+  "good": "CR-62/gap-8-good",
+  "rule": "gap: 8 dp between stacked blocks",
+  "note": "gap between stacked blocks is not 8 dp"
+ },
+ {
+  "cr": "CR-62",
+  "name": "gutter-right",
+  "bad": "CR-62/gutter-right-bad",
+  "good": "CR-62/gutter-right-good",
+  "rule": "gutter: block right edge on the 16 dp gutter (CR-62)",
+  "note": "card right edge off the 16 dp gutter"
+ },
+ {
+  "cr": "CR-23",
+  "name": "touch-under-48",
+  "bad": "CR-23/touch-under-48-bad",
+  "good": "CR-23/touch-under-48-good",
+  "rule": "touch: clickable at least 48 x 48 dp",
+  "note": "clickable shorter than 48 dp"
+ },
+ {
+  "cr": "CR-27",
+  "name": "dock-centre",
+  "bad": "CR-27/dock-centre-bad",
+  "good": "CR-27/dock-centre-good",
+  "rule": "frame: dock centre x equals screen centre",
+  "note": "cover dock off the screen centre"
+ },
+ {
+  "cr": "CR-27",
+  "name": "dock-5-items",
+  "bad": "CR-27/dock-5-items-bad",
+  "good": "CR-27/dock-5-items-good",
+  "rule": "frame: exactly 5 dock-item",
+  "note": "cover dock with 4 items"
+ },
+ {
+  "cr": "CR-33",
+  "name": "copy-80",
+  "bad": "CR-33/copy-80-bad",
+  "good": "CR-33/copy-80-good",
+  "rule": "copy: text longer than 70 chars",
+  "note": "explanation sentence on a working screen"
+ },
+ {
+  "cr": "CR-40",
+  "name": "two-primary",
+  "bad": "CR-40/two-primary-bad",
+  "good": "CR-40/two-primary-good",
+  "rule": "figure: one primary-figure per pane",
+  "note": "two primary figures in one pane"
+ },
+ {
+  "cr": "CR-55",
+  "name": "two-primary-accent",
+  "bad": "CR-55/two-primary-accent-bad",
+  "good": "CR-55/two-primary-accent-good",
+  "rule": "accent: at most one accent-card and primary-figure per pane",
+  "note": "more than one primary figure inside the accent card"
+ },
+ {
+  "cr": "CR-56",
+  "name": "primary-vs-secondary",
+  "bad": "CR-56/primary-vs-secondary-bad",
+  "good": "CR-56/primary-vs-secondary-good",
+  "rule": "figure: primary >= 1.5 x secondary-figure (CR-56)",
+  "note": "secondary figure too close to the primary figure"
+ },
+ {
+  "cr": "CR-59",
+  "name": "attention-height",
+  "bad": "CR-59/attention-height-bad",
+  "good": "CR-59/attention-height-good",
+  "rule": "attention: attention-row height 56 dp",
+  "note": "attention row not 56 dp"
+ },
+ {
+  "cr": "CR-59",
+  "name": "attention-button",
+  "bad": "CR-59/attention-button-bad",
+  "good": "CR-59/attention-button-good",
+  "rule": "attention: no button inside the attention-row (CR-59)",
+  "note": "a \"Controlla\" button inside the quiet attention row"
+ },
+ {
+  "cr": "CR-07",
+  "name": "gear-axis",
+  "bad": "CR-07/gear-axis-bad",
+  "good": "CR-07/gear-axis-good",
+  "rule": "frame: gear centre x equals island centre x (CR-07)",
+  "note": "gear not on the island axis"
+ },
+ {
+  "cr": "CR-24",
+  "name": "island-edge",
+  "bad": "CR-24/island-edge-bad",
+  "good": "CR-24/island-edge-good",
+  "rule": "frame: island 12 dp from the right edge",
+  "note": "island 20 dp from the right edge"
+ },
+ {
+  "cr": "CR-24",
+  "name": "island-centre",
+  "bad": "CR-24/island-centre-bad",
+  "good": "CR-24/island-centre-good",
+  "rule": "frame: island vertically centred",
+  "note": "island 20 dp off the vertical centre"
+ },
+ {
+  "cr": "CR-41",
+  "name": "pane-split",
+  "bad": "CR-41/pane-split-bad",
+  "good": "CR-41/pane-split-good",
+  "rule": "panes: left pane ends at the split",
+  "note": "left pane ends past the hinge"
+ },
+ {
+  "cr": "CR-70",
+  "name": "date-three-times",
+  "bad": "CR-70/date-three-times-bad",
+  "good": "CR-70/date-three-times-good",
+  "rule": "duplicate: a text or value appears once per screen (CR-70)",
+  "note": "user: I can see the date 3 times"
+ },
+ {
+  "cr": "CR-70",
+  "name": "amount-429-twice",
+  "bad": "CR-70/amount-429-twice-bad",
+  "good": "CR-70/amount-429-twice-good",
+  "rule": "duplicate: a text or value appears once per screen (CR-70)",
+  "note": "hero figure and chart end label both \"429 €\" (the chart label is synthetic: a canvas label is invisible in a real dump)"
+ },
+ {
+  "cr": "CR-70",
+  "name": "budget-nd-twice",
+  "bad": "CR-70/budget-nd-twice-bad",
+  "good": "CR-70/budget-nd-twice-good",
+  "rule": "duplicate: a text or value appears once per screen (CR-70)",
+  "note": "identical \"budget n/d\" in two nodes"
+ },
+ {
+  "cr": "CR-70",
+  "name": "flusso-441-twice",
+  "bad": "CR-70/flusso-441-twice-bad",
+  "good": "CR-70/flusso-441-twice-good",
+  "rule": "duplicate: a text or value appears once per screen (CR-70)",
+  "note": "the Flusso amount repeated under two labels"
+ },
+ {
+  "cr": "CR-70",
+  "name": "range-endpoint-mese",
+  "bad": "CR-70/range-endpoint-mese-bad",
+  "good": "CR-70/range-endpoint-mese-good",
+  "rule": "duplicate: a text or value appears once per screen (CR-70)",
+  "note": "range \"1-9 nov\" and its own endpoint on Mese (dateRanges add-on, Italian)"
+ },
+ {
+  "cr": "CR-70",
+  "name": "symbol-chevrons",
+  "bad": "CR-70/symbol-chevrons-bad",
+  "good": "CR-70/symbol-chevrons-good",
+  "rule": "",
+  "note": "NARROWING: a pure symbol (no letter, no digit) is never compared; the repeated \"‹\" and \"—\" in the bad twin must NOT be flagged",
+  "clean": true
+ },
+ {
+  "cr": "CR-71",
+  "name": "period-title-missing",
+  "bad": "CR-71/period-title-missing-bad",
+  "good": "CR-71/period-title-missing-good",
+  "rule": "period: swipe page exposes its current period in a `period-title` node (CR-71)",
+  "note": "user: not even one is big; swipe page without the big period-title"
+ },
+ {
+  "cr": "CR-71",
+  "name": "period-title-small",
+  "bad": "CR-71/period-title-small-bad",
+  "good": "CR-71/period-title-small-good",
+  "rule": "period: period-title is the tallest text of the page header (CR-71)",
+  "note": "period-title smaller than the page title"
+ },
+ {
+  "cr": "CR-01",
+  "name": "peek-too-small-cover",
+  "bad": "CR-01/peek-too-small-cover-bad",
+  "good": "CR-01/peek-too-small-cover-good",
+  "rule": "CR-01, user rule",
+  "note": "user: the previous month is barely visible (2026-11-08), and again \"è tornato a non vedersi\" / \"ancora un po troppo poco visibile\" (2026-11-09): >= 28 dp on the cover; the wave 6 8 dp peek (agent decision D-14) is the bad fixture"
+ },
+ {
+  "cr": "CR-01",
+  "name": "peek-too-small-fold",
+  "bad": "CR-01/peek-too-small-fold-bad",
+  "good": "CR-01/peek-too-small-fold-good",
+  "rule": "CR-01, user rule",
+  "note": "same rule on the open Fold: >= 40 dp; the 8 dp peek of output/consistency-2026-11-09k fold Mese is the bad fixture"
+ },
+ {
+  "cr": "CR-01",
+  "name": "peek-no-surface-fold",
+  "bad": "CR-01/peek-no-surface-fold-bad",
+  "good": "CR-01/peek-no-surface-fold-good",
+  "rule": "CR-01, no drawn peek",
+  "note": "user 2026-11-10: \"si deve vedere ancora più\"; the hero strip of output/consistency-2026-11-10d/fold-top-pilastri.xml has a 40 dp neighbour slot and nothing drawn in it (a blank indent); the good twin draws the tonal tile"
+ },
+ {
+  "cr": "CR-01",
+  "name": "peek-no-surface-cover",
+  "bad": "CR-01/peek-no-surface-cover-bad",
+  "good": "CR-01/peek-no-surface-cover-good",
+  "rule": "CR-01, no drawn peek",
+  "note": "same on the cover (phone-top-pilastri.xml: slot 28 dp, nothing drawn)"
+ },
+ {
+  "cr": "CR-89",
+  "name": "range-ends-cover",
+  "bad": "CR-89/range-ends-cover-bad",
+  "good": "CR-89/range-ends-cover-good",
+  "rule": "G-11 range ends: the page surface stops short of the content margin on a side with no neighbour",
+  "note": "user 2026-11-10: \"Qua perché così stretto?\" / \"va bene modifica schermata\": newest period, no next page, the page stopped 36 dp from the edge instead of the 16 dp content margin"
+ },
+ {
+  "cr": "CR-89",
+  "name": "range-ends-fold",
+  "bad": "CR-89/range-ends-fold-bad",
+  "good": "CR-89/range-ends-fold-good",
+  "rule": "G-11 range ends: the page surface stops short of the content margin on a side with no neighbour",
+  "note": "same on the open Fold (gutter 48 dp, margin 16 dp)"
+ },
+ {
+  "cr": "CR-89",
+  "name": "range-ends-single",
+  "bad": "CR-89/range-ends-single-bad",
+  "good": "CR-89/range-ends-single-good",
+  "rule": "G-11 range ends: the page surface stops short of the content margin on a side with no neighbour",
+  "note": "a strip with one page spans margin to margin; the centred page leaves an empty band on both sides"
+ },
+ {
+  "cr": "CR-89",
+  "name": "page-gutter-range-end-cover",
+  "bad": "CR-89/page-gutter-range-end-cover-bad",
+  "good": "CR-89/page-gutter-range-end-cover-good",
+  "rule": "gutter: block left edge on the 16 dp gutter (CR-62)",
+  "note": "CR-62 range ends: the newest page rests on the right margin (card 56..344 on the cover); a card at another offset is a deviation"
+ },
+ {
+  "cr": "CR-89",
+  "name": "page-gutter-single",
+  "bad": "CR-89/page-gutter-single-bad",
+  "good": "CR-89/page-gutter-single-good",
+  "rule": "gutter: block left edge on the 16 dp gutter (CR-62)",
+  "note": "a one-page strip: card margin to margin (16)"
+ },
+ {
+  "cr": "CR-89",
+  "name": "page-gutter-middle",
+  "bad": "CR-89/page-gutter-middle-bad",
+  "good": "CR-89/page-gutter-middle-good",
+  "rule": "gutter: block left edge on the 16 dp gutter (CR-62)",
+  "note": "a page with both neighbours stays centred (card 36); a card at another offset is a deviation"
+ },
+ {
+  "cr": "CR-62",
+  "name": "narrowing",
+  "bad": "CR-62/narrowing-bad",
+  "good": "CR-62/narrowing-good",
+  "rule": "gutter: block left edge on the 16 dp gutter (CR-62)",
+  "note": "cards inside a period-viewport are on the gutter line like every other card (G-11 narrowing removed 2026-11-09)"
+ },
+ {
+  "cr": "CR-68",
+  "name": "label-not-moving",
+  "bad": "CR-68/label-not-moving-bad",
+  "good": "CR-68/label-not-moving-good",
+  "rule": "period label moves like its page (CR-68)",
+  "note": "user: the month of the card must scroll together with the card"
+ },
+ {
+  "cr": "CR-53",
+  "name": "title-not-moving",
+  "bad": "CR-53/title-not-moving-bad",
+  "good": "CR-53/title-not-moving-good",
+  "rule": "CO-MOTION card-title vs its card",
+  "note": "card title stays while its card moves (what belongs together moves together)"
+ },
+ {
+  "cr": "CR-68",
+  "name": "title-still",
+  "bad": "CR-68/title-still-bad",
+  "good": "CR-68/title-still-good",
+  "rule": "period-title moves like its page (CR-68, M1)",
+  "note": "user: \"se cose appartengono allo stesso elemento, quasi sempre avranno lo stesso movimento\" (Spese period-title stayed while its content moved)"
+ },
+ {
+  "cr": "CR-68",
+  "name": "title-absent",
+  "bad": "CR-68/title-absent-bad",
+  "good": "CR-68/title-still-good",
+  "rule": "capture: period-title absent or zero-width",
+  "note": "K2 wave 6: a period-title present at rest and missing in the moving dump is an explicit capture row, never a silent pass"
+ }
+]

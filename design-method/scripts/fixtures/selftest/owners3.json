@@ -1,0 +1,1 @@
+{"concepts":[{"name":"strip","owners":["ui/Strip.kt"],"signatures":["position\\.animateTo\\("],"known":[{"file":"screens/Bad.kt","reason":"legacy","decision":"pending owner U"}]}]}

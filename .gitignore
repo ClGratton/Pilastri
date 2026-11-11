@@ -40,3 +40,6 @@ tools/fixtures/hold/real-spese/
 .env
 .env.*
 *.hprof
+
+# tool crash dumps
+*.stackdump
